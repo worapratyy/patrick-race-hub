@@ -1,0 +1,410 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Patrick Race Hub</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Instrument+Sans:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+<style>
+:root{
+  --bg:#f4f1ea; --panel:#fbfaf6; --ink:#1d1c19; --ink2:#5d5a52; --ink3:#8f8b80; --line:#e2ddd1; --line2:#d3cdbf;
+  --accent:#c2410c; --accent-soft:#fbe6d9;
+  --z1:#94a3b8; --z2:#3f8f5a; --z3:#d4a019; --z4:#dd6b20; --z5:#c0392b;
+  --ok:#3f8f5a; --ok-soft:#e1efe4; --warn:#b7791f; --warn-soft:#f7ecd4; --bad:#c0392b; --bad-soft:#f6dcd8;
+  --ems:#2f5d8a; --sau:#7a4a9e;
+  --mono:'JetBrains Mono',ui-monospace,monospace; --sans:'Instrument Sans',system-ui,sans-serif;
+}
+@media (prefers-color-scheme: dark){ :root:not([data-theme="light"]){
+  --bg:#151513; --panel:#1d1d1a; --ink:#ecebe6; --ink2:#aeaba2; --ink3:#7a776f; --line:#2c2b27; --line2:#3a3934;
+  --accent:#f0773a; --accent-soft:#3a2418; --ok:#5fb37b; --ok-soft:#1f3326; --warn:#e0a83c; --warn-soft:#382d17; --bad:#e2665a; --bad-soft:#3a1f1c;
+  --z2:#5fb37b; --z3:#e0b43c; --z4:#f08a42; --z5:#e2665a; --ems:#6f9fd0; --sau:#b489d6;
+}}
+:root[data-theme="dark"]{
+  --bg:#151513; --panel:#1d1d1a; --ink:#ecebe6; --ink2:#aeaba2; --ink3:#7a776f; --line:#2c2b27; --line2:#3a3934;
+  --accent:#f0773a; --accent-soft:#3a2418; --ok:#5fb37b; --ok-soft:#1f3326; --warn:#e0a83c; --warn-soft:#382d17; --bad:#e2665a; --bad-soft:#3a1f1c;
+  --z2:#5fb37b; --z3:#e0b43c; --z4:#f08a42; --z5:#e2665a; --ems:#6f9fd0; --sau:#b489d6;
+}
+*{box-sizing:border-box}
+html,body{margin:0}
+body{background:var(--bg);color:var(--ink);font:15px/1.5 var(--sans);-webkit-font-smoothing:antialiased}
+.wrap{max-width:1120px;margin:0 auto;padding:0 16px 64px}
+.mono{font-family:var(--mono)}
+header{padding:28px 0 18px;display:flex;flex-wrap:wrap;gap:16px;align-items:flex-end;justify-content:space-between;border-bottom:1px solid var(--line)}
+.brand h1{font-size:26px;letter-spacing:-.02em;margin:0;font-weight:700}
+.brand p{margin:4px 0 0;color:var(--ink2);font-size:13px}
+.countdowns{display:flex;gap:10px;flex-wrap:wrap}
+.cd{border:1px solid var(--line2);border-radius:10px;padding:8px 12px;min-width:150px;background:var(--panel)}
+.cd b{font:600 22px var(--mono);letter-spacing:-.02em}
+.cd small{display:block;color:var(--ink2);font-size:12px}
+.cd.ems{border-left:3px solid var(--ems)} .cd.sau{border-left:3px solid var(--sau)}
+nav{display:flex;gap:4px;margin:18px 0 22px;overflow-x:auto}
+nav button{font:500 14px var(--sans);color:var(--ink2);background:none;border:1px solid transparent;border-radius:8px;padding:7px 14px;cursor:pointer;white-space:nowrap}
+nav button[aria-selected="true"]{color:var(--ink);background:var(--panel);border-color:var(--line2)}
+nav .sp{flex:1}
+nav .theme{font-size:12px}
+section[hidden]{display:none}
+.grid{display:grid;gap:16px}
+.g2{grid-template-columns:1.3fr 1fr}
+.g3{grid-template-columns:repeat(3,1fr)}
+.g2.even{grid-template-columns:1fr 1fr}
+.card{min-width:0}
+@media(max-width:820px){.g2,.g2.even,.g3{grid-template-columns:1fr}}
+.card{background:var(--panel);border:1px solid var(--line);border-radius:12px;padding:18px}
+.eyebrow{font:500 11px var(--mono);text-transform:uppercase;letter-spacing:.08em;color:var(--ink3);margin:0 0 8px}
+h2{font-size:20px;margin:0 0 6px;letter-spacing:-.01em}
+h3{font-size:15px;margin:0 0 10px}
+.muted{color:var(--ink2)} .small{font-size:13px}
+.kv{display:flex;flex-wrap:wrap;gap:18px;margin:12px 0}
+.kv div small{display:block;font-size:11px;color:var(--ink3);text-transform:uppercase;letter-spacing:.06em}
+.kv div b{font:500 17px var(--mono)}
+ol.steps{margin:10px 0 0;padding-left:20px} ol.steps li{margin:4px 0}
+.why{border-left:2px solid var(--accent);padding:2px 0 2px 12px;color:var(--ink2);margin:12px 0 0;font-size:14px}
+.pill{display:inline-block;font:500 11px var(--mono);padding:2px 8px;border-radius:99px;letter-spacing:.02em;white-space:nowrap}
+.p-ok{background:var(--ok-soft);color:var(--ok)} .p-warn{background:var(--warn-soft);color:var(--warn)} .p-bad{background:var(--bad-soft);color:var(--bad)}
+.p-na{background:var(--line);color:var(--ink2)} .p-acc{background:var(--accent-soft);color:var(--accent)}
+.t-easy{color:var(--z2)} .t-long{color:var(--ems)} .t-tempo{color:var(--z4)} .t-race{color:var(--accent)} .t-strength,.t-rest{color:var(--ink3)}
+.week{display:grid;grid-template-columns:repeat(7,1fr);gap:6px;margin-top:10px}
+.day{border:1px solid var(--line);border-radius:8px;padding:8px 6px;min-height:78px;font-size:12px;background:var(--bg)}
+.day.today{border-color:var(--accent);box-shadow:inset 0 0 0 1px var(--accent)}
+.day .d{font:500 11px var(--mono);color:var(--ink3)}
+.day .n{font-weight:600;margin:3px 0;line-height:1.25}
+.day .a{font:500 11px var(--mono)}
+@media(max-width:620px){.week{grid-template-columns:repeat(4,1fr)}}
+.bar{height:8px;border-radius:99px;background:var(--line);overflow:hidden;margin:8px 0 4px}
+.bar i{display:block;height:100%;background:var(--accent)}
+table{width:100%;border-collapse:collapse;font-size:13px}
+th{font:500 11px var(--mono);text-transform:uppercase;letter-spacing:.06em;color:var(--ink3);text-align:left;padding:6px 8px;border-bottom:1px solid var(--line2)}
+td{padding:8px;border-bottom:1px solid var(--line);vertical-align:top}
+td.n{font-family:var(--mono);white-space:nowrap}
+.tscroll{overflow-x:auto}
+.weekblock{margin-bottom:14px}
+.weekhead{display:flex;flex-wrap:wrap;gap:10px;align-items:baseline;justify-content:space-between;padding:12px 16px;cursor:pointer;user-select:none}
+.weekhead h3{margin:0}
+.weekbody{border-top:1px solid var(--line)}
+.row{display:grid;grid-template-columns:92px 1fr 150px 120px;gap:10px;padding:10px 16px;border-bottom:1px solid var(--line);align-items:start}
+.row:last-child{border-bottom:0}
+.row.today{background:var(--accent-soft)}
+.row .dt{font:500 12px var(--mono);color:var(--ink2)}
+.row .act{font:500 12px var(--mono)}
+.row details summary{cursor:pointer;list-style:none;font-weight:600}
+.row details summary::-webkit-details-marker{display:none}
+.row details[open] summary{margin-bottom:6px}
+.row .meta{font:12px var(--mono);color:var(--ink2)}
+@media(max-width:700px){.row{grid-template-columns:70px 1fr}.row .act,.row .vd{grid-column:2}}
+.chart svg{width:100%;height:auto;display:block}
+.chart text{font:13px var(--mono);fill:var(--ink3)}
+.legend{display:flex;gap:14px;flex-wrap:wrap;font-size:12px;color:var(--ink2);margin-top:8px}
+.legend i{display:inline-block;width:10px;height:10px;border-radius:2px;margin-right:5px;vertical-align:-1px}
+.note{font-size:13px;color:var(--ink2);margin:10px 0 0}
+.zt td:first-child{font-family:var(--mono);font-weight:600}
+.sw{display:inline-block;width:10px;height:10px;border-radius:2px;margin-right:6px}
+.err{background:var(--bad-soft);color:var(--bad);padding:12px;border-radius:8px;margin:16px 0}
+.split{display:flex;align-items:flex-end;gap:3px;height:70px;margin-top:10px}
+.split div{flex:1;border-radius:3px 3px 0 0;min-width:6px;position:relative}
+.foot{margin-top:28px;font-size:12px;color:var(--ink3);border-top:1px solid var(--line);padding-top:12px}
+a{color:var(--accent)}
+</style>
+</head>
+<body>
+<div class="wrap">
+<header>
+  <div class="brand">
+    <h1>Patrick &middot; Race Hub</h1>
+    <p id="sub">Loading Strava data&hellip;</p>
+  </div>
+  <div class="countdowns" id="countdowns"></div>
+</header>
+<nav role="tablist">
+  <button role="tab" data-tab="today" aria-selected="true">Today</button>
+  <button role="tab" data-tab="progress" aria-selected="false">Progress</button>
+  <button role="tab" data-tab="plan" aria-selected="false">Plan</button>
+  <button role="tab" data-tab="race" aria-selected="false">Race &amp; zones</button>
+  <span class="sp"></span>
+  <button class="theme" id="themeBtn" title="Toggle theme">Theme</button>
+</nav>
+<div id="err"></div>
+<section id="tab-today"></section>
+<section id="tab-progress" hidden></section>
+<section id="tab-plan" hidden></section>
+<section id="tab-race" hidden></section>
+<div class="foot" id="foot"></div>
+</div>
+
+<script>
+/* ---------- helpers ---------- */
+const $=s=>document.querySelector(s);
+const esc=s=>String(s??'').replace(/[&<>"]/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;'}[c]));
+const iso=d=>d.getFullYear()+'-'+String(d.getMonth()+1).padStart(2,'0')+'-'+String(d.getDate()).padStart(2,'0');
+const parse=s=>{const[y,m,d]=s.split('-').map(Number);return new Date(y,m-1,d)};
+const addDays=(s,n)=>{const d=parse(s);d.setDate(d.getDate()+n);return iso(d)};
+const monday=s=>{const d=parse(s);const w=(d.getDay()+6)%7;d.setDate(d.getDate()-w);return iso(d)};
+const dayDiff=(a,b)=>Math.round((parse(b)-parse(a))/864e5);
+const fmtD=s=>parse(s).toLocaleDateString('en-GB',{weekday:'short',day:'numeric',month:'short'});
+const fmtShort=s=>parse(s).toLocaleDateString('en-GB',{day:'numeric',month:'short'});
+const secs=(m,s)=>m*60+s;
+const pace=sec=>{sec=Math.round(sec);return Math.floor(sec/60)+':'+String(sec%60).padStart(2,'0')};
+const hms=sec=>{sec=Math.round(sec);const h=Math.floor(sec/3600),m=Math.floor(sec%3600/60),s=sec%60;return (h?h+':'+String(m).padStart(2,'0'):m)+':'+String(s).padStart(2,'0')};
+const qs=new URLSearchParams(location.search);
+const TODAY=qs.get('date')||iso(new Date());
+
+let PLAN,RUNS,ZONES,byDate={};
+function zoneOf(hr){if(hr==null)return null;for(const z of ZONES){if(hr<=z.hi)return z;}return ZONES[ZONES.length-1]}
+const zcol={Z1:'var(--z1)',Z2:'var(--z2)',Z3:'var(--z3)',Z4:'var(--z4)',Z5:'var(--z5)'};
+
+/* ---------- theme ---------- */
+(()=>{let t=null;try{t=localStorage.getItem('hubTheme')}catch(e){}
+ if(t)document.documentElement.dataset.theme=t;
+ $('#themeBtn').onclick=()=>{const cur=document.documentElement.dataset.theme||(matchMedia('(prefers-color-scheme: dark)').matches?'dark':'light');
+  const nx=cur==='dark'?'light':'dark';document.documentElement.dataset.theme=nx;try{localStorage.setItem('hubTheme',nx)}catch(e){}}})();
+
+/* ---------- tabs ---------- */
+function showTab(t){document.querySelectorAll('nav [role=tab]').forEach(b=>b.setAttribute('aria-selected',b.dataset.tab===t));
+ ['today','progress','plan','race'].forEach(x=>$('#tab-'+x).hidden=x!==t);try{history.replaceState(null,'','#'+t)}catch(e){}}
+document.querySelectorAll('nav [role=tab]').forEach(b=>b.onclick=()=>showTab(b.dataset.tab));
+
+/* ---------- verdict engine ---------- */
+function runsOn(d){return byDate[d]||[]}
+function merge(rs){ // combine multiple runs same day
+  if(!rs.length)return null; if(rs.length===1)return rs[0];
+  const dist=rs.reduce((a,r)=>a+r.dist,0), t=rs.reduce((a,r)=>a+r.dist*secs(r.pM,r.pS),0);
+  const hrs=rs.filter(r=>r.hr); const hr=hrs.length?hrs.reduce((a,r)=>a+r.hr*r.dist,0)/hrs.reduce((a,r)=>a+r.dist,0):null;
+  const p=t/dist; return {...rs[rs.length-1],dist,pM:Math.floor(p/60),pS:Math.round(p%60),hr,splits:rs.flatMap(r=>r.splits||[])};
+}
+function avgHr(splits){const s=splits.filter(x=>x.hr&&x.dist>=0.5);return s.length?s.reduce((a,x)=>a+x.hr,0)/s.length:null}
+function drift(r){const s=(r.splits||[]).filter(x=>x.hr&&x.dist>=0.9).slice(1);if(s.length<6)return null;const h=Math.floor(s.length/2);return avgHr(s.slice(h))-avgHr(s.slice(0,h))}
+
+function verdict(date){
+  const s=PLAN.sessions[date]; const r=merge(runsOn(date));
+  const past=date<TODAY, isToday=date===TODAY;
+  if(!s&&!r)return null;
+  if(!r){
+    if(!s||s.type==='rest'||s.type==='strength')return {cls:'p-na',label:s&&s.type==='strength'?'Strength':'Rest'};
+    if(past)return {cls:'p-bad',label:'Missed'};
+    return {cls:'p-na',label:isToday?'Today':'Planned'};
+  }
+  const t=s?s.type:'none';
+  if(t==='rest'||t==='strength'||t==='none'){return {cls:'p-warn',label:'Unplanned run',detail:'A run on a planned '+(t==='none'?'off':t)+' day. Fine occasionally - it costs recovery for the next key session.'}}
+  const hr=r.hr;
+  if(t==='easy'||t==='long'){
+    let evalHr=hr, scope='average';
+    if(s.easyKm&&r.splits){evalHr=avgHr(r.splits.slice(1,s.easyKm));scope='easy part (km 2-'+s.easyKm+')';}
+    const dr=t==='long'?drift(r):null;
+    const dtxt=dr!=null?' HR drift first half to second half: '+(dr>0?'+':'')+dr.toFixed(1)+' bpm'+(dr>8?' (too much - started too fast or too hot).':'.'):'';
+    if(evalHr==null)return {cls:'p-na',label:'No HR'};
+    if(evalHr<=151)return {cls:'p-ok',label:'On target',detail:'Easy HR held: '+evalHr.toFixed(0)+' bpm '+scope+', cap 151.'+dtxt};
+    if(evalHr<=155)return {cls:'p-warn',label:'Slightly hot',detail:evalHr.toFixed(0)+' bpm '+scope+' - just over the 151 cap. Slow the pace 10-15 s/km next time.'+dtxt};
+    return {cls:'p-bad',label:'Too hard',detail:evalHr.toFixed(0)+' bpm '+scope+' is Z3. This easy day became a medium-hard day, which eats into the next quality session.'+dtxt};
+  }
+  if(t==='tempo'){
+    const q=(r.splits||[]).filter(x=>x.hr>=160&&x.dist>=0.5).length; const need=s.qualKm||3;
+    const d='Km splits with HR 160+: '+q+' of '+need+' planned quality km. Km splits blur rep pace - use laps in the Garmin workout for exact reps.';
+    if(q>=need)return {cls:'p-ok',label:'Quality hit',detail:d};
+    if(q>=Math.ceil(need/2))return {cls:'p-warn',label:'Partial',detail:d};
+    return {cls:'p-bad',label:'Quality missed',detail:d};
+  }
+  if(t==='race'){
+    const tot=r.dist*secs(r.pM,r.pS)*10/r.dist; const t10=secs(r.pM,r.pS)*10;
+    const race=PLAN.races.find(x=>x.date===date);
+    return {cls:t10<=57*60?'p-ok':t10<=58*60?'p-ok':t10<=59*60+15?'p-warn':'p-bad',label:'10K est '+hms(t10),detail:race?('Goal A '+race.goalA+', B '+race.goalB+'.'):''};
+  }
+  return {cls:'p-na',label:'Logged'};
+}
+
+/* ---------- SVG charts ---------- */
+function lineChart({pts,band,yMin,yMax,h=220,W=640,yFmt=v=>v,dots=true,roll=null,xLabels=[],colorFn=null,yTicks=4,x0o=null,x1o=null}){
+  const H=h,L=38,R=10,T=10,B=24; const x0=x0o??(pts.length?pts[0].x:0),x1=x1o??(pts.length?pts[pts.length-1].x:1);
+  const X=x=>L+(x1===x0?0:(x-x0)/(x1-x0))*(W-L-R), Y=y=>T+(1-(y-yMin)/(yMax-yMin))*(H-T-B);
+  let g='';
+  for(let i=0;i<=yTicks;i++){const v=yMin+(yMax-yMin)*i/yTicks;g+=`<line x1="${L}" x2="${W-R}" y1="${Y(v)}" y2="${Y(v)}" stroke="var(--line)"/><text x="${L-6}" y="${Y(v)+3}" text-anchor="end">${yFmt(v)}</text>`}
+  if(band)g+=`<rect x="${L}" width="${W-L-R}" y="${Y(band[1])}" height="${Y(band[0])-Y(band[1])}" fill="var(--ok)" opacity=".12"/>`;
+  xLabels.forEach(l=>{g+=`<text x="${X(l.x)}" y="${H-6}" text-anchor="middle">${l.t}</text>`});
+  if(dots)pts.forEach(p=>{g+=`<circle cx="${X(p.x)}" cy="${Y(p.y)}" r="${p.r||3.2}" fill="${colorFn?colorFn(p):'var(--ink3)'}" opacity=".9"><title>${esc(p.tip||'')}</title></circle>`});
+  if(roll&&roll.length>1)g+=`<polyline fill="none" stroke="var(--accent)" stroke-width="2.2" stroke-linejoin="round" points="${roll.map(p=>X(p.x)+','+Y(p.y)).join(' ')}"/>`;
+  return `<svg viewBox="0 0 ${W} ${H}" role="img">${g}</svg>`;
+}
+function barChart({bars,h=200,yMax}){
+  const W=640,H=h,L=34,R=8,T=10,B=24,n=bars.length,bw=(W-L-R)/n; const Y=v=>T+(1-v/yMax)*(H-T-B);
+  let g='';for(let v=0;v<=yMax;v+=10){g+=`<line x1="${L}" x2="${W-R}" y1="${Y(v)}" y2="${Y(v)}" stroke="var(--line)"/><text x="${L-6}" y="${Y(v)+3}" text-anchor="end">${Math.round(v)}</text>`}
+  bars.forEach((b,i)=>{const x=L+i*bw+bw*.18,w=bw*.64;
+    if(b.plan)g+=`<rect x="${x-2}" y="${Y(b.plan)}" width="${w+4}" height="${Y(0)-Y(b.plan)}" fill="none" stroke="var(--ink3)" stroke-dasharray="3 3" rx="3"><title>Planned ${b.plan} km</title></rect>`;
+    if(b.v)g+=`<rect x="${x}" y="${Y(b.v)}" width="${w}" height="${Y(0)-Y(b.v)}" fill="${b.cur?'var(--accent)':'var(--ink2)'}" opacity="${b.cur?1:.55}" rx="3"><title>${b.label}: ${b.v.toFixed(1)} km</title></rect>`;
+    if(i%2===0||n<10)g+=`<text x="${x+w/2}" y="${H-6}" text-anchor="middle">${b.label}</text>`;});
+  return `<svg viewBox="0 0 ${W} ${H}" role="img">${g}</svg>`;
+}
+
+/* ---------- render: header ---------- */
+function renderHeader(){
+  const last=RUNS[RUNS.length-1];
+  const synced=PLAN_SYNC?new Date(PLAN_SYNC).toLocaleString('en-GB',{day:'numeric',month:'short',hour:'2-digit',minute:'2-digit'}):'-';
+  $('#sub').textContent=`10K block · Garmin LTHR ${PLAN.athlete.lthr} · ${RUNS.length} runs · Strava synced ${synced}`;
+  $('#countdowns').innerHTML=PLAN.races.map(r=>{const d=dayDiff(TODAY,r.date);
+    return `<div class="cd ${r.id==='ems'?'ems':'sau'}"><b>${d>0?d:d===0?'Today':'Done'}</b>${d>0?' <span class="muted small">days</span>':''}<small>${esc(r.short)} · ${fmtShort(r.date)} · ${esc(r.goalA)}</small></div>`}).join('');
+}
+
+/* ---------- render: today ---------- */
+function sessionCard(date,s,title){
+  if(!s)return `<div class="card"><p class="eyebrow">${title}</p><h2>Nothing planned</h2></div>`;
+  const kv=[];if(s.km)kv.push(['Distance',s.km+' km']);if(s.pace)kv.push(['Pace',s.pace]);if(s.hr)kv.push(['HR',s.hr]);if(s.treadmill)kv.push(['Treadmill',s.treadmill]);
+  return `<div class="card"><p class="eyebrow">${title} · ${fmtD(date)}</p>
+   <h2><span class="t-${s.type}">${esc(s.name)}</span></h2>
+   ${kv.length?`<div class="kv">${kv.map(([k,v])=>`<div><small>${k}</small><b>${esc(v)}</b></div>`).join('')}</div>`:''}
+   ${s.steps&&s.steps.length?`<ol class="steps">${s.steps.map(x=>`<li>${esc(x)}</li>`).join('')}</ol>`:''}
+   ${s.why?`<p class="why">${esc(s.why)}</p>`:''}</div>`;
+}
+function splitBars(r){
+  const s=(r.splits||[]).filter(x=>x.dist>=0.5&&x.hr); if(!s.length)return '';
+  const lo=110,hi=Math.max(180,...s.map(x=>x.hr));
+  return `<div class="split">${s.map(x=>{const z=zoneOf(x.hr);return `<div style="height:${Math.max(8,(x.hr-lo)/(hi-lo)*100)}%;background:${zcol[z.z]}" title="km ${x.km}: ${x.pM}:${String(x.pS).padStart(2,'0')}/km · ${x.hr.toFixed(0)} bpm · ${z.z}"></div>`}).join('')}</div>
+  <div class="legend">${ZONES.map(z=>`<span><i style="background:${zcol[z.z]}"></i>${z.z} ${z.lo||'<'}${z.lo?'-':''}${z.hi}</span>`).join('')}</div>`;
+}
+function renderToday(){
+  const s=PLAN.sessions[TODAY];
+  let nextD=null;for(let i=(s&&!['rest','strength'].includes(s.type))?0:1;i<40;i++){const d=addDays(TODAY,i);const x=PLAN.sessions[d];if(x&&!['rest','strength'].includes(x.type)){nextD=d;break}}
+  let keyD=null;for(let i=1;i<40;i++){const d=addDays(TODAY,i);const x=PLAN.sessions[d];if(x&&(x.type==='tempo'||x.type==='race')){keyD=d;break}}
+  const last=RUNS[RUNS.length-1]; const v=verdict(last.date); const ls=PLAN.sessions[last.date];
+  const lastCard=`<div class="card"><p class="eyebrow">Last run · ${fmtD(last.date)}</p>
+    <h2>${ls?esc(ls.name):esc(last.name)}</h2>
+    <div class="kv"><div><small>Distance</small><b>${last.dist.toFixed(2)} km</b></div><div><small>Pace</small><b>${last.pM}:${String(last.pS).padStart(2,'0')}</b></div><div><small>Avg HR</small><b>${last.hr?last.hr.toFixed(0):'-'}</b></div><div><small>Cadence</small><b>${last.cad?last.cad.toFixed(0):'-'}</b></div></div>
+    ${v?`<span class="pill ${v.cls}">${esc(v.label)}</span><p class="note">${esc(v.detail||'')}</p>`:''}
+    ${splitBars(last)}</div>`;
+  // this week
+  const mon=monday(TODAY); let planKm=0,doneKm=0; const days=[];
+  for(let i=0;i<7;i++){const d=addDays(mon,i);const x=PLAN.sessions[d];const r=merge(runsOn(d));planKm+=x?x.km||0:0;doneKm+=r?r.dist:0;
+    const vv=verdict(d);
+    days.push(`<div class="day ${d===TODAY?'today':''}"><div class="d">${parse(d).toLocaleDateString('en-GB',{weekday:'short'})} ${parse(d).getDate()}</div>
+      <div class="n t-${x?x.type:'rest'}">${esc(x?x.name.replace(/ - .*/,''):'Rest')}</div>
+      ${r?`<div class="a">${r.dist.toFixed(1)} km · ${r.hr?r.hr.toFixed(0):'-'}</div>`:x&&x.km?`<div class="a muted">${x.km} km</div>`:''}
+      ${vv&&r?`<span class="pill ${vv.cls}">${esc(vv.label)}</span>`:''}</div>`)}
+  const pct=planKm?Math.min(100,doneKm/planKm*100):0;
+  const weekCard=`<div class="card"><p class="eyebrow">This week · ${phaseOf(TODAY)}</p>
+    <div style="display:flex;justify-content:space-between;align-items:baseline"><h3 style="margin:0">${doneKm.toFixed(1)} of ${planKm.toFixed(0)} km</h3><span class="muted small mono">${Math.round(pct)}%</span></div>
+    <div class="bar"><i style="width:${pct}%"></i></div><div class="week">${days.join('')}</div></div>`;
+  // checkpoints
+  const cps=PLAN.checkpoints.map(c=>{const vv=verdict(c.date);const past=c.date<=TODAY;
+    return `<tr><td class="n">${fmtShort(c.date)}</td><td><b>${esc(c.name)}</b><div class="muted small">${esc(c.pass)}</div></td><td>${past&&vv?`<span class="pill ${vv.cls}">${esc(vv.label)}</span>`:`<span class="pill p-na">in ${dayDiff(TODAY,c.date)} d</span>`}</td></tr>`}).join('');
+  $('#tab-today').innerHTML=`
+   <div class="grid g2">
+     ${s&&!['rest','strength'].includes(s.type)?sessionCard(TODAY,s,'Today'):`<div class="grid">${sessionCard(TODAY,s,'Today')}${nextD?sessionCard(nextD,PLAN.sessions[nextD],'Next run'):''}</div>`}
+     ${lastCard}
+   </div>
+   <div style="margin-top:16px">${weekCard}</div>
+   <div class="grid g2" style="margin-top:16px">
+     <div class="card"><p class="eyebrow">Road to Saucony</p><h3>Decision checkpoints</h3><p class="muted small" style="margin-top:-6px">These set the goal for Oct 25. The target follows your data, not the other way round.</p>
+       <div class="tscroll"><table>${cps}</table></div></div>
+     ${keyD?sessionCard(keyD,PLAN.sessions[keyD],'Next key session'):''}
+   </div>`;
+}
+function phaseOf(d){const p=PLAN.phases.find(p=>d>=p.start&&d<=p.end);return p?p.label:'Off-plan'}
+
+/* ---------- render: progress ---------- */
+function renderProgress(){
+  const since='2026-03-01';
+  // efficiency: indoor, non-quality runs, HR <=158, dist>=4
+  const quality=d=>{const s=PLAN.sessions[d];return s&&(s.type==='tempo'||s.type==='race')};
+  const eff=RUNS.filter(r=>r.date>=since&&r.hr&&r.indoor&&r.dist>=4&&r.hr<=158&&!quality(r.date)&&!/tempo|interval|race/i.test(r.name))
+    .map(r=>{const sp=1000/secs(r.pM,r.pS);return {x:dayDiff(since,r.date),y:sp*60/r.hr,d:r.date,tip:`${r.date} · ${r.dist.toFixed(1)} km @ ${r.pM}:${String(r.pS).padStart(2,'0')} · ${r.hr.toFixed(0)} bpm`}});
+  const roll=eff.map((p,i)=>{const w=eff.slice(Math.max(0,i-4),i+1);return {x:p.x,y:w.reduce((a,q)=>a+q.y,0)/w.length}});
+  const months=[];for(let m=2;m<10;m++){const d=iso(new Date(2026,m,1));months.push({x:dayDiff(since,d),t:parse(d).toLocaleDateString('en-GB',{month:'short'})})}
+  const avgOf=(a,b)=>{const s=eff.filter(p=>p.d>=a&&p.d<=b);return s.length?s.reduce((x,p)=>x+p.y,0)/s.length:null};
+  const eMar=avgOf('2026-03-01','2026-03-31'),eMay=avgOf('2026-05-10','2026-06-20'),eNow=avgOf(addDays(TODAY,-35),TODAY);
+  // easy discipline since block start
+  const blockStart='2026-08-24';
+  const easy=RUNS.filter(r=>r.date>=blockStart&&r.hr).map(r=>({r,s:PLAN.sessions[r.date]})).filter(o=>o.s&&(o.s.type==='easy'||o.s.type==='long'));
+  const ok=easy.filter(o=>o.r.hr<=151).length; const miss=easy.filter(o=>o.r.hr>151); const missOut=miss.filter(o=>!o.r.indoor).length;
+  const easyPts=easy.map(o=>({r:4.5,x:dayDiff(blockStart,o.r.date),y:o.r.hr,type:o.s.type,tip:`${o.r.date} · ${o.s.name} · ${o.r.hr.toFixed(0)} bpm`}));
+  const bLabels=[];for(let d=blockStart;d<=addDays(TODAY,0);d=addDays(d,14))bLabels.push({x:dayDiff(blockStart,d),t:fmtShort(d)});
+  // weekly km
+  const wk={};RUNS.forEach(r=>{const m=monday(r.date);wk[m]=(wk[m]||0)+r.dist});
+  const wp={};Object.entries(PLAN.sessions).forEach(([d,s])=>{const m=monday(d);wp[m]=(wp[m]||0)+(s.km||0)});
+  const bars=[];const curM=monday(TODAY);for(let i=-13;i<=4;i++){const m=addDays(curM,i*7);bars.push({label:fmtShort(m),v:m<=curM?(wk[m]||0):0,plan:m>=curM?wp[m]:null,cur:m===curM})}
+  const yMax=Math.ceil(Math.max(...bars.map(b=>Math.max(b.v,b.plan||0)),10)/10)*10;
+  // long runs
+  const longs=RUNS.filter(r=>r.dist>=12&&r.date>=since).slice(-8).reverse();
+  const longRows=longs.map(r=>{const dr=drift(r);const z=zoneOf(r.hr);return `<tr><td class="n">${fmtShort(r.date)}</td><td class="n">${r.dist.toFixed(1)}</td><td class="n">${r.pM}:${String(r.pS).padStart(2,'0')}</td><td class="n"><span class="sw" style="background:${zcol[z.z]}"></span>${r.hr.toFixed(0)}</td><td class="n">${dr==null?'-':(dr>0?'+':'')+dr.toFixed(1)}</td><td>${r.indoor?'Treadmill':'Outdoor'}</td></tr>`}).join('');
+  // race baseline -> goal
+  const b=PLAN.baseline;
+  $('#tab-progress').innerHTML=`
+  <div class="grid g3">
+    <div class="card"><p class="eyebrow">Aerobic engine</p><h2 class="mono">${eNow?eNow.toFixed(2):'-'} <span class="small muted">m/beat</span></h2><p class="note">March ${eMar.toFixed(2)} → May-June ${eMay.toFixed(2)} → last 5 weeks ${eNow?eNow.toFixed(2):'-'}. Big gains in spring, flat since June.</p></div>
+    <div class="card"><p class="eyebrow">Easy-day discipline</p><h2 class="mono">${ok}/${easy.length}</h2><p class="note">Easy and long runs this block with average HR at or under 151. ${miss.length?(missOut>=miss.length/2?`${missOut} of ${miss.length} misses were outdoor runs - heat and pace pressure push HR up. Slow down outside.`:`${miss.length} misses, mostly on the treadmill - lower the belt speed.`):'Clean record.'}</p></div>
+    <div class="card"><p class="eyebrow">Gap to goal</p><h2 class="mono">${b.time} → 57:00</h2><p class="note">Needs ${(((secs(59,15)-57*60)/secs(59,15))*100).toFixed(1)}% faster than Aug 16. ${esc(b.note)}</p></div>
+  </div>
+  <div class="grid g2" style="margin-top:16px">
+    <div class="card chart"><p class="eyebrow">Efficiency trend</p><h3>Metres per heartbeat on easy treadmill runs</h3>
+      ${lineChart({pts:eff,roll,yMin:.85,yMax:1.25,yFmt:v=>v.toFixed(2),xLabels:months})}
+      <div class="legend"><span><i style="background:var(--ink3)"></i>Easy run</span><span><i style="background:var(--accent)"></i>5-run average</span></div>
+      <p class="note">Higher is fitter: more distance for each heartbeat. Treadmill only, so heat and hills don't skew it.</p></div>
+    <div class="card chart"><p class="eyebrow">Easy-day HR since Aug 24</p><h3>Were the easy days easy?</h3>
+      ${lineChart({pts:easyPts,W:440,h:240,x0o:0,x1o:dayDiff(blockStart,TODAY),band:[136,151],yMin:125,yMax:165,yFmt:v=>Math.round(v),xLabels:bLabels,colorFn:p=>p.y<=151?'var(--ok)':p.y<=155?'var(--warn)':'var(--bad)'})}
+      <div class="legend"><span><i style="background:var(--ok);opacity:.35"></i>Z2 band 136-151</span><span><i style="background:var(--bad)"></i>Over cap</span></div></div>
+  </div>
+  <div class="grid g2" style="margin-top:16px">
+    <div class="card chart"><p class="eyebrow">Weekly volume</p><h3>Actual km, with the plan dashed</h3>${barChart({bars,yMax})}
+      <p class="note">Best week in this view: ${Math.max(...bars.filter(b=>!b.plan||b.cur).map(b=>b.v)).toFixed(0)} km. Last 4 full weeks averaged ${(bars.filter(b=>!b.cur&&!b.plan).slice(-4).reduce((a,b)=>a+b.v,0)/4).toFixed(0)} km. Consistency matters more than one big week.</p></div>
+    <div class="card"><p class="eyebrow">Long runs</p><h3>Pace, HR and drift</h3><div class="tscroll"><table>
+      <tr><th>Date</th><th>km</th><th>Pace</th><th>HR</th><th>Drift</th><th></th></tr>${longRows}</table></div>
+      <p class="note">Drift = average HR in the second half minus the first half. Under 5 bpm is well paced. Over 8 means you started too fast or it was hot.</p></div>
+  </div>`;
+}
+
+/* ---------- render: plan ---------- */
+function renderPlan(){
+  const dates=Object.keys(PLAN.sessions).sort(); const start=monday(dates[0]), end=dates[dates.length-1];
+  const curM=monday(TODAY); let html='';
+  for(let m=start;m<=end;m=addDays(m,7)){
+    let pk=0,ak=0,rows='';
+    for(let i=0;i<7;i++){const d=addDays(m,i); const s=PLAN.sessions[d]; const r=merge(runsOn(d)); if(!s&&!r)continue;
+      pk+=s?s.km||0:0; ak+=r?r.dist:0; const v=verdict(d);
+      const body=s&&(s.steps&&s.steps.length||s.why||s.pace)?`<details ${d>=TODAY&&d<=addDays(TODAY,2)?'open':''}><summary class="t-${s.type}">${esc(s.name)}</summary>
+        ${s.pace||s.hr?`<div class="meta">${s.km?s.km+' km · ':''}${s.pace?esc(s.pace)+'/km · ':''}${s.hr?'HR '+esc(s.hr):''}${s.treadmill?' · '+esc(s.treadmill):''}</div>`:''}
+        ${s.steps&&s.steps.length?`<ol class="steps small">${s.steps.map(x=>`<li>${esc(x)}</li>`).join('')}</ol>`:''}
+        ${s.why?`<p class="why">${esc(s.why)}</p>`:''}</details>`
+        :`<b class="t-${s?s.type:'rest'}">${esc(s?s.name:'Unplanned run')}</b>${s&&s.km?`<div class="meta">${s.km} km planned</div>`:''}`;
+      rows+=`<div class="row ${d===TODAY?'today':''}"><div class="dt">${fmtD(d)}</div><div>${body}${v&&v.detail&&r?`<div class="note">${esc(v.detail)}</div>`:''}</div>
+        <div class="act">${r?`${r.dist.toFixed(2)} km<br>${r.pM}:${String(r.pS).padStart(2,'0')}/km · ${r.hr?r.hr.toFixed(0)+' bpm':'-'}`:''}</div>
+        <div class="vd">${v?`<span class="pill ${v.cls}">${esc(v.label)}</span>`:''}</div></div>`;
+    }
+    const open=m>=addDays(curM,-7);
+    html+=`<div class="card weekblock" style="padding:0"><div class="weekhead" data-t><h3>${fmtShort(m)} - ${fmtShort(addDays(m,6))} <span class="muted small">· ${phaseOf(addDays(m,3))}</span>${m===curM?' <span class="pill p-acc">this week</span>':''}</h3>
+      <span class="mono small muted">${ak.toFixed(1)} / ${pk.toFixed(0)} km</span></div><div class="weekbody" ${open?'':'hidden'}>${rows}</div></div>`;
+  }
+  $('#tab-plan').innerHTML=`<p class="muted small" style="margin-top:0">Actual runs are matched from Strava by date. Nothing is typed in by hand. Tap a week to expand it and a session to see its details.</p>`+html;
+  document.querySelectorAll('[data-t]').forEach(h=>h.onclick=()=>{const b=h.nextElementSibling;b.hidden=!b.hidden});
+}
+
+/* ---------- render: race & zones ---------- */
+function renderRace(){
+  const races=PLAN.races.map(r=>`<div class="card" style="border-top:3px solid ${r.id==='ems'?'var(--ems)':'var(--sau)'}">
+    <p class="eyebrow">${fmtD(r.date)} · start ${r.start}${r.bib?' · bib '+esc(r.bib):''}</p><h2>${esc(r.name)}</h2><p class="muted small" style="margin:0">${esc(r.role)} · ${esc(r.place)}</p>
+    <div class="kv"><div><small>Goal A</small><b>${esc(r.goalA)}</b></div><div><small>Goal B</small><b>${esc(r.goalB)}</b></div></div>
+    <div class="tscroll"><table><tr><th>km</th><th>Pace</th><th>HR</th><th>Cue</th></tr>${r.plan.map(p=>`<tr><td class="n">${p.km}</td><td class="n">${p.pace}</td><td class="n">${p.hr}</td><td>${esc(p.cue)}</td></tr>`).join('')}</table></div>
+    <p class="why">${esc(r.rule)}</p></div>`).join('');
+  $('#tab-race').innerHTML=`<div class="grid g2 even">${races}</div>
+  <div class="grid g2" style="margin-top:16px">
+    <div class="card"><p class="eyebrow">Heart-rate zones · ${esc(PLAN.athlete.zoneSource)}</p><div class="tscroll"><table class="zt"><tr><th>Zone</th><th>bpm</th><th>Use</th></tr>
+      ${ZONES.map(z=>`<tr><td><span class="sw" style="background:${zcol[z.z]}"></span>${z.z} ${z.name}</td><td class="n">${z.lo?z.lo+'-'+z.hi:'up to '+z.hi}</td><td>${esc(z.use)}</td></tr>`).join('')}</table></div></div>
+    <div class="card"><p class="eyebrow">Pace guide</p><div class="tscroll"><table><tr><th>Effort</th><th>Pace /km</th><th>Treadmill</th><th>HR</th></tr>
+      ${PLAN.paces.map(p=>`<tr><td>${esc(p.k)}</td><td class="n">${p.pace}</td><td class="n">${p.kmh} km/h</td><td class="n">${p.hr}</td></tr>`).join('')}</table></div>
+      <p class="note">Race morning (both): coffee and banana 90 min before · 10 min easy jog · 4 strides · in the start pen 10 min early. Drink at every station from km 3 on.</p></div>
+  </div>`;
+}
+
+/* ---------- boot ---------- */
+let PLAN_SYNC=null;
+/* Live Strava runs come from the original repo's sync, so this repo needs no Strava secrets. */
+const RUNS_URL='https://worapratyy.github.io/patrick-running-hub/data/runs.json';
+(async()=>{
+  try{
+    const [p,r]=await Promise.all([fetch('data/plan.json?_='+Date.now()).then(x=>x.json()),fetch(RUNS_URL+'?_='+Date.now()).then(x=>{if(!x.ok)throw new Error('runs '+x.status);return x.json()}).catch(()=>fetch('data/runs.json?_='+Date.now()).then(x=>x.json()))]);
+    PLAN=p; ZONES=p.zones; PLAN_SYNC=r.last_synced_at; RUNS=r.runs.filter(x=>x.sport_type!=='Walk').sort((a,b)=>a.date<b.date?-1:1);
+    RUNS.forEach(x=>{(byDate[x.date]=byDate[x.date]||[]).push(x)});
+    renderHeader();renderToday();renderProgress();renderPlan();renderRace();
+    const h=location.hash.slice(1);if(['today','progress','plan','race'].includes(h))showTab(h);
+    $('#foot').innerHTML=`Plan and zones: <span class="mono">data/plan.json</span> · Runs: live from patrick-running-hub (Strava sync) · Viewing ${fmtD(TODAY)}`;
+  }catch(e){$('#err').innerHTML=`<div class="err">Could not load data: ${esc(e.message)}. Open this page from the GitHub Pages site, not as a local file.</div>`;console.error(e)}
+})();
+</script>
+</body>
+</html>

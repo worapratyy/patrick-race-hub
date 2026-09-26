@@ -1,0 +1,730 @@
+{
+ "athlete": {
+  "name": "Patrick",
+  "lthr": 172,
+  "maxHr": 185,
+  "zoneSource": "Garmin LTHR 172 - single source for every page"
+ },
+ "zones": [
+  {
+   "z": "Z1",
+   "name": "Recovery",
+   "lo": 0,
+   "hi": 135,
+   "use": "Warm-up, recovery runs"
+  },
+  {
+   "z": "Z2",
+   "name": "Easy",
+   "lo": 136,
+   "hi": 151,
+   "use": "Easy and long runs - most of your km"
+  },
+  {
+   "z": "Z3",
+   "name": "Aerobic",
+   "lo": 152,
+   "hi": 161,
+   "use": "Grey zone - avoid on easy days"
+  },
+  {
+   "z": "Z4",
+   "name": "Threshold",
+   "lo": 162,
+   "hi": 169,
+   "use": "Tempo, threshold reps, 10K cruise"
+  },
+  {
+   "z": "Z5",
+   "name": "Max",
+   "lo": 170,
+   "hi": 185,
+   "use": "10K finish, short reps"
+  }
+ ],
+ "paces": [
+  {
+   "k": "Easy",
+   "pace": "6:50-7:20",
+   "kmh": "8.2-8.8",
+   "hr": "136-151"
+  },
+  {
+   "k": "Threshold",
+   "pace": "6:00-6:10",
+   "kmh": "9.7-10.0",
+   "hr": "160-168"
+  },
+  {
+   "k": "10K goal (sub-57)",
+   "pace": "5:42",
+   "kmh": "10.5",
+   "hr": "166-174"
+  },
+  {
+   "k": "10K safe (sub-58)",
+   "pace": "5:48",
+   "kmh": "10.3",
+   "hr": "164-172"
+  },
+  {
+   "k": "Strides",
+   "pace": "5:15-5:25",
+   "kmh": "11.1-11.4",
+   "hr": "-"
+  }
+ ],
+ "baseline": {
+  "date": "2026-08-16",
+  "name": "asics META:Time:Trials 10K",
+  "time": "59:15",
+  "pace": "5:55",
+  "hr": 164.5,
+  "note": "Negative split - last 2 km at 5:33 and 5:23 with HR only 168-170. There was more in the tank."
+ },
+ "races": [
+  {
+   "id": "ems",
+   "date": "2026-10-18",
+   "start": "04:00",
+   "name": "Thailand Post EMS RUN 2026",
+   "short": "EMS RUN 10K",
+   "place": "Bangkok Central Post Office, Bang Rak",
+   "bib": "TH343UVR",
+   "role": "Race 1 - controlled hard effort",
+   "goalA": "Sub-58:00",
+   "goalB": "Sub-59:00 (beat 59:15)",
+   "plan": [
+    {
+     "km": "1-2",
+     "pace": "5:52-5:55",
+     "hr": "up to 162",
+     "cue": "Let the crowd go. This is the only way to lose the race."
+    },
+    {
+     "km": "3-7",
+     "pace": "5:45-5:50",
+     "hr": "163-169",
+     "cue": "Lock in. Cadence 170+. Drink at every station without stopping."
+    },
+    {
+     "km": "8-9",
+     "pace": "5:40-5:45",
+     "hr": "169-173",
+     "cue": "Press. Pass people."
+    },
+    {
+     "km": "10",
+     "pace": "open",
+     "hr": "173+",
+     "cue": "Empty it."
+    }
+   ],
+   "rule": "Through 5 km in 29:00 or faster and breathing is controlled: hold 5:45 and finish hard. Slower than 29:30 at 5 km: settle for beating 59:15."
+  },
+  {
+   "id": "saucony",
+   "date": "2026-10-25",
+   "start": "05:00",
+   "name": "Saucony BKK10K",
+   "short": "Saucony BKK10K",
+   "place": "Bangkok",
+   "bib": "",
+   "role": "Race 2 - goal race",
+   "goalA": "Sub-57:00",
+   "goalB": "Sub-58:00",
+   "plan": [
+    {
+     "km": "1-2",
+     "pace": "5:45-5:48",
+     "hr": "up to 164",
+     "cue": "Settle. You have run this pace before."
+    },
+    {
+     "km": "3-7",
+     "pace": "5:40-5:42",
+     "hr": "165-170",
+     "cue": "Even effort. No surges."
+    },
+    {
+     "km": "8-9",
+     "pace": "5:35-5:40",
+     "hr": "170-174",
+     "cue": "Go."
+    },
+    {
+     "km": "10",
+     "pace": "open",
+     "hr": "175+",
+     "cue": "Nothing left at the line."
+    }
+   ],
+   "rule": "Go for sub-57 only if (1) the Oct 9 test passed, (2) EMS was 58:00 or faster, and (3) the Oct 20 recovery run HR was normal. Otherwise run the EMS pacing again and target sub-58."
+  }
+ ],
+ "phases": [
+  {
+   "label": "Base",
+   "start": "2026-08-24",
+   "end": "2026-09-06"
+  },
+  {
+   "label": "Build",
+   "start": "2026-09-07",
+   "end": "2026-09-20"
+  },
+  {
+   "label": "Peak",
+   "start": "2026-09-21",
+   "end": "2026-10-04"
+  },
+  {
+   "label": "Sharpen",
+   "start": "2026-10-05",
+   "end": "2026-10-10"
+  },
+  {
+   "label": "Race week 1",
+   "start": "2026-10-11",
+   "end": "2026-10-18"
+  },
+  {
+   "label": "Race week 2",
+   "start": "2026-10-19",
+   "end": "2026-10-25"
+  }
+ ],
+ "checkpoints": [
+  {
+   "date": "2026-10-02",
+   "name": "3 x 2 km threshold",
+   "pass": "Reps at 6:00-6:10, rep 3 HR 168 or lower"
+  },
+  {
+   "date": "2026-10-09",
+   "name": "4 x 1.5 km at goal pace",
+   "pass": "Reps at 5:40-5:45, rep 4 HR 173 or lower, effort 8/10"
+  },
+  {
+   "date": "2026-10-18",
+   "name": "EMS RUN result",
+   "pass": "58:00 or faster"
+  },
+  {
+   "date": "2026-10-20",
+   "name": "Recovery run HR",
+   "pass": "Within 5 bpm of usual easy HR at the same pace"
+  }
+ ],
+ "sessions": {
+  "2026-08-24": {
+   "type": "rest",
+   "name": "Stretch + Recovery",
+   "km": 0
+  },
+  "2026-08-25": {
+   "type": "easy",
+   "name": "Easy Z2 - 8km",
+   "km": 8.0
+  },
+  "2026-08-26": {
+   "type": "easy",
+   "name": "Easy Z1 - 5km",
+   "km": 5.0
+  },
+  "2026-08-27": {
+   "type": "strength",
+   "name": "Leg Strength (Gym)",
+   "km": 0
+  },
+  "2026-08-28": {
+   "type": "tempo",
+   "name": "Unplanned Fartlek - 7km",
+   "km": 7.0
+  },
+  "2026-08-29": {
+   "type": "rest",
+   "name": "Rest",
+   "km": 0
+  },
+  "2026-08-30": {
+   "type": "long",
+   "name": "Long Run - 22km (Distance PR)",
+   "km": 22.0
+  },
+  "2026-08-31": {
+   "type": "rest",
+   "name": "Stretch + Recovery",
+   "km": 0
+  },
+  "2026-09-01": {
+   "type": "easy",
+   "name": "Easy Z2 - 8km",
+   "km": 8.0
+  },
+  "2026-09-02": {
+   "type": "easy",
+   "name": "Easy Z1 - 5km",
+   "km": 5.0
+  },
+  "2026-09-03": {
+   "type": "strength",
+   "name": "Leg Strength (Gym)",
+   "km": 0
+  },
+  "2026-09-04": {
+   "type": "tempo",
+   "name": "Progressive Run - 6km",
+   "km": 6.0,
+   "qualKm": 3
+  },
+  "2026-09-05": {
+   "type": "rest",
+   "name": "Rest",
+   "km": 0
+  },
+  "2026-09-06": {
+   "type": "long",
+   "name": "Long Run - 16km Z2",
+   "km": 16.0
+  },
+  "2026-09-07": {
+   "type": "rest",
+   "name": "Stretch + Recovery",
+   "km": 0
+  },
+  "2026-09-08": {
+   "type": "easy",
+   "name": "Easy Z2 - 8km",
+   "km": 8.0
+  },
+  "2026-09-09": {
+   "type": "easy",
+   "name": "Easy Z1 - 5km",
+   "km": 5.0
+  },
+  "2026-09-10": {
+   "type": "strength",
+   "name": "Leg Strength (Gym)",
+   "km": 0
+  },
+  "2026-09-11": {
+   "type": "tempo",
+   "name": "Intervals - 5×1000m @ I Pace",
+   "km": 8,
+   "qualKm": 5
+  },
+  "2026-09-12": {
+   "type": "rest",
+   "name": "Rest",
+   "km": 0
+  },
+  "2026-09-13": {
+   "type": "long",
+   "name": "Long Run - 18km Z2",
+   "km": 18.0
+  },
+  "2026-09-14": {
+   "type": "strength",
+   "name": "Strength Day B - Glutes/Core",
+   "km": 0
+  },
+  "2026-09-15": {
+   "type": "easy",
+   "name": "Easy Z2 - 6km",
+   "km": 6.0
+  },
+  "2026-09-16": {
+   "type": "easy",
+   "name": "Easy Z1 - 4km",
+   "km": 4.0
+  },
+  "2026-09-17": {
+   "type": "strength",
+   "name": "Strength Day A - Lower Stability",
+   "km": 0
+  },
+  "2026-09-18": {
+   "type": "tempo",
+   "name": "Tempo - 2×15min T Pace",
+   "km": 9,
+   "qualKm": 6
+  },
+  "2026-09-19": {
+   "type": "rest",
+   "name": "Rest",
+   "km": 0
+  },
+  "2026-09-20": {
+   "type": "long",
+   "name": "Long Run - 12km Z2",
+   "km": 12.0
+  },
+  "2026-09-21": {
+   "type": "strength",
+   "name": "Strength Day B - Glutes/Core",
+   "km": 0
+  },
+  "2026-09-22": {
+   "type": "easy",
+   "name": "Easy Z2 - 8km",
+   "km": 8.0
+  },
+  "2026-09-23": {
+   "type": "easy",
+   "name": "Easy Z1 - 5km",
+   "km": 5.0
+  },
+  "2026-09-24": {
+   "type": "strength",
+   "name": "Strength Day A - Lower Stability",
+   "km": 0
+  },
+  "2026-09-25": {
+   "type": "tempo",
+   "name": "Intervals - 5×1000m @ I Pace",
+   "km": 8,
+   "qualKm": 5
+  },
+  "2026-09-26": {
+   "type": "rest",
+   "name": "Rest",
+   "km": 0
+  },
+  "2026-09-27": {
+   "type": "long",
+   "name": "Long run - 11 easy + 3 steady",
+   "km": 14,
+   "pace": "7:00-7:15 then 6:05-6:15",
+   "hr": "<=151 then 158-165",
+   "treadmill": "8.4 then 9.8 km/h",
+   "why": "Last long run with a race-specific finish. The easy part must stay under 151 - your recent long runs drifted to 155-159, which turns them into medium-hard days.",
+   "steps": [
+    "11 km easy, HR cap 151. If HR passes 151, slow down - do not hold pace.",
+    "3 km steady at 6:05-6:15/km, HR 158-165.",
+    "Walk 3 min, stretch calves and hips."
+   ],
+   "easyKm": 11
+  },
+  "2026-09-28": {
+   "type": "strength",
+   "name": "Strength B - glutes and core",
+   "km": 0,
+   "pace": "",
+   "hr": "",
+   "treadmill": "",
+   "why": "Moderate. Hip thrust, side plank, dead bug, single-leg bridge. Stop 2 reps short of failure.",
+   "steps": []
+  },
+  "2026-09-29": {
+   "type": "easy",
+   "name": "Easy 8 km + 4 strides",
+   "km": 8,
+   "pace": "6:50-7:10",
+   "hr": "136-151",
+   "treadmill": "8.6 km/h",
+   "why": "Easy means Z2. Finish with 4 x 20 s relaxed strides to keep turnover.",
+   "steps": [
+    "7.5 km easy, HR 136-151",
+    "4 x 20 s strides at about 5:20/km, walk 40 s between"
+   ]
+  },
+  "2026-09-30": {
+   "type": "easy",
+   "name": "Easy 5 km",
+   "km": 5,
+   "pace": "7:00-7:20",
+   "hr": "<145",
+   "treadmill": "8.4 km/h",
+   "why": "Recovery run. Short, very easy, cadence 170+.",
+   "steps": []
+  },
+  "2026-10-01": {
+   "type": "strength",
+   "name": "Strength A - light",
+   "km": 0,
+   "pace": "",
+   "hr": "",
+   "treadmill": "",
+   "why": "Light lower-body stability only. Friday is the key session of the week.",
+   "steps": []
+  },
+  "2026-10-02": {
+   "type": "tempo",
+   "name": "Key session 1 - 3 x 2 km threshold",
+   "km": 10,
+   "pace": "6:00-6:10",
+   "hr": "160-168",
+   "treadmill": "9.8-10.0 km/h",
+   "why": "Threshold is the limiter for a sub-58 10K. Program it as a Garmin structured workout so each rep is its own lap - km splits hide rep pace.",
+   "steps": [
+    "2 km warm-up easy, then 4 x 20 s strides",
+    "3 x 2 km at 6:00-6:10/km (treadmill 9.8-10.0 km/h), 2 min easy jog between",
+    "1.5 km cool-down",
+    "Pass: all 3 reps on pace with rep 3 averaging HR 168 or lower"
+   ],
+   "qualKm": 6
+  },
+  "2026-10-03": {
+   "type": "rest",
+   "name": "Rest",
+   "km": 0,
+   "pace": "",
+   "hr": "",
+   "treadmill": "",
+   "why": "Full rest.",
+   "steps": []
+  },
+  "2026-10-04": {
+   "type": "long",
+   "name": "Long run - 14 km easy",
+   "km": 14,
+   "pace": "7:00-7:20",
+   "hr": "<=151",
+   "treadmill": "8.4 km/h",
+   "why": "Pure aerobic long run. No fast finish this week - Friday carries the intensity.",
+   "steps": [
+    "14 km easy, HR cap 151 the whole way",
+    "If outdoors, start before 6:00 to beat the heat"
+   ]
+  },
+  "2026-10-05": {
+   "type": "strength",
+   "name": "Strength B - short",
+   "km": 0,
+   "pace": "",
+   "hr": "",
+   "treadmill": "",
+   "why": "Half the usual sets. No soreness allowed this close to racing.",
+   "steps": []
+  },
+  "2026-10-06": {
+   "type": "easy",
+   "name": "Easy 7 km + 4 strides",
+   "km": 7,
+   "pace": "6:50-7:10",
+   "hr": "136-151",
+   "treadmill": "8.6 km/h",
+   "why": "Steady easy run with strides at the end.",
+   "steps": [
+    "6.5 km easy, HR 136-151",
+    "4 x 20 s strides, walk 40 s between"
+   ]
+  },
+  "2026-10-07": {
+   "type": "easy",
+   "name": "Easy 5 km",
+   "km": 5,
+   "pace": "7:00-7:20",
+   "hr": "<145",
+   "treadmill": "8.4 km/h",
+   "why": "Very easy. Legs should feel fresher by the end of this week.",
+   "steps": []
+  },
+  "2026-10-08": {
+   "type": "strength",
+   "name": "Mobility only",
+   "km": 0,
+   "pace": "",
+   "hr": "",
+   "treadmill": "",
+   "why": "8-10 min piriformis, hip flexor and calf mobility. No weights.",
+   "steps": []
+  },
+  "2026-10-09": {
+   "type": "tempo",
+   "name": "Key session 2 - race-pace test 4 x 1.5 km",
+   "km": 10,
+   "pace": "5:40-5:45",
+   "hr": "166-172",
+   "treadmill": "10.5-10.6 km/h",
+   "why": "This session decides the Saucony target. It is 6 km at goal pace with short breaks - if you can hold it under control now, sub-57 is realistic on race day with taper and adrenaline.",
+   "steps": [
+    "2 km warm-up + 4 x 20 s strides",
+    "4 x 1.5 km at 5:40-5:45/km (treadmill 10.5-10.6 km/h), 90 s easy jog between",
+    "1 km cool-down",
+    "Pass for sub-57: all reps on pace, rep 4 HR 173 or lower, effort 8/10 not 10/10",
+    "If reps 3-4 slip above 5:50 or HR goes past 175: Saucony target is sub-58"
+   ],
+   "qualKm": 6
+  },
+  "2026-10-10": {
+   "type": "rest",
+   "name": "Rest",
+   "km": 0,
+   "pace": "",
+   "hr": "",
+   "treadmill": "",
+   "why": "Full rest.",
+   "steps": []
+  },
+  "2026-10-11": {
+   "type": "long",
+   "name": "Easy 10 km + strides",
+   "km": 10,
+   "pace": "7:00-7:20",
+   "hr": "<=151",
+   "treadmill": "8.4 km/h",
+   "why": "Last longer run. Volume drops from here, intensity stays.",
+   "steps": [
+    "9.5 km easy",
+    "4 x 20 s strides"
+   ]
+  },
+  "2026-10-12": {
+   "type": "rest",
+   "name": "Stretch and recovery",
+   "km": 0,
+   "pace": "",
+   "hr": "",
+   "treadmill": "",
+   "why": "Stretch only. Sleep 8 hours.",
+   "steps": []
+  },
+  "2026-10-13": {
+   "type": "tempo",
+   "name": "Sharpener - 3 x 1 km at race pace",
+   "km": 6,
+   "pace": "5:40-5:45",
+   "hr": "<=172",
+   "treadmill": "10.5 km/h",
+   "why": "Keeps race pace familiar without adding fatigue.",
+   "steps": [
+    "2 km easy",
+    "3 x 1 km at 5:40-5:45/km, 2 min jog between",
+    "1 km easy"
+   ],
+   "qualKm": 3
+  },
+  "2026-10-14": {
+   "type": "easy",
+   "name": "Easy 4 km",
+   "km": 4,
+   "pace": "7:10-7:30",
+   "hr": "<140",
+   "treadmill": "8.2 km/h",
+   "why": "Very easy shake-out.",
+   "steps": []
+  },
+  "2026-10-15": {
+   "type": "rest",
+   "name": "Rest",
+   "km": 0,
+   "pace": "",
+   "hr": "",
+   "treadmill": "",
+   "why": "Rest. Hydrate, eat normally.",
+   "steps": []
+  },
+  "2026-10-16": {
+   "type": "easy",
+   "name": "Shakeout 3 km + 4 x 200 m",
+   "km": 4,
+   "pace": "7:00 / 5:20",
+   "hr": "<155",
+   "treadmill": "8.6 km/h",
+   "why": "Short and sharp. Wake the legs up, do not tire them.",
+   "steps": [
+    "3 km easy",
+    "4 x 200 m at 5:15-5:25/km, full walk recovery"
+   ]
+  },
+  "2026-10-17": {
+   "type": "rest",
+   "name": "Race eve - rest",
+   "km": 0,
+   "pace": "",
+   "hr": "",
+   "treadmill": "",
+   "why": "Lay out kit, pin bib, set the 3:00 alarm. Start is 04:00. Dinner by 19:00, bed by 21:00.",
+   "steps": []
+  },
+  "2026-10-18": {
+   "type": "race",
+   "name": "EMS RUN 10K - race 1",
+   "km": 10,
+   "pace": "5:50 start, 5:45 cruise",
+   "hr": "see race plan",
+   "treadmill": "",
+   "why": "Run it on HR and effort. Goal sub-58. Details on the Race tab.",
+   "steps": []
+  },
+  "2026-10-19": {
+   "type": "rest",
+   "name": "Rest",
+   "km": 0,
+   "pace": "",
+   "hr": "",
+   "treadmill": "",
+   "why": "Full rest. Walk, stretch, eat.",
+   "steps": []
+  },
+  "2026-10-20": {
+   "type": "easy",
+   "name": "Recovery 5 km",
+   "km": 5,
+   "pace": "7:20-7:45",
+   "hr": "<140",
+   "treadmill": "8.0 km/h",
+   "why": "Check: if HR at this pace is more than 5 bpm above your usual easy HR, you are still carrying the race - drop Saucony to the B target.",
+   "steps": []
+  },
+  "2026-10-21": {
+   "type": "rest",
+   "name": "Rest or 3 km easy",
+   "km": 0,
+   "pace": "",
+   "hr": "",
+   "treadmill": "",
+   "why": "Optional 3 km very easy if legs feel good.",
+   "steps": []
+  },
+  "2026-10-22": {
+   "type": "easy",
+   "name": "Easy 5 km with 4 x 1 min race pace",
+   "km": 5,
+   "pace": "7:00 / 5:40",
+   "hr": "<=165",
+   "treadmill": "8.6 / 10.6 km/h",
+   "why": "Reminds the legs of race pace.",
+   "steps": [
+    "2 km easy",
+    "4 x 1 min at 5:40/km, 1 min easy between",
+    "1.5 km easy"
+   ]
+  },
+  "2026-10-23": {
+   "type": "rest",
+   "name": "Rest",
+   "km": 0,
+   "pace": "",
+   "hr": "",
+   "treadmill": "",
+   "why": "Rest.",
+   "steps": []
+  },
+  "2026-10-24": {
+   "type": "easy",
+   "name": "Race eve shakeout 3 km",
+   "km": 3,
+   "pace": "7:10-7:30",
+   "hr": "<145",
+   "treadmill": "8.4 km/h",
+   "why": "Start is 05:00. 3 km easy + 3 x 100 m strides, then feet up.",
+   "steps": [
+    "3 km easy",
+    "3 x 100 m relaxed strides"
+   ]
+  },
+  "2026-10-25": {
+   "type": "race",
+   "name": "Saucony BKK10K - race 2",
+   "km": 10,
+   "pace": "per decision rule",
+   "hr": "see race plan",
+   "treadmill": "",
+   "why": "Goal race. Target set by the Oct 9 test and the EMS result.",
+   "steps": []
+  }
+ }
+}
