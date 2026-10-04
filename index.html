@@ -329,7 +329,7 @@ function renderProgress(){
   <div class="grid g3">
     <div class="card"><p class="eyebrow">Aerobic engine</p><h2 class="mono">${eNow?eNow.toFixed(2):'-'} <span class="small muted">m/beat</span></h2><p class="note">March ${eMar.toFixed(2)} → May-June ${eMay.toFixed(2)} → last 5 weeks ${eNow?eNow.toFixed(2):'-'}. Big gains in spring, flat since June.</p></div>
     <div class="card"><p class="eyebrow">Easy-day discipline</p><h2 class="mono">${ok}/${easy.length}</h2><p class="note">Easy and long runs this block with average HR at or under 151. ${miss.length?(missOut>=miss.length/2?`${missOut} of ${miss.length} misses were outdoor runs - heat and pace pressure push HR up. Slow down outside.`:`${miss.length} misses, mostly on the treadmill - lower the belt speed.`):'Clean record.'}</p></div>
-    <div class="card"><p class="eyebrow">Gap to goal</p><h2 class="mono">${b.time} → 57:00</h2><p class="note">Needs ${(((secs(59,15)-57*60)/secs(59,15))*100).toFixed(1)}% faster than Aug 16. ${esc(b.note)}</p></div>
+    <div class="card"><p class="eyebrow">Gap to goal</p><h2 class="mono">${b.time} → 58:00</h2><p class="note">Needs ${(((secs(59,15)-58*60)/secs(59,15))*100).toFixed(1)}% faster than Aug 16. ${esc(b.note)}</p></div>
   </div>
   <div class="grid g2" style="margin-top:16px">
     <div class="card chart"><p class="eyebrow">Efficiency trend</p><h3>Metres per heartbeat on easy treadmill runs</h3>
