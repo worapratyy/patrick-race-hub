@@ -79,9 +79,28 @@ th{font:500 11px var(--mono);text-transform:uppercase;letter-spacing:.06em;color
 td{padding:8px;border-bottom:1px solid var(--line);vertical-align:top}
 td.n{font-family:var(--mono);white-space:nowrap}
 .tscroll{overflow-x:auto}
-.weekblock{margin-bottom:14px}
-.weekhead{display:flex;flex-wrap:wrap;gap:10px;align-items:baseline;justify-content:space-between;padding:12px 16px;cursor:pointer;user-select:none}
-.weekhead h3{margin:0}
+.weekblock{margin-bottom:10px;padding:0}
+.weekblock>summary{list-style:none}
+.weekblock>summary::-webkit-details-marker,.pastgroup>summary::-webkit-details-marker{display:none}
+.weekhead{display:grid;grid-template-columns:1fr auto;gap:6px 14px;align-items:center;padding:12px 16px;cursor:pointer;user-select:none}
+.weekhead h3{margin:0 0 2px}
+.wh-r{display:flex;align-items:center;gap:12px;flex-wrap:wrap;justify-content:flex-end}
+.wbar{grid-column:1/-1;margin:4px 0 0}
+.chev{font:600 18px var(--sans);color:var(--ink3);transition:transform .2s;display:inline-block;line-height:1}
+details[open]>summary .chev{transform:rotate(90deg)}
+.dots{display:inline-flex;gap:4px}
+.dot{width:9px;height:9px;border-radius:50%;border:1.5px solid currentColor;opacity:.55;display:inline-block}
+.dot.done{background:currentColor;opacity:1}
+.dot.miss{border-style:dashed;opacity:.9;color:var(--bad)}
+.dot.now{outline:2px solid var(--accent);outline-offset:2px;opacity:1}
+.dot.t-none{color:var(--line2)}
+.weekblock.current{border-color:var(--accent);box-shadow:0 0 0 1px var(--accent)}
+.pastwk{background:var(--bg)} .pastwk .weekhead{padding:9px 16px} .pastwk h3{font-size:14px}
+.row.past{opacity:.6} .row.past:hover{opacity:1}
+.pastgroup{margin-top:22px}
+.pastgroup>summary{list-style:none;cursor:pointer;padding:10px 0;border-top:1px solid var(--line);display:flex;gap:8px;align-items:center}
+.pastgroup[open]>summary{margin-bottom:8px}
+@media(max-width:620px){.weekhead{grid-template-columns:1fr}.wh-r{justify-content:flex-start}}
 .weekbody{border-top:1px solid var(--line)}
 .row{display:grid;grid-template-columns:92px 1fr 150px 120px;gap:10px;padding:10px 16px;border-bottom:1px solid var(--line);align-items:start}
 .row:last-child{border-bottom:0}
@@ -350,28 +369,55 @@ function renderProgress(){
 }
 
 /* ---------- render: plan ---------- */
-function renderPlan(){
-  const dates=Object.keys(PLAN.sessions).sort(); const start=monday(dates[0]), end=dates[dates.length-1];
-  const curM=monday(TODAY); let html='';
-  for(let m=start;m<=end;m=addDays(m,7)){
-    let pk=0,ak=0,rows='';
-    for(let i=0;i<7;i++){const d=addDays(m,i); const s=PLAN.sessions[d]; const r=merge(runsOn(d)); if(!s&&!r)continue;
-      pk+=s?s.km||0:0; ak+=r?r.dist:0; const v=verdict(d);
-      const body=s&&(s.steps&&s.steps.length||s.why||s.pace)?`<details ${d>=TODAY&&d<=addDays(TODAY,2)?'open':''}><summary class="t-${s.type}">${esc(s.name)}</summary>
-        ${s.pace||s.hr?`<div class="meta">${s.km?s.km+' km · ':''}${s.pace?esc(s.pace)+'/km · ':''}${s.hr?'HR '+esc(s.hr):''}${s.treadmill?' · '+esc(s.treadmill):''}</div>`:''}
-        ${s.steps&&s.steps.length?`<ol class="steps small">${s.steps.map(x=>`<li>${esc(x)}</li>`).join('')}</ol>`:''}
-        ${s.why?`<p class="why">${esc(s.why)}</p>`:''}</details>`
-        :`<b class="t-${s?s.type:'rest'}">${esc(s?s.name:'Unplanned run')}</b>${s&&s.km?`<div class="meta">${s.km} km planned</div>`:''}`;
-      rows+=`<div class="row ${d===TODAY?'today':''}"><div class="dt">${fmtD(d)}</div><div>${body}${v&&v.detail&&r?`<div class="note">${esc(v.detail)}</div>`:''}</div>
-        <div class="act">${r?`${r.dist.toFixed(2)} km<br>${r.pM}:${String(r.pS).padStart(2,'0')}/km · ${r.hr?r.hr.toFixed(0)+' bpm':'-'}`:''}</div>
-        <div class="vd">${v?`<span class="pill ${v.cls}">${esc(v.label)}</span>`:''}</div></div>`;
-    }
-    const open=m>=addDays(curM,-7);
-    html+=`<div class="card weekblock" style="padding:0"><div class="weekhead" data-t><h3>${fmtShort(m)} - ${fmtShort(addDays(m,6))} <span class="muted small">· ${phaseOf(addDays(m,3))}</span>${m===curM?' <span class="pill p-acc">this week</span>':''}</h3>
-      <span class="mono small muted">${ak.toFixed(1)} / ${pk.toFixed(0)} km</span></div><div class="weekbody" ${open?'':'hidden'}>${rows}</div></div>`;
+const QUAL=t=>t==='tempo'||t==='race';
+function keyLabel(s){const p=s.name.split(' - ');return (s.type==='race'||p.length<2?p[0]:p[1]).split(' (')[0]}
+function dayRow(d){
+  const s=PLAN.sessions[d], r=merge(runsOn(d)); if(!s&&!r)return '';
+  const v=verdict(d), past=d<TODAY, isT=d===TODAY;
+  const meta=s&&(s.pace||s.hr)?`<div class="meta">${s.km?s.km+' km · ':''}${s.pace?esc(s.pace)+'/km · ':''}${s.hr?'HR '+esc(s.hr):''}${s.treadmill?' · '+esc(s.treadmill):''}</div>`:'';
+  const det=s&&(s.steps&&s.steps.length||s.why)?`${s.steps&&s.steps.length?`<ol class="steps small">${s.steps.map(x=>`<li>${esc(x)}</li>`).join('')}</ol>`:''}${s.why?`<p class="why">${esc(s.why)}</p>`:''}`:'';
+  const title=`<span class="t-${s?s.type:'rest'}">${esc(s?s.name:'Unplanned run')}</span>`;
+  const body=det?`<details ${isT||(!past&&d<=addDays(TODAY,1))?'open':''}><summary>${title}${s&&s.km&&!s.pace?` <span class="meta">${s.km} km</span>`:''}</summary>${meta}${det}</details>`:`<b>${title}</b>${meta}`;
+  return `<div class="row ${isT?'today':''} ${past?'past':''}"><div class="dt">${isT?'Today':fmtD(d)}</div><div>${body}${v&&v.detail&&r?`<div class="note">${esc(v.detail)}</div>`:''}</div>
+    <div class="act">${r?`${r.dist.toFixed(2)} km<br>${r.pM}:${String(r.pS).padStart(2,'0')}/km · ${r.hr?r.hr.toFixed(0)+' bpm':'-'}`:''}</div>
+    <div class="vd">${v&&(past||isT||r)?`<span class="pill ${v.cls}">${esc(v.label)}</span>`:''}</div></div>`;
+}
+function weekData(m){
+  let pk=0,ak=0,hit=0,due=0,dots='',keys=[];
+  for(let i=0;i<7;i++){const d=addDays(m,i),s=PLAN.sessions[d],r=merge(runsOn(d));
+    pk+=s?s.km||0:0; ak+=r?r.dist:0;
+    const t=s?s.type:(r?'easy':'none'), run=s&&!['rest','strength'].includes(s.type);
+    if(run&&d<TODAY){due++; if(r)hit++;}
+    const st=r?'done':(d<TODAY&&run?'miss':'');
+    dots+=`<i class="dot t-${t} ${st} ${d===TODAY?'now':''}" title="${fmtD(d)}${s?' · '+esc(s.name):''}"></i>`;
+    if(s&&(QUAL(s.type)||s.type==='long'))keys.push(`<span class="t-${s.type}">${s.type==='long'?'Long '+s.km+' km':esc(keyLabel(s))}</span>`);
   }
-  $('#tab-plan').innerHTML=`<p class="muted small" style="margin-top:0">Actual runs are matched from Strava by date. Nothing is typed in by hand. Tap a week to expand it and a session to see its details.</p>`+html;
-  document.querySelectorAll('[data-t]').forEach(h=>h.onclick=()=>{const b=h.nextElementSibling;b.hidden=!b.hidden});
+  return {pk,ak,hit,due,dots,keys};
+}
+function weekCard(m,{open=false,past=false}={}){
+  const curM=monday(TODAY), w=weekData(m), cur=m===curM;
+  let rows=''; for(let i=0;i<7;i++)rows+=dayRow(addDays(m,i)); if(!rows)return '';
+  const pct=w.pk?Math.min(100,w.ak/w.pk*100):0;
+  const right=past?`<span class="pill ${w.due&&w.hit<w.due?(w.hit>=w.due-1?'p-warn':'p-bad'):'p-ok'}">${w.hit}/${w.due} done</span>`:'';
+  return `<details class="card weekblock ${cur?'current':''} ${past?'pastwk':''}" ${open?'open':''}>
+    <summary class="weekhead"><div class="wh-l"><h3>${fmtShort(m)} – ${fmtShort(addDays(m,6))}${cur?' <span class="pill p-acc">this week</span>':''}</h3>
+      <span class="muted small">${phaseOf(addDays(m,3))}${!past&&w.keys.length?' · '+w.keys.join(' · '):''}</span></div>
+      <div class="wh-r"><span class="dots">${w.dots}</span><span class="mono small">${w.ak.toFixed(1)} / ${w.pk.toFixed(0)} km</span>${right}<span class="chev">›</span></div>
+      ${cur?`<div class="bar wbar"><i style="width:${pct.toFixed(0)}%"></i></div>`:''}</summary>
+    <div class="weekbody">${rows}</div></details>`;
+}
+function renderPlan(){
+  const dates=Object.keys(PLAN.sessions).sort(), curM=monday(TODAY);
+  const first=monday(dates[0]), last=monday(dates[dates.length-1]);
+  const past=[],future=[];
+  for(let m=first;m<=last;m=addDays(m,7)){ if(m<curM)past.push(m); else if(m>curM)future.push(m); }
+  const pastKm=past.reduce((t,m)=>t+weekData(m).ak,0);
+  const pastHtml=past.slice().reverse().map(m=>weekCard(m,{past:true})).join('');
+  const futHtml=future.map((m,i)=>weekCard(m,{open:i===0})).join('');
+  $('#tab-plan').innerHTML=`<p class="muted small" style="margin-top:0">Runs are matched from Strava by date. Past weeks are folded away - tap any week to open it, tap a session for its details.</p>
+    <p class="eyebrow">Now</p>${weekCard(curM,{open:true})}
+    ${futHtml?`<p class="eyebrow" style="margin-top:22px">Coming up</p>${futHtml}`:''}
+    ${past.length?`<details class="pastgroup"><summary class="eyebrow">Completed · ${past.length} weeks · ${pastKm.toFixed(0)} km run <span class="chev">›</span></summary>${pastHtml}</details>`:''}`;
 }
 
 /* ---------- render: race & zones ---------- */
