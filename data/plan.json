@@ -160,6 +160,59 @@
         }
       ],
       "rule": "Stretch for 57:xx only if HR stays 166 or lower through km 6 and the Oct 20 recovery run HR was normal. Otherwise run 5:48 and take the sub-58 PR."
+    },
+    {
+      "id": "atm",
+      "date": "2026-11-29",
+      "start": "06:00",
+      "name": "Amazing Thailand Marathon Bangkok - 10K",
+      "short": "ATM BKK 10K",
+      "place": "Sanam Luang, Ratchadamnoen Nai Rd (finish Na Phra That Rd)",
+      "bib": "",
+      "role": "Race 3 - after Japan trip (Nov 23-27)",
+      "goalA": "Sub-58:00 (provisional)",
+      "goalB": "Any PR under 59:15",
+      "plan": [
+        {
+          "km": "1-2",
+          "pace": "5:55-6:00",
+          "hr": "under 162",
+          "cue": "Settle. Crowd is big at Sanam Luang."
+        },
+        {
+          "km": "3-7",
+          "pace": "5:45-5:50",
+          "hr": "162-167",
+          "cue": "Even effort. HR 168 or lower until km 7."
+        },
+        {
+          "km": "8-9",
+          "pace": "5:40-5:48",
+          "hr": "up to 170",
+          "cue": "Push only if HR is under 170."
+        },
+        {
+          "km": "10",
+          "pace": "open",
+          "hr": "170+",
+          "cue": "Empty the tank."
+        }
+      ],
+      "rule": "Final target is set after the Oct 25 Saucony result. Five days of Japan travel before this race - start conservative and race by heart rate."
+    },
+    {
+      "id": "pocari",
+      "date": "2027-01-17",
+      "start": "",
+      "name": "POCARI SWEAT RUN Carnival 2027 - 21K",
+      "short": "Pocari 21K",
+      "place": "Huamark Indoor Stadium plaza, Bangkok",
+      "bib": "",
+      "role": "Half marathon - paid, Block A",
+      "goalA": "TBD after ATM",
+      "goalB": "TBD",
+      "plan": [],
+      "rule": "Half-marathon build plan will be written after the ATM 10K on Nov 29. Order PO27_HNUPN154876. Kit pickup at the stadium plaza, 10:00-18:00."
     }
   ],
   "phases": [
@@ -192,6 +245,26 @@
       "label": "Race week 2",
       "start": "2026-10-19",
       "end": "2026-10-25"
+    },
+    {
+      "label": "Recovery + base",
+      "start": "2026-10-26",
+      "end": "2026-11-01"
+    },
+    {
+      "label": "Rebuild",
+      "start": "2026-11-02",
+      "end": "2026-11-08"
+    },
+    {
+      "label": "Peak",
+      "start": "2026-11-09",
+      "end": "2026-11-22"
+    },
+    {
+      "label": "Japan + ATM",
+      "start": "2026-11-23",
+      "end": "2026-11-29"
     }
   ],
   "checkpoints": [
@@ -214,6 +287,16 @@
       "date": "2026-10-20",
       "name": "Recovery run HR",
       "pass": "Within 5 bpm of usual easy HR at the same pace"
+    },
+    {
+      "date": "2026-11-13",
+      "name": "5 x 1000m at 10K effort",
+      "pass": "All reps HR 164-170, last rep controlled"
+    },
+    {
+      "date": "2026-11-29",
+      "name": "ATM BKK 10K",
+      "pass": "Sub-58:00 (provisional - set after Saucony)"
     }
   ],
   "sessions": {
@@ -724,6 +807,384 @@
       "hr": "see race plan",
       "treadmill": "",
       "why": "Goal race. Target set by the Oct 9 test and the EMS result.",
+      "steps": []
+    },
+    "2026-10-26": {
+      "type": "rest",
+      "name": "Post-Race Rest",
+      "km": 0,
+      "pace": "",
+      "hr": "",
+      "treadmill": "",
+      "why": "Saucony is done. Full rest, walk only. Don't analyse the race until tomorrow.",
+      "steps": []
+    },
+    "2026-10-27": {
+      "type": "easy",
+      "name": "Easy Z1 - 5km",
+      "km": 5,
+      "pace": "7:15-7:45",
+      "hr": "<140",
+      "treadmill": "",
+      "why": "Flush the legs. If they feel dead, cut to 3 km. Recovery, not training.",
+      "steps": []
+    },
+    "2026-10-28": {
+      "type": "strength",
+      "name": "Strength Day A - Light",
+      "km": 0,
+      "pace": "",
+      "hr": "",
+      "treadmill": "",
+      "why": "Light lower-body stability, 2 sets, stop well before fatigue. Rebuilding phase for ATM BKK 10K.",
+      "steps": []
+    },
+    "2026-10-29": {
+      "type": "easy",
+      "name": "Easy Z2 - 6km",
+      "km": 6,
+      "pace": "6:40-7:10",
+      "hr": "136-151",
+      "treadmill": "",
+      "why": "Steady easy Z2. Hold HR, not pace.",
+      "steps": []
+    },
+    "2026-10-30": {
+      "type": "rest",
+      "name": "Rest",
+      "km": 0,
+      "pace": "",
+      "hr": "",
+      "treadmill": "",
+      "why": "Rest.",
+      "steps": []
+    },
+    "2026-10-31": {
+      "type": "easy",
+      "name": "Easy Z2 - 6km",
+      "km": 6,
+      "pace": "6:40-7:10",
+      "hr": "136-151",
+      "treadmill": "",
+      "why": "Easy Z2 + 4×20 sec relaxed strides at the end.",
+      "steps": []
+    },
+    "2026-11-01": {
+      "type": "long",
+      "name": "Long Run - 10km Z2",
+      "km": 10,
+      "pace": "6:50-7:20",
+      "hr": "136-151",
+      "treadmill": "",
+      "why": "Base rebuild after the Saucony race. Z2 only; if HR sits above 151 for several minutes, slow down.",
+      "steps": []
+    },
+    "2026-11-02": {
+      "type": "strength",
+      "name": "Strength Day A - Lower Stability",
+      "km": 0,
+      "pace": "",
+      "hr": "",
+      "treadmill": "",
+      "why": "Goblet squat, RDL, split squat, calf raises: 2–3 sets, 2–3 reps in reserve.",
+      "steps": []
+    },
+    "2026-11-03": {
+      "type": "easy",
+      "name": "Easy Z2 - 8km",
+      "km": 8,
+      "pace": "6:40-7:10",
+      "hr": "136-151",
+      "treadmill": "",
+      "why": "Aerobic base. Keep easy days truly easy - Friday is a threshold session.",
+      "steps": []
+    },
+    "2026-11-04": {
+      "type": "easy",
+      "name": "Easy Z1 - 5km",
+      "km": 5,
+      "pace": "7:15-7:45",
+      "hr": "<145",
+      "treadmill": "",
+      "why": "Short and easy.",
+      "steps": []
+    },
+    "2026-11-05": {
+      "type": "strength",
+      "name": "Strength Day B - Glutes/Core",
+      "km": 0,
+      "pace": "",
+      "hr": "",
+      "treadmill": "",
+      "why": "Hip thrust, single-leg RDL, clamshell/band walk, dead bug. Moderate.",
+      "steps": []
+    },
+    "2026-11-06": {
+      "type": "tempo",
+      "name": "Tempo - 2x12min Threshold (HR-led)",
+      "km": 9,
+      "pace": "6:15-6:30",
+      "hr": "160-166",
+      "treadmill": "",
+      "why": "Run by HR, not pace (threshold HR 160–166 ≈ 6:15–6:30/km). Goal: rebuild threshold after the two October races.",
+      "steps": [
+        "2 km warm-up",
+        "2x12 min @ threshold effort, HR 160–166",
+        "3 min easy jog between",
+        "1.5 km cool-down"
+      ],
+      "qualKm": 4
+    },
+    "2026-11-07": {
+      "type": "rest",
+      "name": "Rest",
+      "km": 0,
+      "pace": "",
+      "hr": "",
+      "treadmill": "",
+      "why": "Rest. Threshold sessions need 48 hrs to absorb.",
+      "steps": []
+    },
+    "2026-11-08": {
+      "type": "long",
+      "name": "Long Run - 14km Z2",
+      "km": 14,
+      "pace": "6:50-7:20",
+      "hr": "136-151",
+      "treadmill": "",
+      "why": "Z2 long run. Fuel and hydrate as for race day.",
+      "steps": []
+    },
+    "2026-11-09": {
+      "type": "strength",
+      "name": "Strength Day A - Light",
+      "km": 0,
+      "pace": "",
+      "hr": "",
+      "treadmill": "",
+      "why": "Light lower-body stability. Intervals on Friday take priority.",
+      "steps": []
+    },
+    "2026-11-10": {
+      "type": "easy",
+      "name": "Easy Z2 - 8km",
+      "km": 8,
+      "pace": "6:40-7:10",
+      "hr": "136-151",
+      "treadmill": "",
+      "why": "Easy Z2.",
+      "steps": []
+    },
+    "2026-11-11": {
+      "type": "easy",
+      "name": "Easy Z1 - 5km",
+      "km": 5,
+      "pace": "7:15-7:45",
+      "hr": "<145",
+      "treadmill": "",
+      "why": "Short and easy.",
+      "steps": []
+    },
+    "2026-11-12": {
+      "type": "rest",
+      "name": "Rest",
+      "km": 0,
+      "pace": "",
+      "hr": "",
+      "treadmill": "",
+      "why": "Rest before intervals.",
+      "steps": []
+    },
+    "2026-11-13": {
+      "type": "tempo",
+      "name": "Key Session - 5x1000m @ 10K Effort",
+      "km": 9,
+      "pace": "5:50-6:00",
+      "hr": "164-170",
+      "treadmill": "",
+      "why": "The last big quality session. Run by HR/effort (HR 164–170), not by pace. Your Aug 16 10K was 5:55/km at HR 164.5. Pass: all five reps at HR ≤170 with the last rep controlled. If reps slip above HR 172, stop at 4.",
+      "steps": [
+        "2 km warm-up + 4 strides",
+        "5x1000m @ 10K effort, HR 164–170 (expect ~5:50–6:00/km)",
+        "90 sec easy jog between",
+        "1.5 km cool-down"
+      ],
+      "qualKm": 4
+    },
+    "2026-11-14": {
+      "type": "rest",
+      "name": "Rest",
+      "km": 0,
+      "pace": "",
+      "hr": "",
+      "treadmill": "",
+      "why": "Rest.",
+      "steps": []
+    },
+    "2026-11-15": {
+      "type": "long",
+      "name": "Long Run - 16km Z2",
+      "km": 16,
+      "pace": "6:50-7:20",
+      "hr": "136-151",
+      "treadmill": "",
+      "why": "Peak long run before the trip. Z2 only. This is the longest run in the ATM block.",
+      "steps": []
+    },
+    "2026-11-16": {
+      "type": "strength",
+      "name": "Strength Day B - Light",
+      "km": 0,
+      "pace": "",
+      "hr": "",
+      "treadmill": "",
+      "why": "Light glutes/core. Last strength session before the Japan trip.",
+      "steps": []
+    },
+    "2026-11-17": {
+      "type": "easy",
+      "name": "Easy Z2 - 7km",
+      "km": 7,
+      "pace": "6:40-7:10",
+      "hr": "136-151",
+      "treadmill": "",
+      "why": "Easy Z2.",
+      "steps": []
+    },
+    "2026-11-18": {
+      "type": "easy",
+      "name": "Easy Z1 - 5km",
+      "km": 5,
+      "pace": "7:15-7:45",
+      "hr": "<145",
+      "treadmill": "",
+      "why": "Short and easy.",
+      "steps": []
+    },
+    "2026-11-19": {
+      "type": "rest",
+      "name": "Rest",
+      "km": 0,
+      "pace": "",
+      "hr": "",
+      "treadmill": "",
+      "why": "Rest.",
+      "steps": []
+    },
+    "2026-11-20": {
+      "type": "tempo",
+      "name": "Tempo + Strides - 2x10min Threshold",
+      "km": 8,
+      "pace": "6:15-6:30",
+      "hr": "160-166",
+      "treadmill": "",
+      "why": "Final threshold session, 9 days before ATM. HR-led (160–166). Controlled - you should finish feeling you could do more.",
+      "steps": [
+        "2 km warm-up",
+        "2x10 min @ threshold effort, HR 160–166, 3 min easy jog between",
+        "1 km cool-down",
+        "4x20 sec strides"
+      ],
+      "qualKm": 4
+    },
+    "2026-11-21": {
+      "type": "rest",
+      "name": "Rest - Pack",
+      "km": 0,
+      "pace": "",
+      "hr": "",
+      "treadmill": "",
+      "why": "Rest. Pack for Japan, pack running kit.",
+      "steps": []
+    },
+    "2026-11-22": {
+      "type": "easy",
+      "name": "Easy Z2 - 12km",
+      "km": 12,
+      "pace": "6:50-7:20",
+      "hr": "136-151",
+      "treadmill": "",
+      "why": "Last longer run before Japan. Easy Z2 only; no hero pace.",
+      "steps": []
+    },
+    "2026-11-23": {
+      "type": "rest",
+      "name": "Japan Day 1 - Travel",
+      "km": 0,
+      "pace": "",
+      "hr": "",
+      "treadmill": "",
+      "why": "✈️ Japan trip Nov 23–27. No training. Walk a lot, hydrate, sleep.",
+      "steps": []
+    },
+    "2026-11-24": {
+      "type": "easy",
+      "name": "Japan - Easy 6km (optional)",
+      "km": 6,
+      "pace": "6:40-7:10",
+      "hr": "136-151",
+      "treadmill": "",
+      "why": "Optional easy run in Japan. Z2 only, flat route, skip if tired. Treat Japan as the taper - lots of walking already.",
+      "steps": []
+    },
+    "2026-11-25": {
+      "type": "rest",
+      "name": "Japan - Rest",
+      "km": 0,
+      "pace": "",
+      "hr": "",
+      "treadmill": "",
+      "why": "Walking day. No running.",
+      "steps": []
+    },
+    "2026-11-26": {
+      "type": "easy",
+      "name": "Japan - Easy 5km + Strides (optional)",
+      "km": 5,
+      "pace": "6:40-7:10",
+      "hr": "136-151",
+      "treadmill": "",
+      "why": "Optional 5 km easy + 4×20 sec strides. Keep legs light.",
+      "steps": []
+    },
+    "2026-11-27": {
+      "type": "rest",
+      "name": "Japan Day 5 - Fly Home",
+      "km": 0,
+      "pace": "",
+      "hr": "",
+      "treadmill": "",
+      "why": "✈️ Fly home. Hydrate, light food, sleep early. No running.",
+      "steps": []
+    },
+    "2026-11-28": {
+      "type": "easy",
+      "name": "Shakeout - 3km + 4 Strides",
+      "km": 3,
+      "pace": "7:15-7:45",
+      "hr": "<140",
+      "treadmill": "",
+      "why": "3 km very easy + 4×20 sec strides. Collect race kit/BIB if not already done. Eat well, sleep early.",
+      "steps": []
+    },
+    "2026-11-29": {
+      "type": "race",
+      "name": "Amazing Thailand Marathon Bangkok - 10K",
+      "km": 10,
+      "pace": "5:45-5:55",
+      "hr": "162-170",
+      "treadmill": "",
+      "why": "🏁 RACE DAY - ATMBKK 2026 10K 📍 Start: Sanam Luang, Ratchadamnoen Nai Rd · Finish: Na Phra That Rd ⏰ 10K window 06:00–08:30 (Sunday). Fast & flat, World Athletics certified. Provisional target: Sub-58:00 (5:48/km). Final target set after Saucony Oct 25. Note: 5 days of Japan travel and sleep disruption right before - start conservative, race by HR (≤168 until km 7). km 1–2: 5:55–6:00 km 3–7: 5:45–5:50 km 8–9: push if HR <170 km 10: empty the tank",
+      "steps": []
+    },
+    "2026-11-30": {
+      "type": "rest",
+      "name": "Post-Race Rest",
+      "km": 0,
+      "pace": "",
+      "hr": "",
+      "treadmill": "",
+      "why": "Rest. Then 2 easy weeks before the half-marathon build for Pocari Sweat Run Carnival (21K, Jan 17).",
       "steps": []
     }
   }
