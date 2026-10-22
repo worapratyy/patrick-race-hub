@@ -209,10 +209,35 @@
       "place": "Huamark Indoor Stadium plaza, Bangkok",
       "bib": "",
       "role": "Half marathon - paid, Block A",
-      "goalA": "TBD after ATM",
-      "goalB": "TBD",
-      "plan": [],
-      "rule": "Half-marathon build plan will be written after the ATM 10K on Nov 29. Order PO27_HNUPN154876. Kit pickup at the stadium plaza, 10:00-18:00."
+      "goalA": "Sub-2:10 (6:10/km, provisional)",
+      "goalB": "Sub-2:15 (6:24/km)",
+      "plan": [
+        {
+          "km": "1-3",
+          "pace": "6:20-6:25",
+          "hr": "under 158",
+          "cue": "Block A is the sub-2:00 block - start at the back and let faster runners go."
+        },
+        {
+          "km": "4-15",
+          "pace": "6:10-6:15",
+          "hr": "160-165",
+          "cue": "Lock in. Gel at km 7 and km 14."
+        },
+        {
+          "km": "16-19",
+          "pace": "6:10",
+          "hr": "up to 168",
+          "cue": "Hold. Do not chase."
+        },
+        {
+          "km": "20-21.1",
+          "pace": "open",
+          "hr": "168+",
+          "cue": "Empty the tank."
+        }
+      ],
+      "rule": "Targets are provisional and reset after the ATM 10K on Nov 29. Back off immediately if sciatic/piriformis pain appears. Order PO27_HNUPN154876. Kit pickup 10:00-18:00 at the stadium plaza."
     }
   ],
   "phases": [
@@ -265,6 +290,31 @@
       "label": "Japan + ATM",
       "start": "2026-11-23",
       "end": "2026-11-29"
+    },
+    {
+      "label": "HM recovery",
+      "start": "2026-11-30",
+      "end": "2026-12-06"
+    },
+    {
+      "label": "HM base",
+      "start": "2026-12-07",
+      "end": "2026-12-13"
+    },
+    {
+      "label": "HM build",
+      "start": "2026-12-14",
+      "end": "2026-12-27"
+    },
+    {
+      "label": "HM peak",
+      "start": "2026-12-28",
+      "end": "2027-01-03"
+    },
+    {
+      "label": "HM taper",
+      "start": "2027-01-04",
+      "end": "2027-01-17"
     }
   ],
   "checkpoints": [
@@ -297,6 +347,26 @@
       "date": "2026-11-29",
       "name": "ATM BKK 10K",
       "pass": "Sub-58:00 (provisional - set after Saucony)"
+    },
+    {
+      "date": "2026-12-18",
+      "name": "2 x 4 km at HM effort",
+      "pass": "Both reps HR 160-165 at about 6:10-6:20/km"
+    },
+    {
+      "date": "2026-12-31",
+      "name": "3 x 3 km at HM effort",
+      "pass": "All reps HR 165 or lower, last rep controlled"
+    },
+    {
+      "date": "2027-01-03",
+      "name": "21 km peak long run",
+      "pass": "Z2 for 16 km, last 5 km steady, no sciatic pain"
+    },
+    {
+      "date": "2027-01-17",
+      "name": "Pocari 21K",
+      "pass": "Sub-2:10 (provisional)"
     }
   ],
   "sessions": {
@@ -1185,6 +1255,516 @@
       "hr": "",
       "treadmill": "",
       "why": "Rest. Then 2 easy weeks before the half-marathon build for Pocari Sweat Run Carnival (21K, Jan 17).",
+      "steps": []
+    },
+    "2026-12-01": {
+      "type": "easy",
+      "name": "Easy Z1 - 5km",
+      "km": 5,
+      "pace": "7:15-7:45",
+      "hr": "<140",
+      "treadmill": "",
+      "why": "Post-ATM flush. If legs are dead, cut to 3 km.",
+      "steps": []
+    },
+    "2026-12-02": {
+      "type": "strength",
+      "name": "Strength Day B - Light - Glutes/Core",
+      "km": 0,
+      "pace": "",
+      "hr": "",
+      "treadmill": "",
+      "why": "Light version only. Half-marathon build starts properly next week.",
+      "steps": []
+    },
+    "2026-12-03": {
+      "type": "easy",
+      "name": "Easy Z2 - 6km",
+      "km": 6,
+      "pace": "6:40-7:10",
+      "hr": "136-151",
+      "treadmill": "",
+      "why": "Easy Z2.",
+      "steps": []
+    },
+    "2026-12-04": {
+      "type": "rest",
+      "name": "Rest",
+      "km": 0,
+      "pace": "",
+      "hr": "",
+      "treadmill": "",
+      "why": "Rest.",
+      "steps": []
+    },
+    "2026-12-05": {
+      "type": "rest",
+      "name": "Rest",
+      "km": 0,
+      "pace": "",
+      "hr": "",
+      "treadmill": "",
+      "why": "Rest.",
+      "steps": []
+    },
+    "2026-12-06": {
+      "type": "long",
+      "name": "Long Run - 12km Z2",
+      "km": 12,
+      "pace": "6:50-7:20",
+      "hr": "136-151",
+      "treadmill": "",
+      "why": "Start of the half-marathon build. Z2 only. Slow down if HR sits above 151 for more than a few minutes.",
+      "steps": []
+    },
+    "2026-12-07": {
+      "type": "strength",
+      "name": "Strength Day A - Lower Stability",
+      "km": 0,
+      "pace": "",
+      "hr": "",
+      "treadmill": "",
+      "why": "Goblet squat/leg press, RDL, split squat, calf raises: 2-3 sets, 2-3 reps in reserve. Protects the piriformis/sciatic side - no sciatic pain, no exceptions.",
+      "steps": []
+    },
+    "2026-12-08": {
+      "type": "easy",
+      "name": "Easy Z2 - 8km",
+      "km": 8,
+      "pace": "6:40-7:10",
+      "hr": "136-151",
+      "treadmill": "",
+      "why": "Aerobic base.",
+      "steps": []
+    },
+    "2026-12-09": {
+      "type": "easy",
+      "name": "Easy Z1 - 5km",
+      "km": 5,
+      "pace": "7:15-7:45",
+      "hr": "<145",
+      "treadmill": "",
+      "why": "Short and easy.",
+      "steps": []
+    },
+    "2026-12-10": {
+      "type": "strength",
+      "name": "Strength Day B - Glutes/Core",
+      "km": 0,
+      "pace": "",
+      "hr": "",
+      "treadmill": "",
+      "why": "Hip thrust, single-leg RDL, clamshell/band walk, dead bug, piriformis/hip mobility. Moderate.",
+      "steps": []
+    },
+    "2026-12-11": {
+      "type": "tempo",
+      "name": "Tempo - 3x10min Threshold (HR-led)",
+      "km": 9,
+      "pace": "6:15-6:30",
+      "hr": "160-166",
+      "treadmill": "",
+      "why": "Threshold by HR (160-166), not pace. HM engine session - comfortably hard.",
+      "steps": [
+        "2 km warm-up",
+        "3x10 min @ threshold effort, HR 160-166",
+        "2 min easy jog between",
+        "1.5 km cool-down"
+      ],
+      "qualKm": 4
+    },
+    "2026-12-12": {
+      "type": "rest",
+      "name": "Rest",
+      "km": 0,
+      "pace": "",
+      "hr": "",
+      "treadmill": "",
+      "why": "Rest.",
+      "steps": []
+    },
+    "2026-12-13": {
+      "type": "long",
+      "name": "Long Run - 16km Z2",
+      "km": 16,
+      "pace": "6:50-7:20",
+      "hr": "136-151",
+      "treadmill": "",
+      "why": "Z2 long run. Practise race-day fuelling: 1 gel around km 8-10.",
+      "steps": []
+    },
+    "2026-12-14": {
+      "type": "strength",
+      "name": "Strength Day A - Lower Stability",
+      "km": 0,
+      "pace": "",
+      "hr": "",
+      "treadmill": "",
+      "why": "Goblet squat/leg press, RDL, split squat, calf raises: 2-3 sets, 2-3 reps in reserve. Protects the piriformis/sciatic side - no sciatic pain, no exceptions.",
+      "steps": []
+    },
+    "2026-12-15": {
+      "type": "easy",
+      "name": "Easy Z2 - 8km",
+      "km": 8,
+      "pace": "6:40-7:10",
+      "hr": "136-151",
+      "treadmill": "",
+      "why": "Easy Z2.",
+      "steps": []
+    },
+    "2026-12-16": {
+      "type": "easy",
+      "name": "Easy Z1 - 5km",
+      "km": 5,
+      "pace": "7:15-7:45",
+      "hr": "<145",
+      "treadmill": "",
+      "why": "Short and easy.",
+      "steps": []
+    },
+    "2026-12-17": {
+      "type": "strength",
+      "name": "Strength Day B - Glutes/Core",
+      "km": 0,
+      "pace": "",
+      "hr": "",
+      "treadmill": "",
+      "why": "Hip thrust, single-leg RDL, clamshell/band walk, dead bug, piriformis/hip mobility. Moderate.",
+      "steps": []
+    },
+    "2026-12-18": {
+      "type": "tempo",
+      "name": "HM Effort - 2x4km @ Half-Marathon Pace",
+      "km": 11,
+      "pace": "6:10-6:20",
+      "hr": "160-165",
+      "treadmill": "",
+      "why": "First HM-specific session. Run by HR (160-165) - expect ~6:10-6:20/km. Goal: learn the pace you will hold for 21 km. It should feel steady, not hard.",
+      "steps": [
+        "2 km warm-up",
+        "2x4 km @ HM effort, HR 160-165",
+        "2 min easy jog between",
+        "1 km cool-down"
+      ],
+      "qualKm": 4
+    },
+    "2026-12-19": {
+      "type": "rest",
+      "name": "Rest",
+      "km": 0,
+      "pace": "",
+      "hr": "",
+      "treadmill": "",
+      "why": "Rest.",
+      "steps": []
+    },
+    "2026-12-20": {
+      "type": "long",
+      "name": "Long Run - 18km Z2",
+      "km": 18,
+      "pace": "6:50-7:20",
+      "hr": "136-151",
+      "treadmill": "",
+      "why": "Z2 long run. Fuel as for race day.",
+      "steps": []
+    },
+    "2026-12-21": {
+      "type": "strength",
+      "name": "Strength Day A - Lower Stability",
+      "km": 0,
+      "pace": "",
+      "hr": "",
+      "treadmill": "",
+      "why": "Goblet squat/leg press, RDL, split squat, calf raises: 2-3 sets, 2-3 reps in reserve. Protects the piriformis/sciatic side - no sciatic pain, no exceptions.",
+      "steps": []
+    },
+    "2026-12-22": {
+      "type": "easy",
+      "name": "Easy Z2 - 8km",
+      "km": 8,
+      "pace": "6:40-7:10",
+      "hr": "136-151",
+      "treadmill": "",
+      "why": "Easy Z2.",
+      "steps": []
+    },
+    "2026-12-23": {
+      "type": "easy",
+      "name": "Easy Z1 - 5km",
+      "km": 5,
+      "pace": "7:15-7:45",
+      "hr": "<145",
+      "treadmill": "",
+      "why": "Short and easy.",
+      "steps": []
+    },
+    "2026-12-24": {
+      "type": "tempo",
+      "name": "Tempo - 2x15min Threshold (HR-led)",
+      "km": 10,
+      "pace": "6:15-6:30",
+      "hr": "160-166",
+      "treadmill": "",
+      "why": "Threshold by HR (160-166).",
+      "steps": [
+        "2 km warm-up",
+        "2x15 min @ threshold effort, HR 160-166",
+        "3 min easy jog between",
+        "1.5 km cool-down"
+      ],
+      "qualKm": 4
+    },
+    "2026-12-25": {
+      "type": "rest",
+      "name": "Rest",
+      "km": 0,
+      "pace": "",
+      "hr": "",
+      "treadmill": "",
+      "why": "Rest. Holiday week - enjoy it.",
+      "steps": []
+    },
+    "2026-12-26": {
+      "type": "rest",
+      "name": "Rest",
+      "km": 0,
+      "pace": "",
+      "hr": "",
+      "treadmill": "",
+      "why": "Rest.",
+      "steps": []
+    },
+    "2026-12-27": {
+      "type": "long",
+      "name": "Long Run - 18km, last 4km @ HM Effort",
+      "km": 18,
+      "pace": "6:50-7:20 / HM 6:10-6:20",
+      "hr": "136-151, last 4 km 160-165",
+      "treadmill": "",
+      "why": "14 km Z2, then the last 4 km at HM effort (HR 160-165). Practise finishing strong, not racing.",
+      "steps": []
+    },
+    "2026-12-28": {
+      "type": "strength",
+      "name": "Strength Day A - Lower Stability",
+      "km": 0,
+      "pace": "",
+      "hr": "",
+      "treadmill": "",
+      "why": "Goblet squat/leg press, RDL, split squat, calf raises: 2-3 sets, 2-3 reps in reserve. Protects the piriformis/sciatic side - no sciatic pain, no exceptions.",
+      "steps": []
+    },
+    "2026-12-29": {
+      "type": "easy",
+      "name": "Easy Z2 - 8km",
+      "km": 8,
+      "pace": "6:40-7:10",
+      "hr": "136-151",
+      "treadmill": "",
+      "why": "Easy Z2.",
+      "steps": []
+    },
+    "2026-12-30": {
+      "type": "easy",
+      "name": "Easy Z1 - 5km",
+      "km": 5,
+      "pace": "7:15-7:45",
+      "hr": "<145",
+      "treadmill": "",
+      "why": "Short and easy.",
+      "steps": []
+    },
+    "2026-12-31": {
+      "type": "tempo",
+      "name": "HM Effort - 3x3km @ Half-Marathon Pace",
+      "km": 12,
+      "pace": "6:10-6:20",
+      "hr": "160-165",
+      "treadmill": "",
+      "why": "Peak HM-specific session, by HR (160-165). Pass: all three reps within HR 165 and the last rep controlled. If HR drifts above 168, stop after 2 reps.",
+      "steps": [
+        "2 km warm-up",
+        "3x3 km @ HM effort, HR 160-165",
+        "2 min easy jog between",
+        "1 km cool-down"
+      ],
+      "qualKm": 4
+    },
+    "2027-01-01": {
+      "type": "rest",
+      "name": "Rest",
+      "km": 0,
+      "pace": "",
+      "hr": "",
+      "treadmill": "",
+      "why": "Rest. New Year.",
+      "steps": []
+    },
+    "2027-01-02": {
+      "type": "rest",
+      "name": "Rest",
+      "km": 0,
+      "pace": "",
+      "hr": "",
+      "treadmill": "",
+      "why": "Rest.",
+      "steps": []
+    },
+    "2027-01-03": {
+      "type": "long",
+      "name": "Long Run - 21km Z2 (Peak)",
+      "km": 21,
+      "pace": "6:45-7:15",
+      "hr": "136-155",
+      "treadmill": "",
+      "why": "Peak long run, 14 days before the race. Z2 for 16 km, last 5 km steady (HR up to 160). Do not go further than 21 km. Stop if sciatic/piriformis pain returns.",
+      "steps": []
+    },
+    "2027-01-04": {
+      "type": "strength",
+      "name": "Strength Day A - Light",
+      "km": 0,
+      "pace": "",
+      "hr": "",
+      "treadmill": "",
+      "why": "Light lower-body stability. Taper begins.",
+      "steps": []
+    },
+    "2027-01-05": {
+      "type": "easy",
+      "name": "Easy Z2 - 8km",
+      "km": 8,
+      "pace": "6:40-7:10",
+      "hr": "136-151",
+      "treadmill": "",
+      "why": "Easy Z2.",
+      "steps": []
+    },
+    "2027-01-06": {
+      "type": "easy",
+      "name": "Easy Z1 - 5km",
+      "km": 5,
+      "pace": "7:15-7:45",
+      "hr": "<145",
+      "treadmill": "",
+      "why": "Short and easy.",
+      "steps": []
+    },
+    "2027-01-07": {
+      "type": "rest",
+      "name": "Mobility Only",
+      "km": 0,
+      "pace": "",
+      "hr": "",
+      "treadmill": "",
+      "why": "Piriformis/hip mobility 5-8 min, light calf work. No weights.",
+      "steps": []
+    },
+    "2027-01-08": {
+      "type": "tempo",
+      "name": "Sharpener - 2x10min Threshold + Strides",
+      "km": 8,
+      "pace": "6:15-6:30",
+      "hr": "160-166",
+      "treadmill": "",
+      "why": "Last quality session, 9 days out. HR-led (160-166).",
+      "steps": [
+        "2 km warm-up",
+        "2x10 min @ threshold effort, 3 min easy jog between",
+        "1 km cool-down",
+        "4x20 sec strides"
+      ],
+      "qualKm": 4
+    },
+    "2027-01-09": {
+      "type": "rest",
+      "name": "Rest",
+      "km": 0,
+      "pace": "",
+      "hr": "",
+      "treadmill": "",
+      "why": "Rest.",
+      "steps": []
+    },
+    "2027-01-10": {
+      "type": "long",
+      "name": "Long Run - 12km Easy",
+      "km": 12,
+      "pace": "6:50-7:20",
+      "hr": "136-151",
+      "treadmill": "",
+      "why": "Last longer run. Easy Z2, trust the work.",
+      "steps": []
+    },
+    "2027-01-11": {
+      "type": "rest",
+      "name": "Rest + Mobility",
+      "km": 0,
+      "pace": "",
+      "hr": "",
+      "treadmill": "",
+      "why": "Race week. Stretch and mobility only.",
+      "steps": []
+    },
+    "2027-01-12": {
+      "type": "easy",
+      "name": "Easy Z2 - 6km",
+      "km": 6,
+      "pace": "6:40-7:10",
+      "hr": "136-151",
+      "treadmill": "",
+      "why": "Easy, with 4x20 sec strides at the end.",
+      "steps": []
+    },
+    "2027-01-13": {
+      "type": "easy",
+      "name": "Easy Z1 - 4km",
+      "km": 4,
+      "pace": "7:15-7:45",
+      "hr": "<140",
+      "treadmill": "",
+      "why": "Very easy.",
+      "steps": []
+    },
+    "2027-01-14": {
+      "type": "rest",
+      "name": "Rest",
+      "km": 0,
+      "pace": "",
+      "hr": "",
+      "treadmill": "",
+      "why": "Rest. Eat well, hydrate, sleep.",
+      "steps": []
+    },
+    "2027-01-15": {
+      "type": "easy",
+      "name": "Shakeout - 3km + 4 Strides",
+      "km": 3,
+      "pace": "7:15-7:45",
+      "hr": "<140",
+      "treadmill": "",
+      "why": "3 km very easy + 4x20 sec strides. Collect race kit at Huamark Indoor Stadium plaza (10:00-18:00) if kit pickup is open.",
+      "steps": []
+    },
+    "2027-01-16": {
+      "type": "rest",
+      "name": "Race Eve - Rest",
+      "km": 0,
+      "pace": "",
+      "hr": "",
+      "treadmill": "",
+      "why": "Rest. Lay out kit, eat a proper dinner, sleep early. Race starts early morning.",
+      "steps": []
+    },
+    "2027-01-17": {
+      "type": "race",
+      "name": "POCARI SWEAT RUN Carnival 2027 - 21K Half Marathon",
+      "km": 21.1,
+      "pace": "6:10-6:20",
+      "hr": "160-168",
+      "treadmill": "",
+      "why": "🏁 RACE DAY - Pocari Sweat Run Carnival 2027 · 21K 📍 Huamark Indoor Stadium plaza, Bangkok · Sunday Jan 17, 2027 Order PO27_HNUPN154876 · Paid ✓ · M 30-39 · Shirt XL Target A: Sub-2:10 (6:10/km) Target B: Sub-2:15 (6:24/km) Provisional - reset after the ATM 10K result on Nov 29. Block A is the sub-2:00 block, so start at the BACK of Block A (or ask the organiser about a slower block) to avoid being swept up too fast. km 1-3: 6:20-6:25, HR <158 km 4-15: 6:10-6:15, HR 160-165 km 16-19: hold 6:10, HR ≤168 km 20-21.1: empty the tank Fuel: gel at km 7 and km 14. Back off immediately if sciatic/piriformis pain appears.",
       "steps": []
     }
   }
