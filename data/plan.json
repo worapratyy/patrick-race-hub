@@ -346,7 +346,7 @@
       "pass": "Within 5 bpm of usual easy HR at the same pace"
     },
     {
-      "date": "2026-11-13",
+      "date": "2026-11-10",
       "name": "5 x 1000m at 10K effort",
       "pass": "All reps 5:18-5:26, HR 174 or lower, no fast first rep"
     },
@@ -356,12 +356,12 @@
       "pass": "Sub-54:00 (A) / any PR under 54:39 (B)"
     },
     {
-      "date": "2026-12-18",
+      "date": "2026-12-15",
       "name": "2 x 4 km at HM effort",
       "pass": "Both reps 5:45-5:55 at HR 167 or lower"
     },
     {
-      "date": "2026-12-31",
+      "date": "2026-12-29",
       "name": "3 x 3 km at HM effort",
       "pass": "All reps 5:45-5:55, HR 167 or lower - decides sub-2:03 vs 2:00 stretch"
     },
@@ -1082,16 +1082,6 @@
       "steps": []
     },
     "2026-10-28": {
-      "type": "strength",
-      "name": "Strength Day A - Light",
-      "km": 0,
-      "pace": "",
-      "hr": "",
-      "treadmill": "",
-      "why": "Light lower-body stability, 2 sets, stop well before fatigue. Rebuilding phase for ATM BKK 10K.",
-      "steps": []
-    },
-    "2026-10-29": {
       "type": "easy",
       "name": "Easy Z2 - 6km",
       "km": 6,
@@ -1101,24 +1091,34 @@
       "why": "Steady easy Z2. Hold HR, not pace.",
       "steps": []
     },
+    "2026-10-29": {
+      "type": "strength",
+      "name": "Strength Day A - Light",
+      "km": 0,
+      "pace": "",
+      "hr": "",
+      "treadmill": "",
+      "why": "Light lower-body stability, 2 sets, stop well before fatigue. Rebuilding phase for ATM BKK 10K.",
+      "steps": []
+    },
     "2026-10-30": {
+      "type": "easy",
+      "name": "Easy Z2 - 6km + Strides",
+      "km": 6,
+      "pace": "6:40-7:10",
+      "hr": "136-151",
+      "treadmill": "",
+      "why": "Easy Z2 + 4x20 sec relaxed strides at the end.",
+      "steps": []
+    },
+    "2026-10-31": {
       "type": "rest",
       "name": "Rest",
       "km": 0,
       "pace": "",
       "hr": "",
       "treadmill": "",
-      "why": "Rest.",
-      "steps": []
-    },
-    "2026-10-31": {
-      "type": "easy",
-      "name": "Easy Z2 - 6km",
-      "km": 6,
-      "pace": "6:40-7:10",
-      "hr": "136-151",
-      "treadmill": "",
-      "why": "Easy Z2 + 4×20 sec relaxed strides at the end.",
+      "why": "Rest. Saturday is always off.",
       "steps": []
     },
     "2026-11-01": {
@@ -1133,45 +1133,15 @@
     },
     "2026-11-02": {
       "type": "strength",
-      "name": "Strength Day A - Lower Stability",
+      "name": "Strength Day B - Glutes/Core (light)",
       "km": 0,
       "pace": "",
       "hr": "",
       "treadmill": "",
-      "why": "Goblet squat, RDL, split squat, calf raises: 2–3 sets, 2–3 reps in reserve.",
+      "why": "Hip thrust, single-leg RDL, clamshell/band walk, dead bug. Moderate. Keep it light: quality session tomorrow.",
       "steps": []
     },
     "2026-11-03": {
-      "type": "easy",
-      "name": "Easy Z2 - 8km",
-      "km": 8,
-      "pace": "6:40-7:10",
-      "hr": "136-151",
-      "treadmill": "",
-      "why": "Aerobic base. Keep easy days truly easy - Friday is a threshold session.",
-      "steps": []
-    },
-    "2026-11-04": {
-      "type": "easy",
-      "name": "Easy Z1 - 5km",
-      "km": 5,
-      "pace": "7:15-7:45",
-      "hr": "<145",
-      "treadmill": "",
-      "why": "Short and easy.",
-      "steps": []
-    },
-    "2026-11-05": {
-      "type": "strength",
-      "name": "Strength Day B - Glutes/Core",
-      "km": 0,
-      "pace": "",
-      "hr": "",
-      "treadmill": "",
-      "why": "Hip thrust, single-leg RDL, clamshell/band walk, dead bug. Moderate.",
-      "steps": []
-    },
-    "2026-11-06": {
       "type": "tempo",
       "name": "Tempo - 2x12min Threshold (VDOT 36)",
       "km": 9,
@@ -1186,6 +1156,36 @@
         "1.5 km cool-down"
       ],
       "qualKm": 4
+    },
+    "2026-11-04": {
+      "type": "easy",
+      "name": "Easy Z1 - 5km",
+      "km": 5,
+      "pace": "7:15-7:45",
+      "hr": "<145",
+      "treadmill": "",
+      "why": "Short and easy.",
+      "steps": []
+    },
+    "2026-11-05": {
+      "type": "strength",
+      "name": "Strength Day A - Lower Stability",
+      "km": 0,
+      "pace": "",
+      "hr": "",
+      "treadmill": "",
+      "why": "Goblet squat, RDL, split squat, calf raises: 2-3 sets, 2-3 reps in reserve.",
+      "steps": []
+    },
+    "2026-11-06": {
+      "type": "easy",
+      "name": "Easy Z2 - 8km + Strides",
+      "km": 8,
+      "pace": "6:40-7:10",
+      "hr": "136-151",
+      "treadmill": "",
+      "why": "Aerobic base. Keep easy days truly easy - Friday is a threshold session. Finish with 4x20 sec relaxed strides.",
+      "steps": []
     },
     "2026-11-07": {
       "type": "rest",
@@ -1209,45 +1209,15 @@
     },
     "2026-11-09": {
       "type": "strength",
-      "name": "Strength Day A - Light",
+      "name": "Strength Day B - Glutes/Core (light)",
       "km": 0,
       "pace": "",
       "hr": "",
       "treadmill": "",
-      "why": "Light lower-body stability. Intervals on Friday take priority.",
+      "why": "Hip thrust, single-leg RDL, clamshell/band walk, dead bug. Moderate. Keep it light: quality session tomorrow.",
       "steps": []
     },
     "2026-11-10": {
-      "type": "easy",
-      "name": "Easy Z2 - 8km",
-      "km": 8,
-      "pace": "6:40-7:10",
-      "hr": "136-151",
-      "treadmill": "",
-      "why": "Easy Z2.",
-      "steps": []
-    },
-    "2026-11-11": {
-      "type": "easy",
-      "name": "Easy Z1 - 5km",
-      "km": 5,
-      "pace": "7:15-7:45",
-      "hr": "<145",
-      "treadmill": "",
-      "why": "Short and easy.",
-      "steps": []
-    },
-    "2026-11-12": {
-      "type": "rest",
-      "name": "Rest",
-      "km": 0,
-      "pace": "",
-      "hr": "",
-      "treadmill": "",
-      "why": "Rest before intervals.",
-      "steps": []
-    },
-    "2026-11-13": {
       "type": "tempo",
       "name": "Key Session - 5x1000m @ 10K Effort",
       "km": 9,
@@ -1262,6 +1232,36 @@
         "1.5 km cool-down"
       ],
       "qualKm": 4
+    },
+    "2026-11-11": {
+      "type": "easy",
+      "name": "Easy Z1 - 5km",
+      "km": 5,
+      "pace": "7:15-7:45",
+      "hr": "<145",
+      "treadmill": "",
+      "why": "Short and easy.",
+      "steps": []
+    },
+    "2026-11-12": {
+      "type": "strength",
+      "name": "Strength Day A - Lower Stability",
+      "km": 0,
+      "pace": "",
+      "hr": "",
+      "treadmill": "",
+      "why": "Goblet squat, RDL, split squat, calf raises: 2-3 sets, 2-3 reps in reserve.",
+      "steps": []
+    },
+    "2026-11-13": {
+      "type": "easy",
+      "name": "Easy Z2 - 8km + Strides",
+      "km": 8,
+      "pace": "6:40-7:10",
+      "hr": "136-151",
+      "treadmill": "",
+      "why": "Easy Z2. Finish with 4x20 sec relaxed strides.",
+      "steps": []
     },
     "2026-11-14": {
       "type": "rest",
@@ -1285,23 +1285,29 @@
     },
     "2026-11-16": {
       "type": "strength",
-      "name": "Strength Day B - Light",
+      "name": "Strength Day B - Glutes/Core (light)",
       "km": 0,
       "pace": "",
       "hr": "",
       "treadmill": "",
-      "why": "Light glutes/core. Last strength session before the Japan trip.",
+      "why": "Hip thrust, single-leg RDL, clamshell/band walk, dead bug. Moderate. Keep it light: quality session tomorrow.",
       "steps": []
     },
     "2026-11-17": {
-      "type": "easy",
-      "name": "Easy Z2 - 7km",
-      "km": 7,
-      "pace": "6:40-7:10",
-      "hr": "136-151",
+      "type": "tempo",
+      "name": "Tempo + Strides - 2x10min Threshold (VDOT 36)",
+      "km": 8,
+      "pace": "5:30-5:40",
+      "hr": "162-169",
       "treadmill": "",
-      "why": "Easy Z2.",
-      "steps": []
+      "why": "Final threshold session, 12 days before ATM. T pace 5:30-5:40/km road, HR 162-169. On the treadmill, run by HR: treadmill speed has read 40-60 s/km slower than your road pace at the same HR. Controlled: finish feeling you could do more.",
+      "steps": [
+        "2 km warm-up",
+        "2x10 min @ T effort, 3 min easy jog between",
+        "1 km cool-down",
+        "4x20 sec strides"
+      ],
+      "qualKm": 4
     },
     "2026-11-18": {
       "type": "easy",
@@ -1314,30 +1320,24 @@
       "steps": []
     },
     "2026-11-19": {
-      "type": "rest",
-      "name": "Rest",
+      "type": "strength",
+      "name": "Strength Day A - Lower Stability",
       "km": 0,
       "pace": "",
       "hr": "",
       "treadmill": "",
-      "why": "Rest.",
+      "why": "Goblet squat, RDL, split squat, calf raises: 2-3 sets, 2-3 reps in reserve.",
       "steps": []
     },
     "2026-11-20": {
-      "type": "tempo",
-      "name": "Tempo + Strides - 2x10min Threshold (VDOT 36)",
-      "km": 8,
-      "pace": "5:30-5:40",
-      "hr": "162-169",
+      "type": "easy",
+      "name": "Easy Z2 - 7km + Strides",
+      "km": 7,
+      "pace": "6:40-7:10",
+      "hr": "136-151",
       "treadmill": "",
-      "why": "Final threshold session, 9 days before ATM. T pace 5:30-5:40/km road, HR 162-169. On the treadmill, run by HR: treadmill speed has read 40-60 s/km slower than your road pace at the same HR. Controlled: finish feeling you could do more.",
-      "steps": [
-        "2 km warm-up",
-        "2x10 min @ T effort, 3 min easy jog between",
-        "1 km cool-down",
-        "4x20 sec strides"
-      ],
-      "qualKm": 4
+      "why": "Easy Z2. Finish with 4x20 sec relaxed strides.",
+      "steps": []
     },
     "2026-11-21": {
       "type": "rest",
@@ -1396,7 +1396,7 @@
       "pace": "6:40-7:10",
       "hr": "136-151",
       "treadmill": "",
-      "why": "Optional 5 km easy + 4×20 sec strides. Keep legs light.",
+      "why": "Optional 5 km easy + 4x20 sec strides. Keep legs light. Last run before the race - Fri is the flight home and Sat is rest.",
       "steps": []
     },
     "2026-11-27": {
@@ -1410,13 +1410,13 @@
       "steps": []
     },
     "2026-11-28": {
-      "type": "easy",
-      "name": "Shakeout - 3km + 4 Strides",
-      "km": 3,
-      "pace": "7:15-7:45",
-      "hr": "<140",
+      "type": "rest",
+      "name": "Rest - Race Eve",
+      "km": 0,
+      "pace": "",
+      "hr": "",
       "treadmill": "",
-      "why": "3 km very easy + 4×20 sec strides. Collect race kit/BIB if not already done. Eat well, sleep early.",
+      "why": "Race eve, the day after flying home. Rest: collect race kit/BIB if not done, hydrate, eat well, sleep early. (Optional only if legs feel stiff from the flight: 10 min very easy jog + 2 strides.)",
       "steps": []
     },
     "2026-11-29": {
@@ -1460,16 +1460,6 @@
       "steps": []
     },
     "2026-12-03": {
-      "type": "easy",
-      "name": "Easy Z2 - 6km",
-      "km": 6,
-      "pace": "6:40-7:10",
-      "hr": "136-151",
-      "treadmill": "",
-      "why": "Easy Z2.",
-      "steps": []
-    },
-    "2026-12-04": {
       "type": "rest",
       "name": "Rest",
       "km": 0,
@@ -1477,6 +1467,16 @@
       "hr": "",
       "treadmill": "",
       "why": "Rest.",
+      "steps": []
+    },
+    "2026-12-04": {
+      "type": "easy",
+      "name": "Easy Z2 - 6km",
+      "km": 6,
+      "pace": "6:40-7:10",
+      "hr": "136-151",
+      "treadmill": "",
+      "why": "Easy Z2.",
       "steps": []
     },
     "2026-12-05": {
@@ -1501,45 +1501,15 @@
     },
     "2026-12-07": {
       "type": "strength",
-      "name": "Strength Day A - Lower Stability",
+      "name": "Strength Day B - Glutes/Core (light)",
       "km": 0,
       "pace": "",
       "hr": "",
       "treadmill": "",
-      "why": "Goblet squat/leg press, RDL, split squat, calf raises: 2-3 sets, 2-3 reps in reserve. Protects the piriformis/sciatic side - no sciatic pain, no exceptions.",
+      "why": "Hip thrust, single-leg RDL, clamshell/band walk, dead bug. Moderate. Keep it light: quality session tomorrow.",
       "steps": []
     },
     "2026-12-08": {
-      "type": "easy",
-      "name": "Easy Z2 - 8km",
-      "km": 8,
-      "pace": "6:40-7:10",
-      "hr": "136-151",
-      "treadmill": "",
-      "why": "Aerobic base.",
-      "steps": []
-    },
-    "2026-12-09": {
-      "type": "easy",
-      "name": "Easy Z1 - 5km",
-      "km": 5,
-      "pace": "7:15-7:45",
-      "hr": "<145",
-      "treadmill": "",
-      "why": "Short and easy.",
-      "steps": []
-    },
-    "2026-12-10": {
-      "type": "strength",
-      "name": "Strength Day B - Glutes/Core",
-      "km": 0,
-      "pace": "",
-      "hr": "",
-      "treadmill": "",
-      "why": "Hip thrust, single-leg RDL, clamshell/band walk, dead bug, piriformis/hip mobility. Moderate.",
-      "steps": []
-    },
-    "2026-12-11": {
       "type": "tempo",
       "name": "Tempo - 3x10min Threshold (VDOT 36)",
       "km": 9,
@@ -1554,6 +1524,36 @@
         "1.5 km cool-down"
       ],
       "qualKm": 4
+    },
+    "2026-12-09": {
+      "type": "easy",
+      "name": "Easy Z1 - 5km",
+      "km": 5,
+      "pace": "7:15-7:45",
+      "hr": "<145",
+      "treadmill": "",
+      "why": "Short and easy.",
+      "steps": []
+    },
+    "2026-12-10": {
+      "type": "strength",
+      "name": "Strength Day A - Lower Stability",
+      "km": 0,
+      "pace": "",
+      "hr": "",
+      "treadmill": "",
+      "why": "Goblet squat, RDL, split squat, calf raises: 2-3 sets, 2-3 reps in reserve.",
+      "steps": []
+    },
+    "2026-12-11": {
+      "type": "easy",
+      "name": "Easy Z2 - 8km + Strides",
+      "km": 8,
+      "pace": "6:40-7:10",
+      "hr": "136-151",
+      "treadmill": "",
+      "why": "Aerobic base. Finish with 4x20 sec relaxed strides.",
+      "steps": []
     },
     "2026-12-12": {
       "type": "rest",
@@ -1577,45 +1577,15 @@
     },
     "2026-12-14": {
       "type": "strength",
-      "name": "Strength Day A - Lower Stability",
+      "name": "Strength Day B - Glutes/Core (light)",
       "km": 0,
       "pace": "",
       "hr": "",
       "treadmill": "",
-      "why": "Goblet squat/leg press, RDL, split squat, calf raises: 2-3 sets, 2-3 reps in reserve. Protects the piriformis/sciatic side - no sciatic pain, no exceptions.",
+      "why": "Hip thrust, single-leg RDL, clamshell/band walk, dead bug. Moderate. Keep it light: quality session tomorrow.",
       "steps": []
     },
     "2026-12-15": {
-      "type": "easy",
-      "name": "Easy Z2 - 8km",
-      "km": 8,
-      "pace": "6:40-7:10",
-      "hr": "136-151",
-      "treadmill": "",
-      "why": "Easy Z2.",
-      "steps": []
-    },
-    "2026-12-16": {
-      "type": "easy",
-      "name": "Easy Z1 - 5km",
-      "km": 5,
-      "pace": "7:15-7:45",
-      "hr": "<145",
-      "treadmill": "",
-      "why": "Short and easy.",
-      "steps": []
-    },
-    "2026-12-17": {
-      "type": "strength",
-      "name": "Strength Day B - Glutes/Core",
-      "km": 0,
-      "pace": "",
-      "hr": "",
-      "treadmill": "",
-      "why": "Hip thrust, single-leg RDL, clamshell/band walk, dead bug, piriformis/hip mobility. Moderate.",
-      "steps": []
-    },
-    "2026-12-18": {
       "type": "tempo",
       "name": "HM Effort - 2x4km @ Half-Marathon Pace",
       "km": 11,
@@ -1630,6 +1600,36 @@
         "1 km cool-down"
       ],
       "qualKm": 4
+    },
+    "2026-12-16": {
+      "type": "easy",
+      "name": "Easy Z1 - 5km",
+      "km": 5,
+      "pace": "7:15-7:45",
+      "hr": "<145",
+      "treadmill": "",
+      "why": "Short and easy.",
+      "steps": []
+    },
+    "2026-12-17": {
+      "type": "strength",
+      "name": "Strength Day A - Lower Stability",
+      "km": 0,
+      "pace": "",
+      "hr": "",
+      "treadmill": "",
+      "why": "Goblet squat, RDL, split squat, calf raises: 2-3 sets, 2-3 reps in reserve.",
+      "steps": []
+    },
+    "2026-12-18": {
+      "type": "easy",
+      "name": "Easy Z2 - 8km + Strides",
+      "km": 8,
+      "pace": "6:40-7:10",
+      "hr": "136-151",
+      "treadmill": "",
+      "why": "Easy Z2. Finish with 4x20 sec relaxed strides.",
+      "steps": []
     },
     "2026-12-19": {
       "type": "rest",
@@ -1653,35 +1653,15 @@
     },
     "2026-12-21": {
       "type": "strength",
-      "name": "Strength Day A - Lower Stability",
+      "name": "Strength Day B - Glutes/Core (light)",
       "km": 0,
       "pace": "",
       "hr": "",
       "treadmill": "",
-      "why": "Goblet squat/leg press, RDL, split squat, calf raises: 2-3 sets, 2-3 reps in reserve. Protects the piriformis/sciatic side - no sciatic pain, no exceptions.",
+      "why": "Hip thrust, single-leg RDL, clamshell/band walk, dead bug. Moderate. Keep it light: quality session tomorrow.",
       "steps": []
     },
     "2026-12-22": {
-      "type": "easy",
-      "name": "Easy Z2 - 8km",
-      "km": 8,
-      "pace": "6:40-7:10",
-      "hr": "136-151",
-      "treadmill": "",
-      "why": "Easy Z2.",
-      "steps": []
-    },
-    "2026-12-23": {
-      "type": "easy",
-      "name": "Easy Z1 - 5km",
-      "km": 5,
-      "pace": "7:15-7:45",
-      "hr": "<145",
-      "treadmill": "",
-      "why": "Short and easy.",
-      "steps": []
-    },
-    "2026-12-24": {
       "type": "tempo",
       "name": "Tempo - 2x15min Threshold (VDOT 36)",
       "km": 10,
@@ -1697,14 +1677,34 @@
       ],
       "qualKm": 4
     },
-    "2026-12-25": {
-      "type": "rest",
-      "name": "Rest",
+    "2026-12-23": {
+      "type": "easy",
+      "name": "Easy Z1 - 5km",
+      "km": 5,
+      "pace": "7:15-7:45",
+      "hr": "<145",
+      "treadmill": "",
+      "why": "Short and easy.",
+      "steps": []
+    },
+    "2026-12-24": {
+      "type": "strength",
+      "name": "Strength Day A - Lower Stability",
       "km": 0,
       "pace": "",
       "hr": "",
       "treadmill": "",
-      "why": "Rest. Holiday week - enjoy it.",
+      "why": "Goblet squat, RDL, split squat, calf raises: 2-3 sets, 2-3 reps in reserve.",
+      "steps": []
+    },
+    "2026-12-25": {
+      "type": "easy",
+      "name": "Easy Z2 - 8km + Strides",
+      "km": 8,
+      "pace": "6:40-7:10",
+      "hr": "136-151",
+      "treadmill": "",
+      "why": "Easy Z2. Finish with 4x20 sec relaxed strides.",
       "steps": []
     },
     "2026-12-26": {
@@ -1729,35 +1729,15 @@
     },
     "2026-12-28": {
       "type": "strength",
-      "name": "Strength Day A - Lower Stability",
+      "name": "Strength Day B - Glutes/Core (light)",
       "km": 0,
       "pace": "",
       "hr": "",
       "treadmill": "",
-      "why": "Goblet squat/leg press, RDL, split squat, calf raises: 2-3 sets, 2-3 reps in reserve. Protects the piriformis/sciatic side - no sciatic pain, no exceptions.",
+      "why": "Hip thrust, single-leg RDL, clamshell/band walk, dead bug. Moderate. Keep it light: quality session tomorrow.",
       "steps": []
     },
     "2026-12-29": {
-      "type": "easy",
-      "name": "Easy Z2 - 8km",
-      "km": 8,
-      "pace": "6:40-7:10",
-      "hr": "136-151",
-      "treadmill": "",
-      "why": "Easy Z2.",
-      "steps": []
-    },
-    "2026-12-30": {
-      "type": "easy",
-      "name": "Easy Z1 - 5km",
-      "km": 5,
-      "pace": "7:15-7:45",
-      "hr": "<145",
-      "treadmill": "",
-      "why": "Short and easy.",
-      "steps": []
-    },
-    "2026-12-31": {
       "type": "tempo",
       "name": "HM Effort - 3x3km @ Half-Marathon Pace",
       "km": 12,
@@ -1773,14 +1753,34 @@
       ],
       "qualKm": 4
     },
-    "2027-01-01": {
-      "type": "rest",
-      "name": "Rest",
+    "2026-12-30": {
+      "type": "easy",
+      "name": "Easy Z1 - 5km",
+      "km": 5,
+      "pace": "7:15-7:45",
+      "hr": "<145",
+      "treadmill": "",
+      "why": "Short and easy.",
+      "steps": []
+    },
+    "2026-12-31": {
+      "type": "strength",
+      "name": "Strength Day A - Lower Stability",
       "km": 0,
       "pace": "",
       "hr": "",
       "treadmill": "",
-      "why": "Rest. New Year.",
+      "why": "Goblet squat, RDL, split squat, calf raises: 2-3 sets, 2-3 reps in reserve.",
+      "steps": []
+    },
+    "2027-01-01": {
+      "type": "easy",
+      "name": "Easy Z2 - 8km + Strides",
+      "km": 8,
+      "pace": "6:40-7:10",
+      "hr": "136-151",
+      "treadmill": "",
+      "why": "Easy Z2. Finish with 4x20 sec relaxed strides.",
       "steps": []
     },
     "2027-01-02": {
@@ -1804,24 +1804,30 @@
       "steps": []
     },
     "2027-01-04": {
-      "type": "strength",
-      "name": "Strength Day A - Light",
+      "type": "rest",
+      "name": "Mobility + Light Core",
       "km": 0,
       "pace": "",
       "hr": "",
       "treadmill": "",
-      "why": "Light lower-body stability. Taper begins.",
+      "why": "Taper week. Piriformis/hip mobility 8 min + light core. No leg weights - sharpener tomorrow.",
       "steps": []
     },
     "2027-01-05": {
-      "type": "easy",
-      "name": "Easy Z2 - 8km",
+      "type": "tempo",
+      "name": "Sharpener - 2x10min Threshold + Strides",
       "km": 8,
-      "pace": "6:40-7:10",
-      "hr": "136-151",
+      "pace": "5:30-5:40",
+      "hr": "162-169",
       "treadmill": "",
-      "why": "Easy Z2.",
-      "steps": []
+      "why": "Last quality session, 12 days out. T pace 5:30-5:40/km road, HR 162-169.",
+      "steps": [
+        "2 km warm-up",
+        "2x10 min @ T effort, 3 min easy jog between",
+        "1 km cool-down",
+        "4x20 sec strides"
+      ],
+      "qualKm": 4
     },
     "2027-01-06": {
       "type": "easy",
@@ -1844,20 +1850,14 @@
       "steps": []
     },
     "2027-01-08": {
-      "type": "tempo",
-      "name": "Sharpener - 2x10min Threshold + Strides",
+      "type": "easy",
+      "name": "Easy Z2 - 8km + Strides",
       "km": 8,
-      "pace": "5:30-5:40",
-      "hr": "162-169",
+      "pace": "6:40-7:10",
+      "hr": "136-151",
       "treadmill": "",
-      "why": "Last quality session, 9 days out. T pace 5:30-5:40/km road, HR 162-169.",
-      "steps": [
-        "2 km warm-up",
-        "2x10 min @ T effort, 3 min easy jog between",
-        "1 km cool-down",
-        "4x20 sec strides"
-      ],
-      "qualKm": 4
+      "why": "Easy Z2. Finish with 4x20 sec relaxed strides.",
+      "steps": []
     },
     "2027-01-09": {
       "type": "rest",
