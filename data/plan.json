@@ -1123,12 +1123,12 @@
     },
     "2026-11-01": {
       "type": "long",
-      "name": "Long Run - 10km Z2",
+      "name": "Long Run - 10km (Z2 -> last 2km Z3)",
       "km": 10,
       "pace": "6:50-7:20",
-      "hr": "136-151",
+      "hr": "136-151, last 2 km 152-161",
       "treadmill": "",
-      "why": "Base rebuild after the Saucony race. Z2 only; if HR sits above 151 for several minutes, slow down.",
+      "why": "Base rebuild after Saucony. 1 km Z1 warm-up -> 7 km Z2 (136-151) -> last 2 km allowed up to Z3 (152-161). Let the finish drift up naturally: don't force it, and never into Z4.",
       "steps": []
     },
     "2026-11-02": {
@@ -1199,12 +1199,12 @@
     },
     "2026-11-08": {
       "type": "long",
-      "name": "Long Run - 14km Z2",
+      "name": "Long Run - 14km (Z2 -> last 3km Z3)",
       "km": 14,
       "pace": "6:50-7:20",
-      "hr": "136-151",
+      "hr": "136-151, last 3 km 152-161",
       "treadmill": "",
-      "why": "Z2 long run. Fuel and hydrate as for race day.",
+      "why": "Fuel and hydrate as for race day. 1 km Z1 warm-up -> 10 km Z2 (136-151) -> last 3 km allowed up to Z3 (152-161). Let the finish drift up naturally: don't force it, and never into Z4.",
       "steps": []
     },
     "2026-11-09": {
@@ -1275,12 +1275,12 @@
     },
     "2026-11-15": {
       "type": "long",
-      "name": "Long Run - 16km Z2",
+      "name": "Long Run - 16km (Z2 -> last 3km Z3)",
       "km": 16,
       "pace": "6:50-7:20",
-      "hr": "136-151",
+      "hr": "136-151, last 3 km 152-161",
       "treadmill": "",
-      "why": "Peak long run before the trip. Z2 only. This is the longest run in the ATM block.",
+      "why": "Peak long run before the trip, the longest in the ATM block. 1 km Z1 warm-up -> 12 km Z2 (136-151) -> last 3 km allowed up to Z3 (152-161). Let the finish drift up naturally: don't force it, and never into Z4.",
       "steps": []
     },
     "2026-11-16": {
@@ -1350,13 +1350,13 @@
       "steps": []
     },
     "2026-11-22": {
-      "type": "easy",
-      "name": "Easy Z2 - 12km",
+      "type": "long",
+      "name": "Long Run - 12km (Z2 -> last 2km Z3)",
       "km": 12,
       "pace": "6:50-7:20",
-      "hr": "136-151",
+      "hr": "136-151, last 2 km 152-161",
       "treadmill": "",
-      "why": "Last longer run before Japan. Easy Z2 only; no hero pace.",
+      "why": "Last longer run before Japan. 1 km Z1 warm-up -> 9 km Z2 (136-151) -> last 2 km allowed up to Z3 (152-161). Let the finish drift up naturally: don't force it, and never into Z4.",
       "steps": []
     },
     "2026-11-23": {
@@ -1491,12 +1491,12 @@
     },
     "2026-12-06": {
       "type": "long",
-      "name": "Long Run - 12km Z2",
+      "name": "Long Run - 12km (Z2 -> last 2km Z3)",
       "km": 12,
       "pace": "6:50-7:20",
-      "hr": "136-151",
+      "hr": "136-151, last 2 km 152-161",
       "treadmill": "",
-      "why": "Start of the half-marathon build. Z2 only. Slow down if HR sits above 151 for more than a few minutes.",
+      "why": "Start of the half-marathon build. 1 km Z1 warm-up -> 9 km Z2 (136-151) -> last 2 km allowed up to Z3 (152-161). Let the finish drift up naturally: don't force it, and never into Z4.",
       "steps": []
     },
     "2026-12-07": {
@@ -1567,12 +1567,12 @@
     },
     "2026-12-13": {
       "type": "long",
-      "name": "Long Run - 16km Z2",
+      "name": "Long Run - 16km (Z2 -> last 3km Z3)",
       "km": 16,
       "pace": "6:50-7:20",
-      "hr": "136-151",
+      "hr": "136-151, last 3 km 152-161",
       "treadmill": "",
-      "why": "Z2 long run. Practise race-day fuelling: 1 gel around km 8-10.",
+      "why": "Practise race-day fuelling: 1 gel around km 8-10. 1 km Z1 warm-up -> 12 km Z2 (136-151) -> last 3 km allowed up to Z3 (152-161). Let the finish drift up naturally: don't force it, and never into Z4.",
       "steps": []
     },
     "2026-12-14": {
@@ -1643,12 +1643,12 @@
     },
     "2026-12-20": {
       "type": "long",
-      "name": "Long Run - 18km Z2",
+      "name": "Long Run - 18km (Z2 -> last 4km Z3)",
       "km": 18,
       "pace": "6:50-7:20",
-      "hr": "136-151",
+      "hr": "136-151, last 4 km 152-161",
       "treadmill": "",
-      "why": "Z2 long run. Fuel as for race day.",
+      "why": "Fuel as for race day. 1 km Z1 warm-up -> 13 km Z2 (136-151) -> last 4 km allowed up to Z3 (152-161). Let the finish drift up naturally: don't force it, and never into Z4.",
       "steps": []
     },
     "2026-12-21": {
