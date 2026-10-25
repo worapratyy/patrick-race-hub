@@ -226,7 +226,7 @@ function verdict(date){
   if(t==='race'){
     const tot=r.dist*secs(r.pM,r.pS)*10/r.dist; const t10=secs(r.pM,r.pS)*10;
     const race=PLAN.races.find(x=>x.date===date);
-    return {cls:t10<=57*60?'p-ok':t10<=58*60?'p-ok':t10<=59*60+15?'p-warn':'p-bad',label:'10K est '+hms(t10),detail:race?('Goal A '+race.goalA+', B '+race.goalB+'.'):''};
+    return {cls:t10<=54*60?'p-ok':t10<=54*60+39?'p-ok':t10<=56*60?'p-warn':'p-bad',label:'10K est '+hms(t10),detail:race?('Goal A '+race.goalA+', B '+race.goalB+'.'):''};
   }
   return {cls:'p-na',label:'Logged'};
 }
@@ -348,7 +348,7 @@ function renderProgress(){
   <div class="grid g3">
     <div class="card"><p class="eyebrow">Aerobic engine</p><h2 class="mono">${eNow?eNow.toFixed(2):'-'} <span class="small muted">m/beat</span></h2><p class="note">March ${eMar.toFixed(2)} → May-June ${eMay.toFixed(2)} → last 5 weeks ${eNow?eNow.toFixed(2):'-'}. Big gains in spring, flat since June.</p></div>
     <div class="card"><p class="eyebrow">Easy-day discipline</p><h2 class="mono">${ok}/${easy.length}</h2><p class="note">Easy and long runs this block with average HR at or under 151. ${miss.length?(missOut>=miss.length/2?`${missOut} of ${miss.length} misses were outdoor runs - heat and pace pressure push HR up. Slow down outside.`:`${miss.length} misses, mostly on the treadmill - lower the belt speed.`):'Clean record.'}</p></div>
-    <div class="card"><p class="eyebrow">Gap to goal</p><h2 class="mono">${b.time} → 58:00</h2><p class="note">Needs ${(((secs(59,15)-58*60)/secs(59,15))*100).toFixed(1)}% faster than Aug 16. ${esc(b.note)}</p></div>
+    <div class="card"><p class="eyebrow">Gap to goal</p><h2 class="mono">${b.time} → 54:00</h2><p class="note">ATM BKK goal needs ${(((secs(54,39)-54*60)/secs(54,39))*100).toFixed(1)}% faster than Saucony. ${esc(b.note)}</p></div>
   </div>
   <div class="grid g2" style="margin-top:16px">
     <div class="card chart"><p class="eyebrow">Efficiency trend</p><h3>Metres per heartbeat on easy treadmill runs</h3>

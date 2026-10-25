@@ -3,7 +3,8 @@
     "name": "Patrick",
     "lthr": 172,
     "maxHr": 185,
-    "zoneSource": "Garmin LTHR 172 - single source for every page"
+    "zoneSource": "Garmin LTHR 172 - single source for every page",
+    "vdot": 36
   },
   "zones": [
     {
@@ -44,43 +45,49 @@
   ],
   "paces": [
     {
-      "k": "Easy",
-      "pace": "6:50-7:20",
-      "kmh": "8.2-8.8",
+      "k": "Easy (HR-led)",
+      "pace": "6:40-7:20",
+      "kmh": "8.2-9.0",
       "hr": "136-151"
     },
     {
-      "k": "Threshold",
-      "pace": "6:15-6:30",
-      "kmh": "9.2-9.6",
-      "hr": "160-168"
+      "k": "Threshold T (VDOT 36)",
+      "pace": "5:30-5:40",
+      "kmh": "10.6-10.9",
+      "hr": "162-169"
     },
     {
-      "k": "10K stretch (57:xx)",
-      "pace": "5:42-5:46",
-      "kmh": "10.4-10.5",
-      "hr": "166-170"
+      "k": "10K goal (sub-54, ATM)",
+      "pace": "5:22-5:26",
+      "kmh": "11.0-11.2",
+      "hr": "165-175"
     },
     {
-      "k": "10K target (sub-58)",
-      "pace": "5:48",
-      "kmh": "10.3",
-      "hr": "164-170"
+      "k": "HM goal (sub-2:03, Pocari)",
+      "pace": "5:48-5:52",
+      "kmh": "10.2-10.3",
+      "hr": "160-167"
     },
     {
-      "k": "Strides",
-      "pace": "5:15-5:25",
-      "kmh": "11.1-11.4",
+      "k": "Interval I (VDOT 36)",
+      "pace": "5:05",
+      "kmh": "11.8",
+      "hr": "174+"
+    },
+    {
+      "k": "Strides / R",
+      "pace": "4:45-4:50",
+      "kmh": "12.4-12.6",
       "hr": "-"
     }
   ],
   "baseline": {
-    "date": "2026-08-16",
-    "name": "asics META:Time:Trials 10K",
-    "time": "59:15",
-    "pace": "5:55",
-    "hr": 164.5,
-    "note": "Negative split - last 2 km at 5:33 and 5:23 with HR only 168-170. There was more in the tank."
+    "date": "2026-10-25",
+    "name": "Saucony BKK10K",
+    "time": "54:39",
+    "pace": "5:28",
+    "hr": 169.3,
+    "note": "PR by 4:36 over Aug 16 (59:15). Fast start 5:10-5:14, fade km 5-7, strong close. VDOT 36. GPS read 10.19 km."
   },
   "races": [
     {
@@ -131,8 +138,8 @@
       "place": "Bangkok",
       "bib": "",
       "role": "Race 2 - A-race",
-      "goalA": "Sub-58:00 (5:48/km)",
-      "goalB": "Any PR under 59:15 (stretch: 57:xx)",
+      "goalA": "54:39 ✓ PR",
+      "goalB": "Done - 4:36 faster than Aug 16",
       "plan": [
         {
           "km": "1-2",
@@ -169,36 +176,36 @@
       "short": "ATM BKK 10K",
       "place": "Sanam Luang, Ratchadamnoen Nai Rd (finish Na Phra That Rd)",
       "bib": "",
-      "role": "Race 3 - after Japan trip (Nov 23-27)",
-      "goalA": "Sub-58:00 (provisional)",
-      "goalB": "Any PR under 59:15",
+      "role": "Race 3 - PR attempt after Japan trip (Nov 23-27)",
+      "goalA": "Sub-54:00 (5:24/km)",
+      "goalB": "Sub-54:39 (any PR)",
       "plan": [
         {
           "km": "1-2",
-          "pace": "5:55-6:00",
-          "hr": "under 162",
-          "cue": "Settle. Crowd is big at Sanam Luang."
+          "pace": "5:28-5:32",
+          "hr": "up to 168",
+          "cue": "Even start. Saucony's 5:10 opener cost a fade at km 5-7."
         },
         {
           "km": "3-7",
-          "pace": "5:45-5:50",
-          "hr": "162-167",
-          "cue": "Even effort. HR 168 or lower until km 7."
+          "pace": "5:22-5:26",
+          "hr": "168-172",
+          "cue": "Lock in. Cadence 166+ when it starts to sag."
         },
         {
           "km": "8-9",
-          "pace": "5:40-5:48",
-          "hr": "up to 170",
-          "cue": "Push only if HR is under 170."
+          "pace": "5:18-5:22",
+          "hr": "up to 175",
+          "cue": "Press only if HR is under 175."
         },
         {
           "km": "10",
           "pace": "open",
-          "hr": "170+",
-          "cue": "Empty the tank."
+          "hr": "175+",
+          "cue": "Empty it."
         }
       ],
-      "rule": "Final target is set after the Oct 25 Saucony result. Five days of Japan travel before this race - start conservative and race by heart rate."
+      "rule": "If sleep and legs are off after Japan, race for B (any PR) and run 5:28 even."
     },
     {
       "id": "pocari",
@@ -209,35 +216,35 @@
       "place": "Huamark Indoor Stadium plaza, Bangkok",
       "bib": "",
       "role": "Half marathon - paid, Block A",
-      "goalA": "Sub-2:10 (6:10/km, provisional)",
-      "goalB": "Sub-2:15 (6:24/km)",
+      "goalA": "Sub-2:03 (5:50/km)",
+      "goalB": "Sub-2:08 (stretch: sub-2:00)",
       "plan": [
         {
           "km": "1-3",
-          "pace": "6:20-6:25",
-          "hr": "under 158",
-          "cue": "Block A is the sub-2:00 block - start at the back and let faster runners go."
+          "pace": "5:58-6:02",
+          "hr": "under 160",
+          "cue": "Start at the back of Block A. Let the sub-2:00 runners go."
         },
         {
           "km": "4-15",
-          "pace": "6:10-6:15",
-          "hr": "160-165",
-          "cue": "Lock in. Gel at km 7 and km 14."
+          "pace": "5:48-5:52",
+          "hr": "160-166",
+          "cue": "Lock in. Gel at km 7 and 14."
         },
         {
           "km": "16-19",
-          "pace": "6:10",
-          "hr": "up to 168",
+          "pace": "hold",
+          "hr": "up to 170",
           "cue": "Hold. Do not chase."
         },
         {
           "km": "20-21.1",
           "pace": "open",
-          "hr": "168+",
+          "hr": "170+",
           "cue": "Empty the tank."
         }
       ],
-      "rule": "Targets are provisional and reset after the ATM 10K on Nov 29. Back off immediately if sciatic/piriformis pain appears. Order PO27_HNUPN154876. Kit pickup 10:00-18:00 at the stadium plaza."
+      "rule": "VDOT 36 predicts 2:01, but the only half so far is 2:24. Go for the sub-2:00 stretch only if ATM is under 54:00 and the Dec 31 3x3 km is on pace. Back off at once if sciatic pain appears."
     }
   ],
   "phases": [
@@ -341,22 +348,22 @@
     {
       "date": "2026-11-13",
       "name": "5 x 1000m at 10K effort",
-      "pass": "All reps HR 164-170, last rep controlled"
+      "pass": "All reps 5:18-5:26, HR 174 or lower, no fast first rep"
     },
     {
       "date": "2026-11-29",
       "name": "ATM BKK 10K",
-      "pass": "Sub-58:00 (provisional - set after Saucony)"
+      "pass": "Sub-54:00 (A) / any PR under 54:39 (B)"
     },
     {
       "date": "2026-12-18",
       "name": "2 x 4 km at HM effort",
-      "pass": "Both reps HR 160-165 at about 6:10-6:20/km"
+      "pass": "Both reps 5:45-5:55 at HR 167 or lower"
     },
     {
       "date": "2026-12-31",
       "name": "3 x 3 km at HM effort",
-      "pass": "All reps HR 165 or lower, last rep controlled"
+      "pass": "All reps 5:45-5:55, HR 167 or lower - decides sub-2:03 vs 2:00 stretch"
     },
     {
       "date": "2027-01-03",
@@ -366,7 +373,7 @@
     {
       "date": "2027-01-17",
       "name": "Pocari 21K",
-      "pass": "Sub-2:10 (provisional)"
+      "pass": "Sub-2:03 (A) / sub-2:08 (B)"
     }
   ],
   "sessions": {
@@ -991,15 +998,15 @@
     },
     "2026-11-06": {
       "type": "tempo",
-      "name": "Tempo - 2x12min Threshold (HR-led)",
+      "name": "Tempo - 2x12min Threshold (VDOT 36)",
       "km": 9,
-      "pace": "6:15-6:30",
-      "hr": "160-166",
+      "pace": "5:30-5:40",
+      "hr": "162-169",
       "treadmill": "",
-      "why": "Run by HR, not pace (threshold HR 160–166 ≈ 6:15–6:30/km). Goal: rebuild threshold after the two October races.",
+      "why": "VDOT 36 threshold (T) pace: 5:30-5:40/km on the road, HR 162-169 (Z4). On the treadmill, run by HR: treadmill speed has read 40-60 s/km slower than your road pace at the same HR. Saucony showed your real threshold sits around HR 169-172. 160-166 was too easy.",
       "steps": [
         "2 km warm-up",
-        "2x12 min @ threshold effort, HR 160–166",
+        "2x12 min @ T effort, HR 162-169",
         "3 min easy jog between",
         "1.5 km cool-down"
       ],
@@ -1069,13 +1076,13 @@
       "type": "tempo",
       "name": "Key Session - 5x1000m @ 10K Effort",
       "km": 9,
-      "pace": "5:50-6:00",
-      "hr": "164-170",
+      "pace": "5:18-5:26",
+      "hr": "168-174",
       "treadmill": "",
-      "why": "The last big quality session. Run by HR/effort (HR 164–170), not by pace. Your Aug 16 10K was 5:55/km at HR 164.5. Pass: all five reps at HR ≤170 with the last rep controlled. If reps slip above HR 172, stop at 4.",
+      "why": "The last big quality session. 10K effort for ATM (goal 5:24/km). HR 168-174. Pass: all five reps even, no faster than 5:18. Practise starting rep 1 at goal pace, not faster. Saucony's 5:10 start cost a fade at km 5-7.",
       "steps": [
         "2 km warm-up + 4 strides",
-        "5x1000m @ 10K effort, HR 164–170 (expect ~5:50–6:00/km)",
+        "5x1000m @ 5:18-5:26/km road (10K effort), HR 168-174",
         "90 sec easy jog between",
         "1.5 km cool-down"
       ],
@@ -1143,15 +1150,15 @@
     },
     "2026-11-20": {
       "type": "tempo",
-      "name": "Tempo + Strides - 2x10min Threshold",
+      "name": "Tempo + Strides - 2x10min Threshold (VDOT 36)",
       "km": 8,
-      "pace": "6:15-6:30",
-      "hr": "160-166",
+      "pace": "5:30-5:40",
+      "hr": "162-169",
       "treadmill": "",
-      "why": "Final threshold session, 9 days before ATM. HR-led (160–166). Controlled - you should finish feeling you could do more.",
+      "why": "Final threshold session, 9 days before ATM. T pace 5:30-5:40/km road, HR 162-169. On the treadmill, run by HR: treadmill speed has read 40-60 s/km slower than your road pace at the same HR. Controlled: finish feeling you could do more.",
       "steps": [
         "2 km warm-up",
-        "2x10 min @ threshold effort, HR 160–166, 3 min easy jog between",
+        "2x10 min @ T effort, 3 min easy jog between",
         "1 km cool-down",
         "4x20 sec strides"
       ],
@@ -1241,10 +1248,10 @@
       "type": "race",
       "name": "Amazing Thailand Marathon Bangkok - 10K",
       "km": 10,
-      "pace": "5:45-5:55",
-      "hr": "162-170",
+      "pace": "5:22-5:26",
+      "hr": "165-175",
       "treadmill": "",
-      "why": "🏁 RACE DAY - ATMBKK 2026 10K 📍 Start: Sanam Luang, Ratchadamnoen Nai Rd · Finish: Na Phra That Rd ⏰ 10K window 06:00–08:30 (Sunday). Fast & flat, World Athletics certified. Provisional target: Sub-58:00 (5:48/km). Final target set after Saucony Oct 25. Note: 5 days of Japan travel and sleep disruption right before - start conservative, race by HR (≤168 until km 7). km 1–2: 5:55–6:00 km 3–7: 5:45–5:50 km 8–9: push if HR <170 km 10: empty the tank",
+      "why": "🏁 RACE DAY - ATMBKK 2026 10K 📍 Start: Sanam Luang, Ratchadamnoen Nai Rd · Finish: Na Phra That Rd ⏰ 10K window 06:00-08:30 (Sunday). Fast & flat, World Athletics certified. PR to beat: 54:39 (Saucony, Oct 25) · VDOT 36 Target A: Sub-54:00 (5:24/km) Target B: Sub-54:39 (any PR) Caution: Japan Nov 23-27 right before. If sleep and legs are off, race for B. PACING (even, not Saucony's 5:10 start): km 1-2: 5:28-5:32, HR ≤168 km 3-7: 5:22-5:26, HR 168-172 km 8-9: 5:18-5:22 if HR <175 km 10: empty the tank Cadence cue: 166+ from km 5 when it starts to sag.",
       "steps": []
     },
     "2026-11-30": {
@@ -1359,15 +1366,15 @@
     },
     "2026-12-11": {
       "type": "tempo",
-      "name": "Tempo - 3x10min Threshold (HR-led)",
+      "name": "Tempo - 3x10min Threshold (VDOT 36)",
       "km": 9,
-      "pace": "6:15-6:30",
-      "hr": "160-166",
+      "pace": "5:30-5:40",
+      "hr": "162-169",
       "treadmill": "",
-      "why": "Threshold by HR (160-166), not pace. HM engine session - comfortably hard.",
+      "why": "T pace 5:30-5:40/km road, HR 162-169 (Z4). On the treadmill, run by HR: treadmill speed has read 40-60 s/km slower than your road pace at the same HR. HM engine session. Comfortably hard.",
       "steps": [
         "2 km warm-up",
-        "3x10 min @ threshold effort, HR 160-166",
+        "3x10 min @ T effort, HR 162-169",
         "2 min easy jog between",
         "1.5 km cool-down"
       ],
@@ -1437,13 +1444,13 @@
       "type": "tempo",
       "name": "HM Effort - 2x4km @ Half-Marathon Pace",
       "km": 11,
-      "pace": "6:10-6:20",
-      "hr": "160-165",
+      "pace": "5:45-5:55",
+      "hr": "160-167",
       "treadmill": "",
-      "why": "First HM-specific session. Run by HR (160-165) - expect ~6:10-6:20/km. Goal: learn the pace you will hold for 21 km. It should feel steady, not hard.",
+      "why": "First HM-specific session. HM pace for VDOT 36 ≈ 5:44/km; goal pace for sub-2:03 is 5:50. HR 160-167. Goal: lock in the rhythm you will hold for 21 km. Steady, not hard.",
       "steps": [
         "2 km warm-up",
-        "2x4 km @ HM effort, HR 160-165",
+        "2x4 km @ 5:45-5:55/km road, HR 160-167",
         "2 min easy jog between",
         "1 km cool-down"
       ],
@@ -1501,15 +1508,15 @@
     },
     "2026-12-24": {
       "type": "tempo",
-      "name": "Tempo - 2x15min Threshold (HR-led)",
+      "name": "Tempo - 2x15min Threshold (VDOT 36)",
       "km": 10,
-      "pace": "6:15-6:30",
-      "hr": "160-166",
+      "pace": "5:30-5:40",
+      "hr": "162-169",
       "treadmill": "",
-      "why": "Threshold by HR (160-166).",
+      "why": "T pace 5:30-5:40/km road, HR 162-169. On the treadmill, run by HR: treadmill speed has read 40-60 s/km slower than your road pace at the same HR.",
       "steps": [
         "2 km warm-up",
-        "2x15 min @ threshold effort, HR 160-166",
+        "2x15 min @ T effort, HR 162-169",
         "3 min easy jog between",
         "1.5 km cool-down"
       ],
@@ -1539,10 +1546,10 @@
       "type": "long",
       "name": "Long Run - 18km, last 4km @ HM Effort",
       "km": 18,
-      "pace": "6:50-7:20 / HM 6:10-6:20",
-      "hr": "136-151, last 4 km 160-165",
+      "pace": "6:50-7:20 / HM 5:45-5:55",
+      "hr": "136-151, last 4 km 160-167",
       "treadmill": "",
-      "why": "14 km Z2, then the last 4 km at HM effort (HR 160-165). Practise finishing strong, not racing.",
+      "why": "14 km Z2, then the last 4 km at HM pace (5:45-5:55/km road, HR 160-167). Practise finishing strong, not racing.",
       "steps": []
     },
     "2026-12-28": {
@@ -1579,13 +1586,13 @@
       "type": "tempo",
       "name": "HM Effort - 3x3km @ Half-Marathon Pace",
       "km": 12,
-      "pace": "6:10-6:20",
-      "hr": "160-165",
+      "pace": "5:45-5:55",
+      "hr": "160-167",
       "treadmill": "",
-      "why": "Peak HM-specific session, by HR (160-165). Pass: all three reps within HR 165 and the last rep controlled. If HR drifts above 168, stop after 2 reps.",
+      "why": "Peak HM-specific session at 5:45-5:55/km road, HR 160-167. Pass: all three reps on pace with HR ≤167 and the last rep controlled. This decides sub-2:03 vs the 2:00 stretch.",
       "steps": [
         "2 km warm-up",
-        "3x3 km @ HM effort, HR 160-165",
+        "3x3 km @ HM pace, HR 160-167",
         "2 min easy jog between",
         "1 km cool-down"
       ],
@@ -1665,13 +1672,13 @@
       "type": "tempo",
       "name": "Sharpener - 2x10min Threshold + Strides",
       "km": 8,
-      "pace": "6:15-6:30",
-      "hr": "160-166",
+      "pace": "5:30-5:40",
+      "hr": "162-169",
       "treadmill": "",
-      "why": "Last quality session, 9 days out. HR-led (160-166).",
+      "why": "Last quality session, 9 days out. T pace 5:30-5:40/km road, HR 162-169.",
       "steps": [
         "2 km warm-up",
-        "2x10 min @ threshold effort, 3 min easy jog between",
+        "2x10 min @ T effort, 3 min easy jog between",
         "1 km cool-down",
         "4x20 sec strides"
       ],
@@ -1761,10 +1768,10 @@
       "type": "race",
       "name": "POCARI SWEAT RUN Carnival 2027 - 21K Half Marathon",
       "km": 21.1,
-      "pace": "6:10-6:20",
-      "hr": "160-168",
+      "pace": "5:48-5:52",
+      "hr": "160-170",
       "treadmill": "",
-      "why": "🏁 RACE DAY - Pocari Sweat Run Carnival 2027 · 21K 📍 Huamark Indoor Stadium plaza, Bangkok · Sunday Jan 17, 2027 Order PO27_HNUPN154876 · Paid ✓ · M 30-39 · Shirt XL Target A: Sub-2:10 (6:10/km) Target B: Sub-2:15 (6:24/km) Provisional - reset after the ATM 10K result on Nov 29. Block A is the sub-2:00 block, so start at the BACK of Block A (or ask the organiser about a slower block) to avoid being swept up too fast. km 1-3: 6:20-6:25, HR <158 km 4-15: 6:10-6:15, HR 160-165 km 16-19: hold 6:10, HR ≤168 km 20-21.1: empty the tank Fuel: gel at km 7 and km 14. Back off immediately if sciatic/piriformis pain appears.",
+      "why": "🏁 RACE DAY - Pocari Sweat Run Carnival 2027 · 21K 📍 Huamark Indoor Stadium plaza, Bangkok · Sunday Jan 17, 2027 Order PO27_HNUPN154876 · Paid ✓ · M 30-39 · Shirt XL VDOT 36 predicts 2:01. Your only half so far is 2:24 (May) and the longest run is 22 km, so: Target A: Sub-2:03 (5:50/km) Stretch: Sub-2:00 (5:41/km), only if ATM ≤54:00 AND the Dec 31 3x3 km is on pace Target B: Sub-2:08 (6:04/km) Reset after ATM Nov 29. Block A is the sub-2:00 block, so start at the back of it. km 1-3: 5:58-6:02, HR <160 km 4-15: 5:48-5:52, HR 160-166 km 16-19: hold, HR ≤170 km 20-21.1: empty the tank Fuel: gel at km 7 and km 14. Back off immediately if sciatic/piriformis pain appears.",
       "steps": []
     }
   }
