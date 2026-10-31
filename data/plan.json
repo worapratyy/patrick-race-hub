@@ -1154,14 +1154,14 @@
     "2026-11-03": {
       "type": "tempo",
       "name": "Threshold 2x2km",
-      "km": 8.5,
+      "km": 8.1,
       "pace": "by HR",
       "hr": "162-169",
       "treadmill": "start at 9.8 km/h",
       "why": "Heart rate decides. The treadmill speed is only a starting point. If you run outdoors, go by HR. This session finds your real treadmill threshold speed. Write down the speed that holds HR 162-165.",
       "steps": [
         "2 km warm-up: HR 136-151",
-        "2 x (2 km threshold + 500 m jog): HR 162-169",
+        "2 x (2 km threshold + 2 min jog): HR 162-169",
         "1.5 km cool-down: HR up to 140"
       ],
       "qualKm": 4
@@ -1241,14 +1241,14 @@
     "2026-11-10": {
       "type": "tempo",
       "name": "5x1000m",
-      "km": 9.5,
+      "km": 10,
       "pace": "by HR",
       "hr": "166-175",
       "treadmill": "start at 10.4 km/h, max 11.0",
       "why": "Heart rate decides. The treadmill speed is only a starting point. If you run outdoors, go by HR. Run rep 1 no faster than the rest.",
       "steps": [
         "2 km warm-up: HR 136-151",
-        "5 x (1000 m 10K effort + 200 m jog): HR 166-175",
+        "5 x (1000 m 10K effort + 2 min jog): HR 166-175",
         "1.5 km cool-down: HR up to 140"
       ],
       "qualKm": 4
@@ -1328,14 +1328,14 @@
     "2026-11-17": {
       "type": "tempo",
       "name": "Threshold 2x1.6km",
-      "km": 8,
+      "km": 7.6,
       "pace": "by HR",
       "hr": "162-169",
       "treadmill": "start at 9.8 km/h",
       "why": "Heart rate decides. The treadmill speed is only a starting point. If you run outdoors, go by HR.",
       "steps": [
         "2 km warm-up: HR 136-151",
-        "2 x (1.6 km threshold + 500 m jog): HR 162-169",
+        "2 x (1.6 km threshold + 2 min jog): HR 162-169",
         "4 x 20 s strides, 60 s jog: no HR target",
         "1 km cool-down: HR up to 140"
       ],
@@ -1574,14 +1574,14 @@
     "2026-12-08": {
       "type": "tempo",
       "name": "Threshold 3x1.6km",
-      "km": 9.8,
+      "km": 9.2,
       "pace": "by HR",
       "hr": "162-169",
       "treadmill": "start at 9.8 km/h",
       "why": "Heart rate decides. The treadmill speed is only a starting point. If you run outdoors, go by HR.",
       "steps": [
         "2 km warm-up: HR 136-151",
-        "3 x (1.6 km threshold + 500 m jog): HR 162-169",
+        "3 x (1.6 km threshold + 2 min jog): HR 162-169",
         "1.5 km cool-down: HR up to 140"
       ],
       "qualKm": 4
@@ -1661,14 +1661,14 @@
     "2026-12-15": {
       "type": "tempo",
       "name": "HM pace 2x4km",
-      "km": 12,
+      "km": 11.6,
       "pace": "by HR",
       "hr": "160-167",
       "treadmill": "start at 9.8 km/h",
       "why": "Heart rate decides. The treadmill speed is only a starting point. If you run outdoors, go by HR.",
       "steps": [
         "2 km warm-up: HR 136-151",
-        "2 x (4 km HM effort + 500 m jog): HR 160-167",
+        "2 x (4 km HM effort + 2 min jog): HR 160-167",
         "1 km cool-down: HR up to 140"
       ],
       "qualKm": 4
@@ -1748,14 +1748,14 @@
     "2026-12-22": {
       "type": "tempo",
       "name": "Threshold 2x2.5km",
-      "km": 9.5,
+      "km": 9.1,
       "pace": "by HR",
       "hr": "162-169",
       "treadmill": "start at 9.8 km/h",
       "why": "Heart rate decides. The treadmill speed is only a starting point. If you run outdoors, go by HR.",
       "steps": [
         "2 km warm-up: HR 136-151",
-        "2 x (2.5 km threshold + 500 m jog): HR 162-169",
+        "2 x (2.5 km threshold + 2 min jog): HR 162-169",
         "1.5 km cool-down: HR up to 140"
       ],
       "qualKm": 4
@@ -1835,14 +1835,14 @@
     "2026-12-29": {
       "type": "tempo",
       "name": "HM pace 3x3km",
-      "km": 13.5,
+      "km": 12.9,
       "pace": "by HR",
       "hr": "160-167",
       "treadmill": "start at 9.8 km/h",
       "why": "Heart rate decides. The treadmill speed is only a starting point. If you run outdoors, go by HR.",
       "steps": [
         "2 km warm-up: HR 136-151",
-        "3 x (3 km HM effort + 500 m jog): HR 160-167",
+        "3 x (3 km HM effort + 2 min jog): HR 160-167",
         "1 km cool-down: HR up to 140"
       ],
       "qualKm": 4
@@ -1922,14 +1922,14 @@
     "2027-01-05": {
       "type": "tempo",
       "name": "Threshold 2x1.6km",
-      "km": 8,
+      "km": 7.6,
       "pace": "by HR",
       "hr": "162-169",
       "treadmill": "start at 9.8 km/h",
       "why": "Heart rate decides. The treadmill speed is only a starting point. If you run outdoors, go by HR.",
       "steps": [
         "2 km warm-up: HR 136-151",
-        "2 x (1.6 km threshold + 500 m jog): HR 162-169",
+        "2 x (1.6 km threshold + 2 min jog): HR 162-169",
         "4 x 20 s strides, 60 s jog: no HR target",
         "1 km cool-down: HR up to 140"
       ],
