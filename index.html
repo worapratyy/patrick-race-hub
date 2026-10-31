@@ -257,7 +257,7 @@ function barChart({bars,h=200,yMax}){
 function renderHeader(){
   const last=RUNS[RUNS.length-1];
   const synced=PLAN_SYNC?new Date(PLAN_SYNC).toLocaleString('en-GB',{day:'numeric',month:'short',hour:'2-digit',minute:'2-digit'}):'-';
-  $('#sub').textContent=`10K block · Garmin LTHR ${PLAN.athlete.lthr} · ${RUNS.length} runs · Strava synced ${synced}`;
+  $('#sub').textContent=`10K + half block · Garmin LTHR ${PLAN.athlete.lthr} · ${RUNS.length} runs · Strava synced ${synced}`;
   $('#countdowns').innerHTML=PLAN.races.map(r=>{const d=dayDiff(TODAY,r.date);
     return `<div class="cd ${r.id==='ems'?'ems':'sau'}"><b>${d>0?d:d===0?'Today':'Done'}</b>${d>0?' <span class="muted small">days</span>':''}<small>${esc(r.short)} · ${fmtShort(r.date)} · ${esc(r.goalA)}</small></div>`}).join('');
 }

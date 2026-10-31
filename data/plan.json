@@ -45,40 +45,40 @@
   ],
   "paces": [
     {
-      "k": "Easy (HR-led)",
-      "pace": "6:40-7:20",
-      "kmh": "8.2-9.0",
+      "k": "Recovery (HR up to 145)",
+      "pace": "6:40-7:05",
+      "kmh": "8.5-9.0",
+      "hr": "up to 145"
+    },
+    {
+      "k": "Easy (treadmill)",
+      "pace": "6:30-6:50",
+      "kmh": "8.8-9.2",
       "hr": "136-151"
     },
     {
-      "k": "Threshold T (VDOT 36)",
-      "pace": "5:30-5:40",
-      "kmh": "10.6-10.9",
+      "k": "Threshold (by HR)",
+      "pace": "by HR",
+      "kmh": "start 9.8",
       "hr": "162-169"
     },
     {
-      "k": "10K goal (sub-54, ATM)",
-      "pace": "5:22-5:26",
-      "kmh": "11.0-11.2",
+      "k": "10K reps (by HR)",
+      "pace": "by HR",
+      "kmh": "start 10.4, max 11.0",
+      "hr": "166-175"
+    },
+    {
+      "k": "ATM goal, sub-54 (clock)",
+      "pace": "5:24",
+      "kmh": "race",
       "hr": "165-175"
     },
     {
-      "k": "HM goal (sub-2:03, Pocari)",
-      "pace": "5:48-5:52",
-      "kmh": "10.2-10.3",
+      "k": "Pocari goal, sub-2:03 (clock)",
+      "pace": "5:50",
+      "kmh": "race",
       "hr": "160-167"
-    },
-    {
-      "k": "Interval I (VDOT 36)",
-      "pace": "5:05",
-      "kmh": "11.8",
-      "hr": "174+"
-    },
-    {
-      "k": "Strides / R",
-      "pace": "4:45-4:50",
-      "kmh": "12.4-12.6",
-      "hr": "-"
     }
   ],
   "baseline": {
@@ -205,7 +205,7 @@
           "cue": "Empty it."
         }
       ],
-      "rule": "If sleep and legs are off after Japan, race for B (any PR) and run 5:28 even."
+      "rule": "If sleep and legs are off after Japan, race for B (any PR) and run 5:28 even. GPS reads long on city courses, so pace by clock at the km markers: 27:00 at 5 km. 54:00 is about 5:18/km on the watch."
     },
     {
       "id": "pocari",
@@ -244,7 +244,7 @@
           "cue": "Empty the tank."
         }
       ],
-      "rule": "VDOT 36 predicts 2:01, but the only half so far is 2:24. Go for the sub-2:00 stretch only if ATM is under 54:00 and the Dec 31 3x3 km is on pace. Back off at once if sciatic pain appears."
+      "rule": "VDOT 36 predicts 2:01, but the only half so far is 2:24. Go for the sub-2:00 stretch only if ATM is under 54:00 and the Dec 31 3x3 km is on pace. Back off at once if sciatic pain appears. Pace by clock at the km markers: 1:01:30 at halfway."
     }
   ],
   "phases": [
@@ -346,9 +346,14 @@
       "pass": "Within 5 bpm of usual easy HR at the same pace"
     },
     {
+      "date": "2026-11-03",
+      "name": "Treadmill threshold speed",
+      "pass": "Note the belt speed that holds HR 162-165"
+    },
+    {
       "date": "2026-11-10",
       "name": "5 x 1000m at 10K effort",
-      "pass": "All reps 5:18-5:26, HR 174 or lower, no fast first rep"
+      "pass": "All 5 reps HR 166-175, rep 1 no faster than the rest"
     },
     {
       "date": "2026-11-29",
@@ -358,17 +363,17 @@
     {
       "date": "2026-12-15",
       "name": "2 x 4 km at HM effort",
-      "pass": "Both reps 5:45-5:55 at HR 167 or lower"
+      "pass": "Both reps HR 160-167"
     },
     {
       "date": "2026-12-29",
       "name": "3 x 3 km at HM effort",
-      "pass": "All reps 5:45-5:55, HR 167 or lower - decides sub-2:03 vs 2:00 stretch"
+      "pass": "All reps HR 160-167, last rep controlled"
     },
     {
       "date": "2027-01-03",
-      "name": "21 km peak long run",
-      "pass": "Z2 for 16 km, last 5 km steady, no sciatic pain"
+      "name": "20 km peak long run",
+      "pass": "Z2 for 16 km, last 4 km up to 160, no sciatic pain"
     },
     {
       "date": "2027-01-17",
@@ -1123,13 +1128,18 @@
     },
     "2026-11-01": {
       "type": "long",
-      "name": "Long Run - 10km (Z2 -> last 2km Z3)",
+      "name": "Long 10km",
       "km": 10,
-      "pace": "6:50-7:20",
+      "pace": "by HR",
       "hr": "136-151, last 2 km 152-161",
-      "treadmill": "",
-      "why": "Base rebuild after Saucony. 1 km Z1 warm-up -> 7 km Z2 (136-151) -> last 2 km allowed up to Z3 (152-161). Let the finish drift up naturally: don't force it, and never into Z4.",
-      "steps": []
+      "treadmill": "8.6-9.0 km/h",
+      "why": "Same workout on the treadmill or in the park. Outdoors, HR runs about 10 bpm higher at the same pace, so slow down to stay on target.",
+      "steps": [
+        "1 km warm-up: HR up to 140",
+        "7 km Z2: HR 136-151",
+        "2 km steady: HR 152-161"
+      ],
+      "easyKm": 8
     },
     "2026-11-02": {
       "type": "strength",
@@ -1143,29 +1153,31 @@
     },
     "2026-11-03": {
       "type": "tempo",
-      "name": "Tempo - 2x12min Threshold (VDOT 36)",
-      "km": 9,
-      "pace": "5:30-5:40",
+      "name": "Threshold 2x2km",
+      "km": 8.5,
+      "pace": "by HR",
       "hr": "162-169",
-      "treadmill": "",
-      "why": "VDOT 36 threshold (T) pace: 5:30-5:40/km on the road, HR 162-169 (Z4). On the treadmill, run by HR: treadmill speed has read 40-60 s/km slower than your road pace at the same HR. Saucony showed your real threshold sits around HR 169-172. 160-166 was too easy.",
+      "treadmill": "start at 9.8 km/h",
+      "why": "Heart rate decides. The treadmill speed is only a starting point. If you run outdoors, go by HR. This session finds your real treadmill threshold speed. Write down the speed that holds HR 162-165.",
       "steps": [
-        "2 km warm-up",
-        "2x12 min @ T effort, HR 162-169",
-        "3 min easy jog between",
-        "1.5 km cool-down"
+        "2 km warm-up: HR 136-151",
+        "2 x (2 km threshold + 500 m jog): HR 162-169",
+        "1.5 km cool-down: HR up to 140"
       ],
       "qualKm": 4
     },
     "2026-11-04": {
       "type": "easy",
-      "name": "Easy Z1 - 5km",
+      "name": "Recovery 5km",
       "km": 5,
-      "pace": "7:15-7:45",
-      "hr": "<145",
-      "treadmill": "",
-      "why": "Short and easy.",
-      "steps": []
+      "pace": "by HR",
+      "hr": "up to 145",
+      "treadmill": "8.5-9.0 km/h",
+      "why": "",
+      "steps": [
+        "1 km warm-up: HR up to 140",
+        "4 km easy: HR 136-151"
+      ]
     },
     "2026-11-05": {
       "type": "strength",
@@ -1179,13 +1191,17 @@
     },
     "2026-11-06": {
       "type": "easy",
-      "name": "Easy Z2 - 8km + Strides",
-      "km": 8,
-      "pace": "6:40-7:10",
+      "name": "Easy 6km + strides",
+      "km": 6.8,
+      "pace": "by HR",
       "hr": "136-151",
-      "treadmill": "",
-      "why": "Aerobic base. Keep easy days truly easy - Friday is a threshold session. Finish with 4x20 sec relaxed strides.",
-      "steps": []
+      "treadmill": "8.8-9.2 km/h",
+      "why": "",
+      "steps": [
+        "1 km warm-up: HR up to 140",
+        "5 km easy: HR 136-151",
+        "4 x 20 s strides, 60 s jog: no HR target"
+      ]
     },
     "2026-11-07": {
       "type": "rest",
@@ -1199,13 +1215,18 @@
     },
     "2026-11-08": {
       "type": "long",
-      "name": "Long Run - 14km (Z2 -> last 3km Z3)",
-      "km": 14,
-      "pace": "6:50-7:20",
-      "hr": "136-151, last 3 km 152-161",
-      "treadmill": "",
-      "why": "Fuel and hydrate as for race day. 1 km Z1 warm-up -> 10 km Z2 (136-151) -> last 3 km allowed up to Z3 (152-161). Let the finish drift up naturally: don't force it, and never into Z4.",
-      "steps": []
+      "name": "Long 12km",
+      "km": 12,
+      "pace": "by HR",
+      "hr": "136-151, last 2 km 152-161",
+      "treadmill": "8.6-9.0 km/h",
+      "why": "Same workout on the treadmill or in the park. Outdoors, HR runs about 10 bpm higher at the same pace, so slow down to stay on target.",
+      "steps": [
+        "1 km warm-up: HR up to 140",
+        "9 km Z2: HR 136-151",
+        "2 km steady: HR 152-161"
+      ],
+      "easyKm": 10
     },
     "2026-11-09": {
       "type": "strength",
@@ -1219,29 +1240,31 @@
     },
     "2026-11-10": {
       "type": "tempo",
-      "name": "Key Session - 5x1000m @ 10K Effort",
-      "km": 9,
-      "pace": "5:18-5:26",
-      "hr": "168-174",
-      "treadmill": "",
-      "why": "The last big quality session. 10K effort for ATM (goal 5:24/km). HR 168-174. Pass: all five reps even, no faster than 5:18. Practise starting rep 1 at goal pace, not faster. Saucony's 5:10 start cost a fade at km 5-7.",
+      "name": "5x1000m",
+      "km": 9.5,
+      "pace": "by HR",
+      "hr": "166-175",
+      "treadmill": "start at 10.4 km/h, max 11.0",
+      "why": "Heart rate decides. The treadmill speed is only a starting point. If you run outdoors, go by HR. Run rep 1 no faster than the rest.",
       "steps": [
-        "2 km warm-up + 4 strides",
-        "5x1000m @ 5:18-5:26/km road (10K effort), HR 168-174",
-        "90 sec easy jog between",
-        "1.5 km cool-down"
+        "2 km warm-up: HR 136-151",
+        "5 x (1000 m 10K effort + 200 m jog): HR 166-175",
+        "1.5 km cool-down: HR up to 140"
       ],
       "qualKm": 4
     },
     "2026-11-11": {
       "type": "easy",
-      "name": "Easy Z1 - 5km",
+      "name": "Recovery 5km",
       "km": 5,
-      "pace": "7:15-7:45",
-      "hr": "<145",
-      "treadmill": "",
-      "why": "Short and easy.",
-      "steps": []
+      "pace": "by HR",
+      "hr": "up to 145",
+      "treadmill": "8.5-9.0 km/h",
+      "why": "",
+      "steps": [
+        "1 km warm-up: HR up to 140",
+        "4 km easy: HR 136-151"
+      ]
     },
     "2026-11-12": {
       "type": "strength",
@@ -1255,13 +1278,17 @@
     },
     "2026-11-13": {
       "type": "easy",
-      "name": "Easy Z2 - 8km + Strides",
-      "km": 8,
-      "pace": "6:40-7:10",
+      "name": "Easy 7km + strides",
+      "km": 7.8,
+      "pace": "by HR",
       "hr": "136-151",
-      "treadmill": "",
-      "why": "Easy Z2. Finish with 4x20 sec relaxed strides.",
-      "steps": []
+      "treadmill": "8.8-9.2 km/h",
+      "why": "",
+      "steps": [
+        "1 km warm-up: HR up to 140",
+        "6 km easy: HR 136-151",
+        "4 x 20 s strides, 60 s jog: no HR target"
+      ]
     },
     "2026-11-14": {
       "type": "rest",
@@ -1275,13 +1302,18 @@
     },
     "2026-11-15": {
       "type": "long",
-      "name": "Long Run - 16km (Z2 -> last 3km Z3)",
-      "km": 16,
-      "pace": "6:50-7:20",
+      "name": "Long 14km",
+      "km": 14,
+      "pace": "by HR",
       "hr": "136-151, last 3 km 152-161",
-      "treadmill": "",
-      "why": "Peak long run before the trip, the longest in the ATM block. 1 km Z1 warm-up -> 12 km Z2 (136-151) -> last 3 km allowed up to Z3 (152-161). Let the finish drift up naturally: don't force it, and never into Z4.",
-      "steps": []
+      "treadmill": "8.6-9.0 km/h",
+      "why": "Same workout on the treadmill or in the park. Outdoors, HR runs about 10 bpm higher at the same pace, so slow down to stay on target.",
+      "steps": [
+        "1 km warm-up: HR up to 140",
+        "10 km Z2: HR 136-151",
+        "3 km steady: HR 152-161"
+      ],
+      "easyKm": 11
     },
     "2026-11-16": {
       "type": "strength",
@@ -1295,29 +1327,32 @@
     },
     "2026-11-17": {
       "type": "tempo",
-      "name": "Tempo + Strides - 2x10min Threshold (VDOT 36)",
+      "name": "Threshold 2x1.6km",
       "km": 8,
-      "pace": "5:30-5:40",
+      "pace": "by HR",
       "hr": "162-169",
-      "treadmill": "",
-      "why": "Final threshold session, 12 days before ATM. T pace 5:30-5:40/km road, HR 162-169. On the treadmill, run by HR: treadmill speed has read 40-60 s/km slower than your road pace at the same HR. Controlled: finish feeling you could do more.",
+      "treadmill": "start at 9.8 km/h",
+      "why": "Heart rate decides. The treadmill speed is only a starting point. If you run outdoors, go by HR.",
       "steps": [
-        "2 km warm-up",
-        "2x10 min @ T effort, 3 min easy jog between",
-        "1 km cool-down",
-        "4x20 sec strides"
+        "2 km warm-up: HR 136-151",
+        "2 x (1.6 km threshold + 500 m jog): HR 162-169",
+        "4 x 20 s strides, 60 s jog: no HR target",
+        "1 km cool-down: HR up to 140"
       ],
       "qualKm": 4
     },
     "2026-11-18": {
       "type": "easy",
-      "name": "Easy Z1 - 5km",
+      "name": "Recovery 5km",
       "km": 5,
-      "pace": "7:15-7:45",
-      "hr": "<145",
-      "treadmill": "",
-      "why": "Short and easy.",
-      "steps": []
+      "pace": "by HR",
+      "hr": "up to 145",
+      "treadmill": "8.5-9.0 km/h",
+      "why": "",
+      "steps": [
+        "1 km warm-up: HR up to 140",
+        "4 km easy: HR 136-151"
+      ]
     },
     "2026-11-19": {
       "type": "strength",
@@ -1331,13 +1366,17 @@
     },
     "2026-11-20": {
       "type": "easy",
-      "name": "Easy Z2 - 7km + Strides",
-      "km": 7,
-      "pace": "6:40-7:10",
+      "name": "Easy 6km + strides",
+      "km": 6.8,
+      "pace": "by HR",
       "hr": "136-151",
-      "treadmill": "",
-      "why": "Easy Z2. Finish with 4x20 sec relaxed strides.",
-      "steps": []
+      "treadmill": "8.8-9.2 km/h",
+      "why": "",
+      "steps": [
+        "1 km warm-up: HR up to 140",
+        "5 km easy: HR 136-151",
+        "4 x 20 s strides, 60 s jog: no HR target"
+      ]
     },
     "2026-11-21": {
       "type": "rest",
@@ -1351,13 +1390,18 @@
     },
     "2026-11-22": {
       "type": "long",
-      "name": "Long Run - 12km (Z2 -> last 2km Z3)",
-      "km": 12,
-      "pace": "6:50-7:20",
+      "name": "Long 10km",
+      "km": 10,
+      "pace": "by HR",
       "hr": "136-151, last 2 km 152-161",
-      "treadmill": "",
-      "why": "Last longer run before Japan. 1 km Z1 warm-up -> 9 km Z2 (136-151) -> last 2 km allowed up to Z3 (152-161). Let the finish drift up naturally: don't force it, and never into Z4.",
-      "steps": []
+      "treadmill": "8.6-9.0 km/h",
+      "why": "Same workout on the treadmill or in the park. Outdoors, HR runs about 10 bpm higher at the same pace, so slow down to stay on target.",
+      "steps": [
+        "1 km warm-up: HR up to 140",
+        "7 km Z2: HR 136-151",
+        "2 km steady: HR 152-161"
+      ],
+      "easyKm": 8
     },
     "2026-11-23": {
       "type": "rest",
@@ -1371,13 +1415,16 @@
     },
     "2026-11-24": {
       "type": "easy",
-      "name": "Japan - Easy 6km (optional)",
+      "name": "Japan Easy 6km",
       "km": 6,
-      "pace": "6:40-7:10",
+      "pace": "by HR",
       "hr": "136-151",
       "treadmill": "",
-      "why": "Optional easy run in Japan. Z2 only, flat route, skip if tired. Treat Japan as the taper - lots of walking already.",
-      "steps": []
+      "why": "Optional.",
+      "steps": [
+        "1 km warm-up: HR up to 140",
+        "5 km easy: HR 136-151"
+      ]
     },
     "2026-11-25": {
       "type": "rest",
@@ -1391,13 +1438,17 @@
     },
     "2026-11-26": {
       "type": "easy",
-      "name": "Japan - Easy 5km + Strides (optional)",
-      "km": 5,
-      "pace": "6:40-7:10",
+      "name": "Japan 5km + strides",
+      "km": 5.8,
+      "pace": "by HR",
       "hr": "136-151",
       "treadmill": "",
-      "why": "Optional 5 km easy + 4x20 sec strides. Keep legs light. Last run before the race - Fri is the flight home and Sat is rest.",
-      "steps": []
+      "why": "Optional. Last run before the race.",
+      "steps": [
+        "1 km warm-up: HR up to 140",
+        "4 km easy: HR 136-151",
+        "4 x 20 s strides, 60 s jog: no HR target"
+      ]
     },
     "2026-11-27": {
       "type": "rest",
@@ -1426,7 +1477,7 @@
       "pace": "5:22-5:26",
       "hr": "165-175",
       "treadmill": "",
-      "why": "🏁 RACE DAY - ATMBKK 2026 10K 📍 Start: Sanam Luang, Ratchadamnoen Nai Rd · Finish: Na Phra That Rd ⏰ 10K window 06:00-08:30 (Sunday). Fast & flat, World Athletics certified. PR to beat: 54:39 (Saucony, Oct 25) · VDOT 36 Target A: Sub-54:00 (5:24/km) Target B: Sub-54:39 (any PR) Caution: Japan Nov 23-27 right before. If sleep and legs are off, race for B. PACING (even, not Saucony's 5:10 start): km 1-2: 5:28-5:32, HR ≤168 km 3-7: 5:22-5:26, HR 168-172 km 8-9: 5:18-5:22 if HR <175 km 10: empty the tank Cadence cue: 166+ from km 5 when it starts to sag.",
+      "why": "🏁 RACE DAY - ATMBKK 2026 10K 📍 Start: Sanam Luang, Ratchadamnoen Nai Rd · Finish: Na Phra That Rd ⏰ 10K window 06:00-08:30 (Sunday). Fast & flat, World Athletics certified. PR to beat: 54:39 (Saucony, Oct 25) · VDOT 36 Target A: Sub-54:00 (5:24/km) Target B: Sub-54:39 (any PR) Caution: Japan Nov 23-27 right before. If sleep and legs are off, race for B. PACING (even, not Saucony's 5:10 start): km 1-2: 5:28-5:32, HR up to 168 km 3-7: 5:22-5:26, HR 168-172 km 8-9: 5:18-5:22 if HR <175 km 10: empty the tank Cadence cue: 166+ from km 5 when it starts to sag. WATCH: GPS reads long on city courses (Saucony showed 5:21/km, real 5:28/km). Pace by clock at the km markers, not the watch. 54:00 is 27:00 at 5 km and about 5:18/km on the watch. The Garmin workout has no alerts: press lap at the finish.",
       "steps": []
     },
     "2026-11-30": {
@@ -1441,13 +1492,16 @@
     },
     "2026-12-01": {
       "type": "easy",
-      "name": "Easy Z1 - 5km",
+      "name": "Recovery 5km",
       "km": 5,
-      "pace": "7:15-7:45",
-      "hr": "<140",
-      "treadmill": "",
-      "why": "Post-ATM flush. If legs are dead, cut to 3 km.",
-      "steps": []
+      "pace": "by HR",
+      "hr": "up to 145",
+      "treadmill": "8.5-9.0 km/h",
+      "why": "",
+      "steps": [
+        "1 km warm-up: HR up to 140",
+        "4 km easy: HR 136-151"
+      ]
     },
     "2026-12-02": {
       "type": "strength",
@@ -1471,13 +1525,16 @@
     },
     "2026-12-04": {
       "type": "easy",
-      "name": "Easy Z2 - 6km",
+      "name": "Easy 6km",
       "km": 6,
-      "pace": "6:40-7:10",
+      "pace": "by HR",
       "hr": "136-151",
-      "treadmill": "",
-      "why": "Easy Z2.",
-      "steps": []
+      "treadmill": "8.8-9.2 km/h",
+      "why": "",
+      "steps": [
+        "1 km warm-up: HR up to 140",
+        "5 km easy: HR 136-151"
+      ]
     },
     "2026-12-05": {
       "type": "rest",
@@ -1491,13 +1548,18 @@
     },
     "2026-12-06": {
       "type": "long",
-      "name": "Long Run - 12km (Z2 -> last 2km Z3)",
-      "km": 12,
-      "pace": "6:50-7:20",
+      "name": "Long 10km",
+      "km": 10,
+      "pace": "by HR",
       "hr": "136-151, last 2 km 152-161",
-      "treadmill": "",
-      "why": "Start of the half-marathon build. 1 km Z1 warm-up -> 9 km Z2 (136-151) -> last 2 km allowed up to Z3 (152-161). Let the finish drift up naturally: don't force it, and never into Z4.",
-      "steps": []
+      "treadmill": "8.6-9.0 km/h",
+      "why": "Same workout on the treadmill or in the park. Outdoors, HR runs about 10 bpm higher at the same pace, so slow down to stay on target.",
+      "steps": [
+        "1 km warm-up: HR up to 140",
+        "7 km Z2: HR 136-151",
+        "2 km steady: HR 152-161"
+      ],
+      "easyKm": 8
     },
     "2026-12-07": {
       "type": "strength",
@@ -1511,29 +1573,31 @@
     },
     "2026-12-08": {
       "type": "tempo",
-      "name": "Tempo - 3x10min Threshold (VDOT 36)",
-      "km": 9,
-      "pace": "5:30-5:40",
+      "name": "Threshold 3x1.6km",
+      "km": 9.8,
+      "pace": "by HR",
       "hr": "162-169",
-      "treadmill": "",
-      "why": "T pace 5:30-5:40/km road, HR 162-169 (Z4). On the treadmill, run by HR: treadmill speed has read 40-60 s/km slower than your road pace at the same HR. HM engine session. Comfortably hard.",
+      "treadmill": "start at 9.8 km/h",
+      "why": "Heart rate decides. The treadmill speed is only a starting point. If you run outdoors, go by HR.",
       "steps": [
-        "2 km warm-up",
-        "3x10 min @ T effort, HR 162-169",
-        "2 min easy jog between",
-        "1.5 km cool-down"
+        "2 km warm-up: HR 136-151",
+        "3 x (1.6 km threshold + 500 m jog): HR 162-169",
+        "1.5 km cool-down: HR up to 140"
       ],
       "qualKm": 4
     },
     "2026-12-09": {
       "type": "easy",
-      "name": "Easy Z1 - 5km",
+      "name": "Recovery 5km",
       "km": 5,
-      "pace": "7:15-7:45",
-      "hr": "<145",
-      "treadmill": "",
-      "why": "Short and easy.",
-      "steps": []
+      "pace": "by HR",
+      "hr": "up to 145",
+      "treadmill": "8.5-9.0 km/h",
+      "why": "",
+      "steps": [
+        "1 km warm-up: HR up to 140",
+        "4 km easy: HR 136-151"
+      ]
     },
     "2026-12-10": {
       "type": "strength",
@@ -1547,13 +1611,17 @@
     },
     "2026-12-11": {
       "type": "easy",
-      "name": "Easy Z2 - 8km + Strides",
-      "km": 8,
-      "pace": "6:40-7:10",
+      "name": "Easy 7km + strides",
+      "km": 7.8,
+      "pace": "by HR",
       "hr": "136-151",
-      "treadmill": "",
-      "why": "Aerobic base. Finish with 4x20 sec relaxed strides.",
-      "steps": []
+      "treadmill": "8.8-9.2 km/h",
+      "why": "",
+      "steps": [
+        "1 km warm-up: HR up to 140",
+        "6 km easy: HR 136-151",
+        "4 x 20 s strides, 60 s jog: no HR target"
+      ]
     },
     "2026-12-12": {
       "type": "rest",
@@ -1567,13 +1635,18 @@
     },
     "2026-12-13": {
       "type": "long",
-      "name": "Long Run - 16km (Z2 -> last 3km Z3)",
-      "km": 16,
-      "pace": "6:50-7:20",
+      "name": "Long 14km",
+      "km": 14,
+      "pace": "by HR",
       "hr": "136-151, last 3 km 152-161",
-      "treadmill": "",
-      "why": "Practise race-day fuelling: 1 gel around km 8-10. 1 km Z1 warm-up -> 12 km Z2 (136-151) -> last 3 km allowed up to Z3 (152-161). Let the finish drift up naturally: don't force it, and never into Z4.",
-      "steps": []
+      "treadmill": "8.6-9.0 km/h",
+      "why": "Same workout on the treadmill or in the park. Outdoors, HR runs about 10 bpm higher at the same pace, so slow down to stay on target.",
+      "steps": [
+        "1 km warm-up: HR up to 140",
+        "10 km Z2: HR 136-151",
+        "3 km steady: HR 152-161"
+      ],
+      "easyKm": 11
     },
     "2026-12-14": {
       "type": "strength",
@@ -1587,29 +1660,31 @@
     },
     "2026-12-15": {
       "type": "tempo",
-      "name": "HM Effort - 2x4km @ Half-Marathon Pace",
-      "km": 11,
-      "pace": "5:45-5:55",
+      "name": "HM pace 2x4km",
+      "km": 12,
+      "pace": "by HR",
       "hr": "160-167",
-      "treadmill": "",
-      "why": "First HM-specific session. HM pace for VDOT 36 ≈ 5:44/km; goal pace for sub-2:03 is 5:50. HR 160-167. Goal: lock in the rhythm you will hold for 21 km. Steady, not hard.",
+      "treadmill": "start at 9.8 km/h",
+      "why": "Heart rate decides. The treadmill speed is only a starting point. If you run outdoors, go by HR.",
       "steps": [
-        "2 km warm-up",
-        "2x4 km @ 5:45-5:55/km road, HR 160-167",
-        "2 min easy jog between",
-        "1 km cool-down"
+        "2 km warm-up: HR 136-151",
+        "2 x (4 km HM effort + 500 m jog): HR 160-167",
+        "1 km cool-down: HR up to 140"
       ],
       "qualKm": 4
     },
     "2026-12-16": {
       "type": "easy",
-      "name": "Easy Z1 - 5km",
+      "name": "Recovery 5km",
       "km": 5,
-      "pace": "7:15-7:45",
-      "hr": "<145",
-      "treadmill": "",
-      "why": "Short and easy.",
-      "steps": []
+      "pace": "by HR",
+      "hr": "up to 145",
+      "treadmill": "8.5-9.0 km/h",
+      "why": "",
+      "steps": [
+        "1 km warm-up: HR up to 140",
+        "4 km easy: HR 136-151"
+      ]
     },
     "2026-12-17": {
       "type": "strength",
@@ -1623,13 +1698,17 @@
     },
     "2026-12-18": {
       "type": "easy",
-      "name": "Easy Z2 - 8km + Strides",
-      "km": 8,
-      "pace": "6:40-7:10",
+      "name": "Easy 7km + strides",
+      "km": 7.8,
+      "pace": "by HR",
       "hr": "136-151",
-      "treadmill": "",
-      "why": "Easy Z2. Finish with 4x20 sec relaxed strides.",
-      "steps": []
+      "treadmill": "8.8-9.2 km/h",
+      "why": "",
+      "steps": [
+        "1 km warm-up: HR up to 140",
+        "6 km easy: HR 136-151",
+        "4 x 20 s strides, 60 s jog: no HR target"
+      ]
     },
     "2026-12-19": {
       "type": "rest",
@@ -1643,13 +1722,18 @@
     },
     "2026-12-20": {
       "type": "long",
-      "name": "Long Run - 18km (Z2 -> last 4km Z3)",
-      "km": 18,
-      "pace": "6:50-7:20",
-      "hr": "136-151, last 4 km 152-161",
-      "treadmill": "",
-      "why": "Fuel as for race day. 1 km Z1 warm-up -> 13 km Z2 (136-151) -> last 4 km allowed up to Z3 (152-161). Let the finish drift up naturally: don't force it, and never into Z4.",
-      "steps": []
+      "name": "Long 16km",
+      "km": 16,
+      "pace": "by HR",
+      "hr": "136-151, last 3 km 152-161",
+      "treadmill": "8.6-9.0 km/h",
+      "why": "Same workout on the treadmill or in the park. Outdoors, HR runs about 10 bpm higher at the same pace, so slow down to stay on target.",
+      "steps": [
+        "1 km warm-up: HR up to 140",
+        "12 km Z2: HR 136-151",
+        "3 km steady: HR 152-161"
+      ],
+      "easyKm": 13
     },
     "2026-12-21": {
       "type": "strength",
@@ -1663,29 +1747,31 @@
     },
     "2026-12-22": {
       "type": "tempo",
-      "name": "Tempo - 2x15min Threshold (VDOT 36)",
-      "km": 10,
-      "pace": "5:30-5:40",
+      "name": "Threshold 2x2.5km",
+      "km": 9.5,
+      "pace": "by HR",
       "hr": "162-169",
-      "treadmill": "",
-      "why": "T pace 5:30-5:40/km road, HR 162-169. On the treadmill, run by HR: treadmill speed has read 40-60 s/km slower than your road pace at the same HR.",
+      "treadmill": "start at 9.8 km/h",
+      "why": "Heart rate decides. The treadmill speed is only a starting point. If you run outdoors, go by HR.",
       "steps": [
-        "2 km warm-up",
-        "2x15 min @ T effort, HR 162-169",
-        "3 min easy jog between",
-        "1.5 km cool-down"
+        "2 km warm-up: HR 136-151",
+        "2 x (2.5 km threshold + 500 m jog): HR 162-169",
+        "1.5 km cool-down: HR up to 140"
       ],
       "qualKm": 4
     },
     "2026-12-23": {
       "type": "easy",
-      "name": "Easy Z1 - 5km",
+      "name": "Recovery 5km",
       "km": 5,
-      "pace": "7:15-7:45",
-      "hr": "<145",
-      "treadmill": "",
-      "why": "Short and easy.",
-      "steps": []
+      "pace": "by HR",
+      "hr": "up to 145",
+      "treadmill": "8.5-9.0 km/h",
+      "why": "",
+      "steps": [
+        "1 km warm-up: HR up to 140",
+        "4 km easy: HR 136-151"
+      ]
     },
     "2026-12-24": {
       "type": "strength",
@@ -1699,13 +1785,17 @@
     },
     "2026-12-25": {
       "type": "easy",
-      "name": "Easy Z2 - 8km + Strides",
-      "km": 8,
-      "pace": "6:40-7:10",
+      "name": "Easy 7km + strides",
+      "km": 7.8,
+      "pace": "by HR",
       "hr": "136-151",
-      "treadmill": "",
-      "why": "Easy Z2. Finish with 4x20 sec relaxed strides.",
-      "steps": []
+      "treadmill": "8.8-9.2 km/h",
+      "why": "",
+      "steps": [
+        "1 km warm-up: HR up to 140",
+        "6 km easy: HR 136-151",
+        "4 x 20 s strides, 60 s jog: no HR target"
+      ]
     },
     "2026-12-26": {
       "type": "rest",
@@ -1719,13 +1809,18 @@
     },
     "2026-12-27": {
       "type": "long",
-      "name": "Long Run - 18km, last 4km @ HM Effort",
+      "name": "Long 18km HM finish",
       "km": 18,
-      "pace": "6:50-7:20 / HM 5:45-5:55",
+      "pace": "by HR / HM 5:50",
       "hr": "136-151, last 4 km 160-167",
-      "treadmill": "",
-      "why": "14 km Z2, then the last 4 km at HM pace (5:45-5:55/km road, HR 160-167). Practise finishing strong, not racing.",
-      "steps": []
+      "treadmill": "8.6-9.0 km/h",
+      "why": "Same workout on the treadmill or in the park. Outdoors, HR runs about 10 bpm higher at the same pace, so slow down to stay on target. Do the finish outdoors so you practise real road pace.",
+      "steps": [
+        "1 km warm-up: HR up to 140",
+        "13 km Z2: HR 136-151",
+        "4 km at HM pace, 5:50/km: HR 160-167"
+      ],
+      "easyKm": 14
     },
     "2026-12-28": {
       "type": "strength",
@@ -1739,29 +1834,31 @@
     },
     "2026-12-29": {
       "type": "tempo",
-      "name": "HM Effort - 3x3km @ Half-Marathon Pace",
-      "km": 12,
-      "pace": "5:45-5:55",
+      "name": "HM pace 3x3km",
+      "km": 13.5,
+      "pace": "by HR",
       "hr": "160-167",
-      "treadmill": "",
-      "why": "Peak HM-specific session at 5:45-5:55/km road, HR 160-167. Pass: all three reps on pace with HR ≤167 and the last rep controlled. This decides sub-2:03 vs the 2:00 stretch.",
+      "treadmill": "start at 9.8 km/h",
+      "why": "Heart rate decides. The treadmill speed is only a starting point. If you run outdoors, go by HR.",
       "steps": [
-        "2 km warm-up",
-        "3x3 km @ HM pace, HR 160-167",
-        "2 min easy jog between",
-        "1 km cool-down"
+        "2 km warm-up: HR 136-151",
+        "3 x (3 km HM effort + 500 m jog): HR 160-167",
+        "1 km cool-down: HR up to 140"
       ],
       "qualKm": 4
     },
     "2026-12-30": {
       "type": "easy",
-      "name": "Easy Z1 - 5km",
+      "name": "Recovery 5km",
       "km": 5,
-      "pace": "7:15-7:45",
-      "hr": "<145",
-      "treadmill": "",
-      "why": "Short and easy.",
-      "steps": []
+      "pace": "by HR",
+      "hr": "up to 145",
+      "treadmill": "8.5-9.0 km/h",
+      "why": "",
+      "steps": [
+        "1 km warm-up: HR up to 140",
+        "4 km easy: HR 136-151"
+      ]
     },
     "2026-12-31": {
       "type": "strength",
@@ -1775,13 +1872,17 @@
     },
     "2027-01-01": {
       "type": "easy",
-      "name": "Easy Z2 - 8km + Strides",
-      "km": 8,
-      "pace": "6:40-7:10",
+      "name": "Easy 6km + strides",
+      "km": 6.8,
+      "pace": "by HR",
       "hr": "136-151",
-      "treadmill": "",
-      "why": "Easy Z2. Finish with 4x20 sec relaxed strides.",
-      "steps": []
+      "treadmill": "8.8-9.2 km/h",
+      "why": "",
+      "steps": [
+        "1 km warm-up: HR up to 140",
+        "5 km easy: HR 136-151",
+        "4 x 20 s strides, 60 s jog: no HR target"
+      ]
     },
     "2027-01-02": {
       "type": "rest",
@@ -1795,13 +1896,18 @@
     },
     "2027-01-03": {
       "type": "long",
-      "name": "Long Run - 21km Z2 (Peak)",
-      "km": 21,
-      "pace": "6:45-7:15",
-      "hr": "136-155",
-      "treadmill": "",
-      "why": "Peak long run, 14 days before the race. Z2 for 16 km, last 5 km steady (HR up to 160). Do not go further than 21 km. Stop if sciatic/piriformis pain returns.",
-      "steps": []
+      "name": "Long 20km",
+      "km": 20,
+      "pace": "by HR",
+      "hr": "136-151, last 4 km up to 160",
+      "treadmill": "8.6-9.0 km/h",
+      "why": "Same workout on the treadmill or in the park. Outdoors, HR runs about 10 bpm higher at the same pace, so slow down to stay on target.",
+      "steps": [
+        "1 km warm-up: HR up to 140",
+        "15 km Z2: HR 136-151",
+        "4 km steady: HR up to 160"
+      ],
+      "easyKm": 16
     },
     "2027-01-04": {
       "type": "rest",
@@ -1815,29 +1921,32 @@
     },
     "2027-01-05": {
       "type": "tempo",
-      "name": "Sharpener - 2x10min Threshold + Strides",
+      "name": "Threshold 2x1.6km",
       "km": 8,
-      "pace": "5:30-5:40",
+      "pace": "by HR",
       "hr": "162-169",
-      "treadmill": "",
-      "why": "Last quality session, 12 days out. T pace 5:30-5:40/km road, HR 162-169.",
+      "treadmill": "start at 9.8 km/h",
+      "why": "Heart rate decides. The treadmill speed is only a starting point. If you run outdoors, go by HR.",
       "steps": [
-        "2 km warm-up",
-        "2x10 min @ T effort, 3 min easy jog between",
-        "1 km cool-down",
-        "4x20 sec strides"
+        "2 km warm-up: HR 136-151",
+        "2 x (1.6 km threshold + 500 m jog): HR 162-169",
+        "4 x 20 s strides, 60 s jog: no HR target",
+        "1 km cool-down: HR up to 140"
       ],
       "qualKm": 4
     },
     "2027-01-06": {
       "type": "easy",
-      "name": "Easy Z1 - 5km",
+      "name": "Recovery 5km",
       "km": 5,
-      "pace": "7:15-7:45",
-      "hr": "<145",
-      "treadmill": "",
-      "why": "Short and easy.",
-      "steps": []
+      "pace": "by HR",
+      "hr": "up to 145",
+      "treadmill": "8.5-9.0 km/h",
+      "why": "",
+      "steps": [
+        "1 km warm-up: HR up to 140",
+        "4 km easy: HR 136-151"
+      ]
     },
     "2027-01-07": {
       "type": "rest",
@@ -1851,13 +1960,17 @@
     },
     "2027-01-08": {
       "type": "easy",
-      "name": "Easy Z2 - 8km + Strides",
-      "km": 8,
-      "pace": "6:40-7:10",
+      "name": "Easy 6km + strides",
+      "km": 6.8,
+      "pace": "by HR",
       "hr": "136-151",
-      "treadmill": "",
-      "why": "Easy Z2. Finish with 4x20 sec relaxed strides.",
-      "steps": []
+      "treadmill": "8.8-9.2 km/h",
+      "why": "",
+      "steps": [
+        "1 km warm-up: HR up to 140",
+        "5 km easy: HR 136-151",
+        "4 x 20 s strides, 60 s jog: no HR target"
+      ]
     },
     "2027-01-09": {
       "type": "rest",
@@ -1871,13 +1984,16 @@
     },
     "2027-01-10": {
       "type": "long",
-      "name": "Long Run - 12km Easy",
+      "name": "Long 12km easy",
       "km": 12,
-      "pace": "6:50-7:20",
+      "pace": "by HR",
       "hr": "136-151",
-      "treadmill": "",
-      "why": "Last longer run. Easy Z2, trust the work.",
-      "steps": []
+      "treadmill": "8.6-9.0 km/h",
+      "why": "Same workout on the treadmill or in the park. Outdoors, HR runs about 10 bpm higher at the same pace, so slow down to stay on target.",
+      "steps": [
+        "1 km warm-up: HR up to 140",
+        "11 km Z2: HR 136-151"
+      ]
     },
     "2027-01-11": {
       "type": "rest",
@@ -1891,23 +2007,30 @@
     },
     "2027-01-12": {
       "type": "easy",
-      "name": "Easy Z2 - 6km",
-      "km": 6,
-      "pace": "6:40-7:10",
+      "name": "Easy 5km + strides",
+      "km": 5.8,
+      "pace": "by HR",
       "hr": "136-151",
-      "treadmill": "",
-      "why": "Easy, with 4x20 sec strides at the end.",
-      "steps": []
+      "treadmill": "8.8-9.2 km/h",
+      "why": "",
+      "steps": [
+        "1 km warm-up: HR up to 140",
+        "4 km easy: HR 136-151",
+        "4 x 20 s strides, 60 s jog: no HR target"
+      ]
     },
     "2027-01-13": {
       "type": "easy",
-      "name": "Easy Z1 - 4km",
+      "name": "Recovery 4km",
       "km": 4,
-      "pace": "7:15-7:45",
-      "hr": "<140",
-      "treadmill": "",
-      "why": "Very easy.",
-      "steps": []
+      "pace": "by HR",
+      "hr": "up to 145",
+      "treadmill": "8.5-9.0 km/h",
+      "why": "",
+      "steps": [
+        "1 km warm-up: HR up to 140",
+        "3 km easy: HR 136-151"
+      ]
     },
     "2027-01-14": {
       "type": "rest",
@@ -1921,13 +2044,17 @@
     },
     "2027-01-15": {
       "type": "easy",
-      "name": "Shakeout - 3km + 4 Strides",
-      "km": 3,
-      "pace": "7:15-7:45",
-      "hr": "<140",
-      "treadmill": "",
-      "why": "3 km very easy + 4x20 sec strides. Collect race kit at Huamark Indoor Stadium plaza (10:00-18:00) if kit pickup is open.",
-      "steps": []
+      "name": "Shakeout + strides",
+      "km": 3.8,
+      "pace": "by HR",
+      "hr": "136-151",
+      "treadmill": "8.5-9.0 km/h",
+      "why": "Check the kit pickup date.",
+      "steps": [
+        "1 km warm-up: HR up to 140",
+        "2 km easy: HR 136-151",
+        "4 x 20 s strides, 60 s jog: no HR target"
+      ]
     },
     "2027-01-16": {
       "type": "rest",
@@ -1946,7 +2073,7 @@
       "pace": "5:48-5:52",
       "hr": "160-170",
       "treadmill": "",
-      "why": "🏁 RACE DAY - Pocari Sweat Run Carnival 2027 · 21K 📍 Huamark Indoor Stadium plaza, Bangkok · Sunday Jan 17, 2027 Order PO27_HNUPN154876 · Paid ✓ · M 30-39 · Shirt XL VDOT 36 predicts 2:01. Your only half so far is 2:24 (May) and the longest run is 22 km, so: Target A: Sub-2:03 (5:50/km) Stretch: Sub-2:00 (5:41/km), only if ATM ≤54:00 AND the Dec 31 3x3 km is on pace Target B: Sub-2:08 (6:04/km) Reset after ATM Nov 29. Block A is the sub-2:00 block, so start at the back of it. km 1-3: 5:58-6:02, HR <160 km 4-15: 5:48-5:52, HR 160-166 km 16-19: hold, HR ≤170 km 20-21.1: empty the tank Fuel: gel at km 7 and km 14. Back off immediately if sciatic/piriformis pain appears.",
+      "why": "🏁 RACE DAY - Pocari Sweat Run Carnival 2027 · 21K 📍 Huamark Indoor Stadium plaza, Bangkok · Sunday Jan 17, 2027 Order PO27_HNUPN154876 · Paid ✓ · M 30-39 · Shirt XL VDOT 36 predicts 2:01. Your only half so far is 2:24 (May) and the longest run is 22 km, so: Target A: Sub-2:03 (5:50/km) Stretch: Sub-2:00 (5:41/km), only if ATM up to 54:00 AND the Dec 31 3x3 km is on pace Target B: Sub-2:08 (6:04/km) Reset after ATM Nov 29. Block A is the sub-2:00 block, so start at the back of it. km 1-3: 5:58-6:02, HR <160 km 4-15: 5:48-5:52, HR 160-166 km 16-19: hold, HR up to 170 km 20-21.1: empty the tank Fuel: gel at km 7 and km 14. Back off immediately if sciatic/piriformis pain appears. WATCH: GPS reads long on city courses, so pace by clock at the km markers. Sub-2:03 is 1:01:30 at halfway. The Garmin workout has no alerts: press lap at the finish.",
       "steps": []
     }
   }
