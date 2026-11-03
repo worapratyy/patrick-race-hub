@@ -46,27 +46,33 @@
   "paces": [
     {
       "k": "Recovery (HR up to 145)",
-      "pace": "6:40-7:05",
-      "kmh": "8.5-9.0",
+      "pace": "by HR",
+      "kmh": "9.0-9.3",
       "hr": "up to 145"
     },
     {
       "k": "Easy (treadmill)",
-      "pace": "6:30-6:50",
-      "kmh": "8.8-9.2",
+      "pace": "by HR",
+      "kmh": "9.3-9.7 (usual 9.5)",
       "hr": "136-151"
     },
     {
-      "k": "Threshold (by HR)",
-      "pace": "by HR",
-      "kmh": "start 9.8",
+      "k": "Threshold (Nov 3: 11.0)",
+      "pace": "5:27 on belt",
+      "kmh": "11.0, adjust to HR",
       "hr": "162-169"
     },
     {
-      "k": "10K reps (by HR)",
+      "k": "10K reps",
       "pace": "by HR",
-      "kmh": "start 10.4, max 11.0",
+      "kmh": "start 11.4, max 12.0",
       "hr": "166-175"
+    },
+    {
+      "k": "HM effort",
+      "pace": "5:45-5:55 road",
+      "kmh": "start 10.4",
+      "hr": "160-167"
     },
     {
       "k": "ATM goal, sub-54 (clock)",
@@ -348,7 +354,7 @@
     {
       "date": "2026-11-03",
       "name": "Treadmill threshold speed",
-      "pass": "Note the belt speed that holds HR 162-165"
+      "pass": "Done: belt 11.0 km/h held HR 158-169 by rep 2"
     },
     {
       "date": "2026-11-10",
@@ -1158,7 +1164,7 @@
       "pace": "by HR",
       "hr": "162-169",
       "treadmill": "start at 9.8 km/h",
-      "why": "Heart rate decides. The treadmill speed is only a starting point. If you run outdoors, go by HR. This session finds your real treadmill threshold speed. Write down the speed that holds HR 162-165.",
+      "why": "Done. Reps at belt 11.0 km/h (5:27/km), HR 158-169 by rep 2. The watch read the belt about 15% slow, so treadmill threshold speed is about 11.0 km/h.",
       "steps": [
         "2 km warm-up: HR 136-151",
         "2 x (2 km threshold + 2 min jog): HR 162-169",
@@ -1172,7 +1178,7 @@
       "km": 5,
       "pace": "by HR",
       "hr": "up to 145",
-      "treadmill": "8.5-9.0 km/h",
+      "treadmill": "9.0-9.3 km/h",
       "why": "",
       "steps": [
         "1 km warm-up: HR up to 140",
@@ -1195,7 +1201,7 @@
       "km": 6.8,
       "pace": "by HR",
       "hr": "136-151",
-      "treadmill": "8.8-9.2 km/h",
+      "treadmill": "9.3-9.7 km/h",
       "why": "",
       "steps": [
         "1 km warm-up: HR up to 140",
@@ -1219,7 +1225,7 @@
       "km": 12,
       "pace": "by HR",
       "hr": "136-151, last 2 km 152-161",
-      "treadmill": "8.6-9.0 km/h",
+      "treadmill": "9.3-9.6 km/h",
       "why": "Same workout on the treadmill or in the park. Outdoors, HR runs about 10 bpm higher at the same pace, so slow down to stay on target.",
       "steps": [
         "1 km warm-up: HR up to 140",
@@ -1244,7 +1250,7 @@
       "km": 10,
       "pace": "by HR",
       "hr": "166-175",
-      "treadmill": "start at 10.4 km/h, max 11.0",
+      "treadmill": "start at 11.4 km/h, max 12.0",
       "why": "Heart rate decides. The treadmill speed is only a starting point. If you run outdoors, go by HR. Run rep 1 no faster than the rest.",
       "steps": [
         "2 km warm-up: HR 136-151",
@@ -1259,7 +1265,7 @@
       "km": 5,
       "pace": "by HR",
       "hr": "up to 145",
-      "treadmill": "8.5-9.0 km/h",
+      "treadmill": "9.0-9.3 km/h",
       "why": "",
       "steps": [
         "1 km warm-up: HR up to 140",
@@ -1282,7 +1288,7 @@
       "km": 7.8,
       "pace": "by HR",
       "hr": "136-151",
-      "treadmill": "8.8-9.2 km/h",
+      "treadmill": "9.3-9.7 km/h",
       "why": "",
       "steps": [
         "1 km warm-up: HR up to 140",
@@ -1306,7 +1312,7 @@
       "km": 14,
       "pace": "by HR",
       "hr": "136-151, last 3 km 152-161",
-      "treadmill": "8.6-9.0 km/h",
+      "treadmill": "9.3-9.6 km/h",
       "why": "Same workout on the treadmill or in the park. Outdoors, HR runs about 10 bpm higher at the same pace, so slow down to stay on target.",
       "steps": [
         "1 km warm-up: HR up to 140",
@@ -1331,7 +1337,7 @@
       "km": 7.6,
       "pace": "by HR",
       "hr": "162-169",
-      "treadmill": "start at 9.8 km/h",
+      "treadmill": "start at 11.0 km/h",
       "why": "Heart rate decides. The treadmill speed is only a starting point. If you run outdoors, go by HR.",
       "steps": [
         "2 km warm-up: HR 136-151",
@@ -1347,7 +1353,7 @@
       "km": 5,
       "pace": "by HR",
       "hr": "up to 145",
-      "treadmill": "8.5-9.0 km/h",
+      "treadmill": "9.0-9.3 km/h",
       "why": "",
       "steps": [
         "1 km warm-up: HR up to 140",
@@ -1370,7 +1376,7 @@
       "km": 6.8,
       "pace": "by HR",
       "hr": "136-151",
-      "treadmill": "8.8-9.2 km/h",
+      "treadmill": "9.3-9.7 km/h",
       "why": "",
       "steps": [
         "1 km warm-up: HR up to 140",
@@ -1394,7 +1400,7 @@
       "km": 10,
       "pace": "by HR",
       "hr": "136-151, last 2 km 152-161",
-      "treadmill": "8.6-9.0 km/h",
+      "treadmill": "9.3-9.6 km/h",
       "why": "Same workout on the treadmill or in the park. Outdoors, HR runs about 10 bpm higher at the same pace, so slow down to stay on target.",
       "steps": [
         "1 km warm-up: HR up to 140",
@@ -1496,7 +1502,7 @@
       "km": 5,
       "pace": "by HR",
       "hr": "up to 145",
-      "treadmill": "8.5-9.0 km/h",
+      "treadmill": "9.0-9.3 km/h",
       "why": "",
       "steps": [
         "1 km warm-up: HR up to 140",
@@ -1529,7 +1535,7 @@
       "km": 6,
       "pace": "by HR",
       "hr": "136-151",
-      "treadmill": "8.8-9.2 km/h",
+      "treadmill": "9.3-9.7 km/h",
       "why": "",
       "steps": [
         "1 km warm-up: HR up to 140",
@@ -1552,7 +1558,7 @@
       "km": 10,
       "pace": "by HR",
       "hr": "136-151, last 2 km 152-161",
-      "treadmill": "8.6-9.0 km/h",
+      "treadmill": "9.3-9.6 km/h",
       "why": "Same workout on the treadmill or in the park. Outdoors, HR runs about 10 bpm higher at the same pace, so slow down to stay on target.",
       "steps": [
         "1 km warm-up: HR up to 140",
@@ -1577,7 +1583,7 @@
       "km": 9.2,
       "pace": "by HR",
       "hr": "162-169",
-      "treadmill": "start at 9.8 km/h",
+      "treadmill": "start at 11.0 km/h",
       "why": "Heart rate decides. The treadmill speed is only a starting point. If you run outdoors, go by HR.",
       "steps": [
         "2 km warm-up: HR 136-151",
@@ -1592,7 +1598,7 @@
       "km": 5,
       "pace": "by HR",
       "hr": "up to 145",
-      "treadmill": "8.5-9.0 km/h",
+      "treadmill": "9.0-9.3 km/h",
       "why": "",
       "steps": [
         "1 km warm-up: HR up to 140",
@@ -1615,7 +1621,7 @@
       "km": 7.8,
       "pace": "by HR",
       "hr": "136-151",
-      "treadmill": "8.8-9.2 km/h",
+      "treadmill": "9.3-9.7 km/h",
       "why": "",
       "steps": [
         "1 km warm-up: HR up to 140",
@@ -1639,7 +1645,7 @@
       "km": 14,
       "pace": "by HR",
       "hr": "136-151, last 3 km 152-161",
-      "treadmill": "8.6-9.0 km/h",
+      "treadmill": "9.3-9.6 km/h",
       "why": "Same workout on the treadmill or in the park. Outdoors, HR runs about 10 bpm higher at the same pace, so slow down to stay on target.",
       "steps": [
         "1 km warm-up: HR up to 140",
@@ -1664,7 +1670,7 @@
       "km": 11.6,
       "pace": "by HR",
       "hr": "160-167",
-      "treadmill": "start at 9.8 km/h",
+      "treadmill": "start at 10.4 km/h",
       "why": "Heart rate decides. The treadmill speed is only a starting point. If you run outdoors, go by HR.",
       "steps": [
         "2 km warm-up: HR 136-151",
@@ -1679,7 +1685,7 @@
       "km": 5,
       "pace": "by HR",
       "hr": "up to 145",
-      "treadmill": "8.5-9.0 km/h",
+      "treadmill": "9.0-9.3 km/h",
       "why": "",
       "steps": [
         "1 km warm-up: HR up to 140",
@@ -1702,7 +1708,7 @@
       "km": 7.8,
       "pace": "by HR",
       "hr": "136-151",
-      "treadmill": "8.8-9.2 km/h",
+      "treadmill": "9.3-9.7 km/h",
       "why": "",
       "steps": [
         "1 km warm-up: HR up to 140",
@@ -1726,7 +1732,7 @@
       "km": 16,
       "pace": "by HR",
       "hr": "136-151, last 3 km 152-161",
-      "treadmill": "8.6-9.0 km/h",
+      "treadmill": "9.3-9.6 km/h",
       "why": "Same workout on the treadmill or in the park. Outdoors, HR runs about 10 bpm higher at the same pace, so slow down to stay on target.",
       "steps": [
         "1 km warm-up: HR up to 140",
@@ -1751,7 +1757,7 @@
       "km": 9.1,
       "pace": "by HR",
       "hr": "162-169",
-      "treadmill": "start at 9.8 km/h",
+      "treadmill": "start at 11.0 km/h",
       "why": "Heart rate decides. The treadmill speed is only a starting point. If you run outdoors, go by HR.",
       "steps": [
         "2 km warm-up: HR 136-151",
@@ -1766,7 +1772,7 @@
       "km": 5,
       "pace": "by HR",
       "hr": "up to 145",
-      "treadmill": "8.5-9.0 km/h",
+      "treadmill": "9.0-9.3 km/h",
       "why": "",
       "steps": [
         "1 km warm-up: HR up to 140",
@@ -1789,7 +1795,7 @@
       "km": 7.8,
       "pace": "by HR",
       "hr": "136-151",
-      "treadmill": "8.8-9.2 km/h",
+      "treadmill": "9.3-9.7 km/h",
       "why": "",
       "steps": [
         "1 km warm-up: HR up to 140",
@@ -1813,7 +1819,7 @@
       "km": 18,
       "pace": "by HR / HM 5:50",
       "hr": "136-151, last 4 km 160-167",
-      "treadmill": "8.6-9.0 km/h",
+      "treadmill": "9.3-9.6 km/h",
       "why": "Same workout on the treadmill or in the park. Outdoors, HR runs about 10 bpm higher at the same pace, so slow down to stay on target. Do the finish outdoors so you practise real road pace.",
       "steps": [
         "1 km warm-up: HR up to 140",
@@ -1838,7 +1844,7 @@
       "km": 12.9,
       "pace": "by HR",
       "hr": "160-167",
-      "treadmill": "start at 9.8 km/h",
+      "treadmill": "start at 10.4 km/h",
       "why": "Heart rate decides. The treadmill speed is only a starting point. If you run outdoors, go by HR.",
       "steps": [
         "2 km warm-up: HR 136-151",
@@ -1853,7 +1859,7 @@
       "km": 5,
       "pace": "by HR",
       "hr": "up to 145",
-      "treadmill": "8.5-9.0 km/h",
+      "treadmill": "9.0-9.3 km/h",
       "why": "",
       "steps": [
         "1 km warm-up: HR up to 140",
@@ -1876,7 +1882,7 @@
       "km": 6.8,
       "pace": "by HR",
       "hr": "136-151",
-      "treadmill": "8.8-9.2 km/h",
+      "treadmill": "9.3-9.7 km/h",
       "why": "",
       "steps": [
         "1 km warm-up: HR up to 140",
@@ -1900,7 +1906,7 @@
       "km": 20,
       "pace": "by HR",
       "hr": "136-151, last 4 km up to 160",
-      "treadmill": "8.6-9.0 km/h",
+      "treadmill": "9.3-9.6 km/h",
       "why": "Same workout on the treadmill or in the park. Outdoors, HR runs about 10 bpm higher at the same pace, so slow down to stay on target.",
       "steps": [
         "1 km warm-up: HR up to 140",
@@ -1925,7 +1931,7 @@
       "km": 7.6,
       "pace": "by HR",
       "hr": "162-169",
-      "treadmill": "start at 9.8 km/h",
+      "treadmill": "start at 11.0 km/h",
       "why": "Heart rate decides. The treadmill speed is only a starting point. If you run outdoors, go by HR.",
       "steps": [
         "2 km warm-up: HR 136-151",
@@ -1941,7 +1947,7 @@
       "km": 5,
       "pace": "by HR",
       "hr": "up to 145",
-      "treadmill": "8.5-9.0 km/h",
+      "treadmill": "9.0-9.3 km/h",
       "why": "",
       "steps": [
         "1 km warm-up: HR up to 140",
@@ -1964,7 +1970,7 @@
       "km": 6.8,
       "pace": "by HR",
       "hr": "136-151",
-      "treadmill": "8.8-9.2 km/h",
+      "treadmill": "9.3-9.7 km/h",
       "why": "",
       "steps": [
         "1 km warm-up: HR up to 140",
@@ -1988,7 +1994,7 @@
       "km": 12,
       "pace": "by HR",
       "hr": "136-151",
-      "treadmill": "8.6-9.0 km/h",
+      "treadmill": "9.3-9.6 km/h",
       "why": "Same workout on the treadmill or in the park. Outdoors, HR runs about 10 bpm higher at the same pace, so slow down to stay on target.",
       "steps": [
         "1 km warm-up: HR up to 140",
@@ -2011,7 +2017,7 @@
       "km": 5.8,
       "pace": "by HR",
       "hr": "136-151",
-      "treadmill": "8.8-9.2 km/h",
+      "treadmill": "9.3-9.7 km/h",
       "why": "",
       "steps": [
         "1 km warm-up: HR up to 140",
@@ -2025,7 +2031,7 @@
       "km": 4,
       "pace": "by HR",
       "hr": "up to 145",
-      "treadmill": "8.5-9.0 km/h",
+      "treadmill": "9.0-9.3 km/h",
       "why": "",
       "steps": [
         "1 km warm-up: HR up to 140",
@@ -2048,7 +2054,7 @@
       "km": 3.8,
       "pace": "by HR",
       "hr": "136-151",
-      "treadmill": "8.5-9.0 km/h",
+      "treadmill": "9.0-9.3 km/h",
       "why": "Check the kit pickup date.",
       "steps": [
         "1 km warm-up: HR up to 140",
