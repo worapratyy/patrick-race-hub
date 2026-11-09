@@ -357,7 +357,7 @@
       "pass": "Done: belt 11.0 km/h held HR 158-169 by rep 2"
     },
     {
-      "date": "2026-11-10",
+      "date": "2026-11-11",
       "name": "5 x 1000m at 10K effort",
       "pass": "All 5 reps HR 166-175, rep 1 no faster than the rest"
     },
@@ -1245,21 +1245,6 @@
       "steps": []
     },
     "2026-11-10": {
-      "type": "tempo",
-      "name": "5x1000m",
-      "km": 10,
-      "pace": "by HR",
-      "hr": "166-175",
-      "treadmill": "start at 11.4 km/h, max 12.0",
-      "why": "Heart rate decides. The treadmill speed is only a starting point. If you run outdoors, go by HR. Run rep 1 no faster than the rest.",
-      "steps": [
-        "2 km warm-up: HR 136-151",
-        "5 x (1000 m 10K effort + 2 min jog): HR 166-175",
-        "1.5 km cool-down: HR up to 140"
-      ],
-      "qualKm": 4
-    },
-    "2026-11-11": {
       "type": "easy",
       "name": "Recovery 5km",
       "km": 5,
@@ -1271,6 +1256,21 @@
         "1 km warm-up: HR up to 140",
         "4 km easy: HR 136-151"
       ]
+    },
+    "2026-11-11": {
+      "type": "tempo",
+      "name": "5x1000m",
+      "km": 10,
+      "pace": "by HR",
+      "hr": "166-175",
+      "treadmill": "start at 11.4 km/h, max 12.0",
+      "why": "Heart rate decides. The treadmill speed is only a starting point. If you run outdoors, go by HR. Run rep 1 no faster than the rest. Moved from Tue Nov 10 after the 22 km long run (Garmin recovery 48 h, readiness 27).",
+      "steps": [
+        "2 km warm-up: HR 136-151",
+        "5 x (1000 m 10K effort + 2 min jog): HR 166-175",
+        "1.5 km cool-down: HR up to 140"
+      ],
+      "qualKm": 4
     },
     "2026-11-12": {
       "type": "strength",
