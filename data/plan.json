@@ -1333,32 +1333,28 @@
     },
     "2026-11-17": {
       "type": "tempo",
-      "name": "Threshold 2x1.6km",
-      "km": 7.6,
+      "name": "Norwegian 4x4",
+      "km": 8,
       "pace": "by HR",
-      "hr": "162-169",
-      "treadmill": "start at 11.0 km/h",
-      "why": "Heart rate decides. The treadmill speed is only a starting point. If you run outdoors, go by HR.",
+      "hr": "167-176",
+      "treadmill": "start 11.6-11.8 km/h, up to 12.0",
+      "why": "Last hard session before ATM (12 days out). Reps long enough for HR to reach race intensity; timed, so the watch's treadmill distance error doesn't matter. Stop after 3 reps if HR won't reach 167 even at 12.0 km/h, or if legs feel heavy.",
       "steps": [
-        "2 km warm-up: HR 136-151",
-        "2 x (1.6 km threshold + 2 min jog): HR 162-169",
-        "4 x 20 s strides, 60 s jog: no HR target",
-        "1 km cool-down: HR up to 140"
+        "2 km warm-up: no HR target",
+        "4 x (4 min hard + 3 min jog or walk): HR 167-176, jog at 7.5-8.5 km/h",
+        "1.5 km cool-down: no HR target"
       ],
-      "qualKm": 4
+      "qualKm": 3
     },
     "2026-11-18": {
-      "type": "easy",
-      "name": "Recovery 5km",
-      "km": 5,
-      "pace": "by HR",
-      "hr": "up to 145",
-      "treadmill": "9.0-9.3 km/h",
-      "why": "",
-      "steps": [
-        "1 km warm-up: HR up to 140",
-        "4 km easy: HR 136-151"
-      ]
+      "type": "rest",
+      "name": "Rest",
+      "km": 0,
+      "pace": "",
+      "hr": "",
+      "treadmill": "",
+      "why": "Rest. Three-run week before Japan: Tue 4x4, Fri easy, Sun long.",
+      "steps": []
     },
     "2026-11-19": {
       "type": "strength",
