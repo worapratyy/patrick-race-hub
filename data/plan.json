@@ -367,6 +367,11 @@
       "pass": "Sub-54:00 (A) / any PR under 54:39 (B)"
     },
     {
+      "date": "2026-12-08",
+      "name": "Norwegian 4x4 at 12.0 km/h",
+      "pass": "Last 2 min of reps 3-4 at HR 162-172 (Nov 17 at 11.0-11.5 topped out at 161-165)"
+    },
+    {
       "date": "2026-12-15",
       "name": "2 x 4 km at HM effort",
       "pass": "Both reps HR 160-167"
@@ -1575,30 +1580,30 @@
     },
     "2026-12-08": {
       "type": "tempo",
-      "name": "Threshold 3x1.6km",
-      "km": 9.2,
+      "name": "Norwegian 4x4",
+      "km": 8.3,
       "pace": "by HR",
-      "hr": "162-169",
-      "treadmill": "start at 11.0 km/h",
-      "why": "Heart rate decides. The treadmill speed is only a starting point. If you run outdoors, go by HR.",
+      "hr": "162-172",
+      "treadmill": "reps at 11.8 -> 12.0 km/h, jogs at 8.0 km/h",
+      "why": "HR lags in a 4-min rep: judge it by the last 2 minutes. If HR stays under 162 at 12.0, add 1-2% incline.",
       "steps": [
         "2 km warm-up: HR 136-151",
-        "3 x (1.6 km threshold + 2 min jog): HR 162-169",
+        "4 x (4 min hard + 3 min jog): first 45-60 s at 12.3, then 12.0. HR 162-172 in the last 2 min",
         "1.5 km cool-down: HR up to 140"
       ],
-      "qualKm": 4
+      "qualKm": 3.2
     },
     "2026-12-09": {
       "type": "easy",
-      "name": "Recovery 5km",
-      "km": 5,
+      "name": "Easy 7km",
+      "km": 7,
       "pace": "by HR",
-      "hr": "up to 145",
-      "treadmill": "9.0-9.3 km/h",
+      "hr": "136-151",
+      "treadmill": "9.3-9.7 km/h",
       "why": "",
       "steps": [
         "1 km warm-up: HR up to 140",
-        "4 km easy: HR 136-151"
+        "6 km easy: HR 136-151"
       ]
     },
     "2026-12-10": {
@@ -1613,15 +1618,15 @@
     },
     "2026-12-11": {
       "type": "easy",
-      "name": "Easy 7km + strides",
-      "km": 7.8,
+      "name": "Easy 8km + strides",
+      "km": 8.8,
       "pace": "by HR",
       "hr": "136-151",
       "treadmill": "9.3-9.7 km/h",
       "why": "",
       "steps": [
         "1 km warm-up: HR up to 140",
-        "6 km easy: HR 136-151",
+        "7 km easy: HR 136-151",
         "4 x 20 s strides, 60 s jog: no HR target"
       ]
     },
@@ -1677,15 +1682,15 @@
     },
     "2026-12-16": {
       "type": "easy",
-      "name": "Recovery 5km",
-      "km": 5,
+      "name": "Easy 7km",
+      "km": 7,
       "pace": "by HR",
-      "hr": "up to 145",
-      "treadmill": "9.0-9.3 km/h",
+      "hr": "136-151",
+      "treadmill": "9.3-9.7 km/h",
       "why": "",
       "steps": [
         "1 km warm-up: HR up to 140",
-        "4 km easy: HR 136-151"
+        "6 km easy: HR 136-151"
       ]
     },
     "2026-12-17": {
@@ -1700,15 +1705,15 @@
     },
     "2026-12-18": {
       "type": "easy",
-      "name": "Easy 7km + strides",
-      "km": 7.8,
+      "name": "Easy 8km + strides",
+      "km": 8.8,
       "pace": "by HR",
       "hr": "136-151",
       "treadmill": "9.3-9.7 km/h",
       "why": "",
       "steps": [
         "1 km warm-up: HR up to 140",
-        "6 km easy: HR 136-151",
+        "7 km easy: HR 136-151",
         "4 x 20 s strides, 60 s jog: no HR target"
       ]
     },
@@ -1749,41 +1754,44 @@
     },
     "2026-12-22": {
       "type": "tempo",
-      "name": "Threshold 2x2.5km",
-      "km": 9.1,
+      "name": "Threshold 2x3km",
+      "km": 10,
       "pace": "by HR",
       "hr": "162-169",
       "treadmill": "start at 11.0 km/h",
       "why": "Heart rate decides. The treadmill speed is only a starting point. If you run outdoors, go by HR.",
       "steps": [
         "2 km warm-up: HR 136-151",
-        "2 x (2.5 km threshold + 2 min jog): HR 162-169",
+        "2 x (3 km threshold + 2 min jog): HR 162-169",
         "1.5 km cool-down: HR up to 140"
       ],
-      "qualKm": 4
+      "qualKm": 6
     },
     "2026-12-23": {
       "type": "easy",
-      "name": "Recovery 5km",
+      "name": "Easy 7km",
+      "km": 7,
+      "pace": "by HR",
+      "hr": "136-151",
+      "treadmill": "9.3-9.7 km/h",
+      "why": "",
+      "steps": [
+        "1 km warm-up: HR up to 140",
+        "6 km easy: HR 136-151"
+      ]
+    },
+    "2026-12-24": {
+      "type": "easy",
+      "name": "Easy 5km + Strength A",
       "km": 5,
       "pace": "by HR",
-      "hr": "up to 145",
-      "treadmill": "9.0-9.3 km/h",
-      "why": "",
+      "hr": "136-151",
+      "treadmill": "9.3-9.7 km/h",
+      "why": "Extra run for the 45-50 km weeks. Pure Z2, no strides. If the piriformis complains or legs feel heavy, skip this run first. Strength A after the run, light: goblet squat, split squat, calf raises, 2 sets, 3 reps in reserve.",
       "steps": [
         "1 km warm-up: HR up to 140",
         "4 km easy: HR 136-151"
       ]
-    },
-    "2026-12-24": {
-      "type": "strength",
-      "name": "Strength Day A - Lower Stability",
-      "km": 0,
-      "pace": "",
-      "hr": "",
-      "treadmill": "",
-      "why": "Goblet squat, RDL, split squat, calf raises: 2-3 sets, 2-3 reps in reserve.",
-      "steps": []
     },
     "2026-12-25": {
       "type": "easy",
@@ -1851,26 +1859,29 @@
     },
     "2026-12-30": {
       "type": "easy",
-      "name": "Recovery 5km",
-      "km": 5,
+      "name": "Easy 7km",
+      "km": 7,
       "pace": "by HR",
-      "hr": "up to 145",
-      "treadmill": "9.0-9.3 km/h",
+      "hr": "136-151",
+      "treadmill": "9.3-9.7 km/h",
       "why": "",
       "steps": [
         "1 km warm-up: HR up to 140",
-        "4 km easy: HR 136-151"
+        "6 km easy: HR 136-151"
       ]
     },
     "2026-12-31": {
-      "type": "strength",
-      "name": "Strength Day A - Lower Stability",
-      "km": 0,
-      "pace": "",
-      "hr": "",
-      "treadmill": "",
-      "why": "Goblet squat, RDL, split squat, calf raises: 2-3 sets, 2-3 reps in reserve.",
-      "steps": []
+      "type": "easy",
+      "name": "Easy 4km + Strength A",
+      "km": 4,
+      "pace": "by HR",
+      "hr": "136-151",
+      "treadmill": "9.3-9.7 km/h",
+      "why": "Peak week (~50 km). Pure Z2, no strides. If the piriformis complains or legs feel heavy, skip this run first. Strength A after the run, light: goblet squat, split squat, calf raises, 2 sets, 3 reps in reserve.",
+      "steps": [
+        "1 km warm-up: HR up to 140",
+        "3 km easy: HR 136-151"
+      ]
     },
     "2027-01-01": {
       "type": "easy",
@@ -1939,15 +1950,15 @@
     },
     "2027-01-06": {
       "type": "easy",
-      "name": "Recovery 5km",
-      "km": 5,
+      "name": "Easy 6km",
+      "km": 6,
       "pace": "by HR",
-      "hr": "up to 145",
-      "treadmill": "9.0-9.3 km/h",
+      "hr": "136-151",
+      "treadmill": "9.3-9.7 km/h",
       "why": "",
       "steps": [
         "1 km warm-up: HR up to 140",
-        "4 km easy: HR 136-151"
+        "5 km easy: HR 136-151"
       ]
     },
     "2027-01-07": {
@@ -1986,16 +1997,17 @@
     },
     "2027-01-10": {
       "type": "long",
-      "name": "Long 12km easy",
-      "km": 12,
+      "name": "Long 14km easy",
+      "km": 14,
       "pace": "by HR",
       "hr": "136-151",
       "treadmill": "9.3-9.6 km/h",
       "why": "Same workout on the treadmill or in the park. Outdoors, HR runs about 10 bpm higher at the same pace, so slow down to stay on target.",
       "steps": [
         "1 km warm-up: HR up to 140",
-        "11 km Z2: HR 136-151"
-      ]
+        "13 km Z2: HR 136-151"
+      ],
+      "easyKm": 13
     },
     "2027-01-11": {
       "type": "rest",
